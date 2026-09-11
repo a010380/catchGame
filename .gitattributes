@@ -1,0 +1,8 @@
+# 程式碼與設定檔一律以 LF 存進 repo，並且簽出時也保持 LF。
+# GitHub Actions 跑在 Linux 上，統一用 LF 最單純，也不會再跳 CRLF 警告。
+* text=auto eol=lf
+
+# 行事曆檔例外：RFC 5545 規定 .ics 的換行必須是 CRLF，
+# 而且長行折行（continuation line）的還原也依賴 CRLF + 前導空白。
+# 標成 -text 讓 Git 完全不做換行轉換，位元組原封不動進 repo。
+*.ics -text

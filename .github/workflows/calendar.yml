@@ -1,0 +1,52 @@
+name: 更新賽程行事曆
+
+on:
+  schedule:
+    # 每天 UTC 20:00 = 台灣時間隔天 04:00。
+    # 這個時段美洲的比賽大多打完、亞歐的還沒開始，抓下來的賽程最完整。
+    - cron: '0 20 * * *'
+  workflow_dispatch:        # 允許在 Actions 頁面手動點「Run workflow」立即測試
+
+# 需要寫入權限，因為產生的 .ics 要 commit 回 repo 給 GitHub Pages 發布
+permissions:
+  contents: write
+
+concurrency:
+  # 避免跟自己的上一輪執行同時 push 造成衝突
+  group: calendar
+  cancel-in-progress: false
+
+jobs:
+  build-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 產生 calendar.ics
+        run: python main.py calendar
+
+      - name: Commit 更新後的行事曆
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/calendar.ics
+          # 賽程沒變動時不要產生空 commit
+          if git diff --staged --quiet; then
+            echo "賽程無變化，跳過 commit。"
+            exit 0
+          fi
+          git commit -m "chore: 更新賽程行事曆 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          # 另一個 workflow 可能剛推了 state.json，先 rebase 再推
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push 失敗，第 $i 次重試…"
+            sleep 5
+          done
+          exit 1
