@@ -106,14 +106,38 @@ python main.py preview
 
 ### 步驟 3：推上 GitHub
 
+**3-1. 先到 GitHub 網頁上建立一個空的 repo。**
+
+`git remote add` 只是告訴 Git「遠端在哪」，**它不會幫你建 repo**。所以先開
+<https://github.com/new>：
+
+- **Repository name** 填 `catchGame`
+- 選 **Public**（見下方說明）
+- **不要**勾 "Add a README file"、.gitignore、license —— 本機已經有了，勾了會衝突
+
+**3-2. 設定你的 Git 身分**（沒設過的話，commit 作者會顯示 `unknown`）：
+
+```bash
+git config --global user.name  "你的名字"
+git config --global user.email "你的email"
+```
+
+**3-3. 推上去。** 把下面的 `你的GitHub帳號` 換成真的帳號名稱 —— 這是佔位字串，
+直接照貼會得到 `error: 400`：
+
 ```bash
 git init
 git add .
 git commit -m "feat: 賽事提醒與賽果推播"
 git branch -M main
-git remote add origin https://github.com/<你的帳號>/catchGame.git
+git remote add origin https://github.com/a010380/catchGame.git
 git push -u origin main
 ```
+
+第一次 push 時會跳出 GitHub 登入視窗，用瀏覽器授權即可（不需要自己產生 token）。
+
+> 如果 remote 網址打錯了，用 `git remote set-url origin <正確網址>` 改掉，
+> 或先 `git remote remove origin` 再重新 add。
 
 > **建議設成 public repo。** Actions 對公開 repo 的免費額度無上限；私人 repo 每月 2000 分鐘，而本專案的排程大約會用掉 1400 分鐘（見下方「用量」）。這個 repo 裡沒有任何私密內容 —— token 是放在 GitHub Secrets，不在程式碼裡。
 
@@ -133,7 +157,7 @@ git push -u origin main
 一兩分鐘後你的行事曆網址就是：
 
 ```
-https://<你的帳號>.github.io/catchGame/calendar.ics
+https://a010380.github.io/catchGame/calendar.ics
 ```
 
 ### 步驟 6：iPhone 訂閱行事曆
