@@ -150,6 +150,22 @@ git push -u origin main
 | `TELEGRAM_BOT_TOKEN` | 步驟 2 拿到的 token |
 | `TELEGRAM_CHAT_ID` | 步驟 2 拿到的 chat id |
 
+### 步驟 4.5：確認 Actions 有寫入權限
+
+`calendar.yml` 和 `results.yml` 需要把產生的 `.ics` 與推播紀錄 commit 回 repo，
+所以 Actions 必須有寫入權限。
+
+到 **Settings → Actions → General → Workflow permissions**，確認選的是
+**Read and write permissions**。
+
+2023 年之後建立的 repo 預設是唯讀，如果沒改，workflow 會在最後 commit 那一步失敗，
+錯誤訊息長這樣：
+
+```
+remote: Permission to <帳號>/catchGame.git denied to github-actions[bot].
+fatal: unable to access ...: The requested URL returned error: 403
+```
+
 ### 步驟 5：開啟 GitHub Pages
 
 **Settings → Pages → Source** 選 `Deploy from a branch`，branch 選 `main`、資料夾選 **`/docs`**，儲存。

@@ -22,8 +22,9 @@ STATE_RETENTION_DAYS = 14
 # 聯賽清單。
 #
 #   enabled        設 False 就完全跳過，不會抓也不會推
-#   source         目前只有 "espn"；CPBL 與電競要另外寫 adapter（見 README）
-#   path           ESPN API 的路徑片段
+#   source         "espn" / "yahoo" / "lolesports"
+#   path           espn 與 yahoo 的路徑片段（lolesports 改用 league_id）
+#   league_id      lolesports 專用，聯賽的數字 ID
 #   duration_min   行事曆上這場比賽要佔多久（ESPN 不提供結束時間，只能估）
 #   teams          只關注特定球隊時填入隊名或縮寫（例：["NYY", "Dodgers"]）
 #                  留空 [] = 該聯賽全部比賽都要
@@ -77,6 +78,61 @@ LEAGUES = [
         "source": "espn",
         "path": "soccer/esp.1",
         "duration_min": 120,
+        "teams": [],
+    },
+
+    # ---- CPBL（透過 Yahoo 運動，隊名直接是中文）----
+    {
+        "key": "cpbl",
+        "name": "CPBL",
+        "emoji": "⚾",
+        "enabled": True,
+        "source": "yahoo",
+        "path": "cpbl",
+        "duration_min": 210,
+        # 想只看特定球隊就填：["樂天", "中信"]（短名或全名都可比對）
+        "teams": [],
+    },
+
+    # ---- LoL 電競。league_id 來自 lolesports 的 getLeagues ----
+    {
+        "key": "lck",
+        "name": "LCK",
+        "emoji": "🎮",
+        "enabled": True,
+        "source": "lolesports",
+        "league_id": "98767991310872058",
+        "duration_min": 180,
+        "teams": [],
+    },
+    {
+        "key": "lcp",
+        "name": "LCP",
+        "emoji": "🎮",
+        "enabled": True,
+        "source": "lolesports",
+        "league_id": "113476371197627891",
+        "duration_min": 180,
+        "teams": [],
+    },
+    {
+        "key": "msi",
+        "name": "MSI",
+        "emoji": "🏆",
+        "enabled": True,
+        "source": "lolesports",
+        "league_id": "98767991325878492",
+        "duration_min": 180,
+        "teams": [],
+    },
+    {
+        "key": "worlds",
+        "name": "Worlds",
+        "emoji": "🏆",
+        "enabled": True,
+        "source": "lolesports",
+        "league_id": "98767975604431411",
+        "duration_min": 180,
         "teams": [],
     },
 ]

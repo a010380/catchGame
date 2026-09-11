@@ -26,6 +26,21 @@ def load() -> dict:
 
 
 def save(data: dict) -> None:
+    """只有在推播紀錄真的有變動時才寫檔。
+
+    `updated_at` 每次都會變，如果無條件寫檔，排程每 30 分鐘就會產生一筆
+    「內容其實沒變」的 commit，一年下來上萬筆雜訊。所以先比對 notified
+    的內容，沒變就整個跳過 —— workflow 那邊的 `git diff --staged --quiet`
+    就會判定無變化而不 commit。
+    """
+    if STATE_PATH.exists():
+        try:
+            previous = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+            if previous.get("notified") == data.get("notified"):
+                return
+        except json.JSONDecodeError:
+            pass  # 檔案壞掉就照常覆寫
+
     data["updated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     STATE_PATH.write_text(
         json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",

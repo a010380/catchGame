@@ -7,10 +7,12 @@
 from datetime import date
 
 from models import Game
-from sources import espn
+from sources import espn, lolesports, yahoo
 
 _ADAPTERS = {
     "espn": espn.fetch,
+    "lolesports": lolesports.fetch,
+    "yahoo": yahoo.fetch,
 }
 
 

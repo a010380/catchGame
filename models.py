@@ -32,6 +32,8 @@ class Game:
     status_detail: str = ""
     link: str = ""
     note: str = ""  # 例如「延賽」、「第 9 局下」
+    # 電競這類沒有主客場概念的賽事設 True，顯示時用「A vs B」而不是「A @ B」
+    neutral: bool = False
     _tags: list[str] = field(default_factory=list)  # 隊名/縮寫，供 teams 篩選用
 
     @property
@@ -40,7 +42,9 @@ class Game:
 
     @property
     def matchup(self) -> str:
-        """客隊 @ 主隊 — 沿用美國職業運動的慣例寫法。"""
+        """有主客場的寫成「客 @ 主」，中立場地的寫成「A vs B」。"""
+        if self.neutral:
+            return f"{self.away} vs {self.home}"
         return f"{self.away} @ {self.home}"
 
     @property
