@@ -1,28 +1,29 @@
-name: 推播賽果
+name: 開賽提醒與賽果推播
 
 on:
   schedule:
-    # 全天每 30 分鐘檢查一次。
+    # 每 10 分鐘跑一次，一次同時做兩件事：
+    #   1. 推播「即將開賽」（距離開賽 20 分鐘內的比賽）
+    #   2. 推播剛結束的比賽比分
     #
-    # 原本只跑 MLB 的結束時段（UTC 18:00-08:00），但加入 CPBL 與電競後，
-    # 各聯賽的結束時間幾乎鋪滿一整天：
-    #   LCK   台灣 13:00-16:00 開打 -> UTC 09:00-13:00 結束
-    #   CPBL  台灣 18:35 開打      -> UTC 13:00-16:00 結束
-    #   MLB   美國晚間開打          -> UTC 18:00-08:00 結束
-    # 留空檔會讓那個時段結束的比賽漏推，所以改成全天候。
-    # repo 是公開的，Actions 分鐘數無上限，不必省這個。
-    - cron: '*/30 * * * *'
+    # 為什麼是 10 分鐘：開賽提醒需要比較細的顆粒度，而 GitHub Actions 的
+    # 排程不保證準時（尖峰可能延遲 5-15 分鐘）。10 分鐘一次搭配 20 分鐘的
+    # 提醒視窗，可以確保每場比賽都會被提醒到，實際送達落在開賽前約 20-5 分鐘。
+    #
+    # 為什麼兩件事合併：兩個 job 各自 commit 同一個 state.json 會互相衝突，
+    # 而且重複的 checkout 與 pip install 純屬浪費。
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: results
+  group: notify
   cancel-in-progress: false
 
 jobs:
-  notify-results:
+  remind-and-results:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,22 +35,22 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 檢查並推播賽果
+      - name: 開賽提醒 + 賽果推播
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py results
+        run: python main.py tick
 
-      - name: Commit 推播紀錄
+      - name: Commit 通知紀錄
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state.json
           if git diff --staged --quiet; then
-            echo "推播紀錄無變化，跳過 commit。"
+            echo "通知紀錄無變化，跳過 commit。"
             exit 0
           fi
-          git commit -m "chore: 更新賽果推播紀錄"
+          git commit -m "chore: 更新通知紀錄"
           for i in 1 2 3; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
             echo "push 失敗，第 $i 次重試…"

@@ -3,8 +3,10 @@
 用法：
   python main.py preview      抓賽程印在畫面上（不碰 Telegram，最適合第一次測試）
   python main.py calendar     產生 docs/calendar.ics（給 iPhone 行事曆訂閱）
-  python main.py digest       推播「今天有哪些比賽」摘要
+  python main.py digest       推播「接下來 24 小時」摘要
+  python main.py remind       推播即將開賽的比賽（開賽前 20 分鐘內）
   python main.py results      推播剛結束的比賽比分（會記錄避免重複）
+  python main.py tick         remind + results，排程實際跑的就是這個
   python main.py chat-id      找出你的 Telegram chat id（只需要 BOT_TOKEN）
   python main.py test-notify  送一則測試訊息，確認 Telegram 設定正確
 """
@@ -151,6 +153,64 @@ def cmd_digest(_args) -> int:
     return 0
 
 
+def cmd_remind(_args) -> int:
+    """推播即將開賽的比賽。
+
+    刻意把同一批比賽併成一則訊息 —— CPBL 三場同時 18:35 開打、MLB 常常
+    十幾場擠在同一個時段，一場一則會變成連續轟炸。
+    """
+    print("檢查即將開賽的比賽…")
+    games = collect(days_back=0, days_ahead=1)
+
+    now = datetime.now(timezone.utc)
+    lead = timedelta(minutes=config.REMIND_LEAD_MINUTES)
+
+    data = state.load()
+    upcoming = [
+        g for g in games
+        if not g.finished
+        and now < g.start <= now + lead
+        and not state.already(data, "reminded", g.uid)
+    ]
+
+    if not upcoming:
+        state.save(data)
+        print("這個時段沒有即將開賽的比賽。")
+        return 0
+
+    lines = ["<b>🔔 即將開賽</b>", ""]
+    current_league = None
+    for game in upcoming:
+        if game.league_name != current_league:
+            current_league = game.league_name
+            lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
+        mins = max(1, round((game.start - now).total_seconds() / 60))
+        note = f" <i>({notify.esc(game.note)})</i>" if game.note else ""
+        lines.append(
+            f"  {game.local_start():%H:%M}（{mins} 分鐘後）"
+            f"  {notify.esc(game.matchup)}{note}"
+        )
+
+    notify.send("\n".join(lines))
+
+    for game in upcoming:
+        state.mark(data, "reminded", game.uid)
+    state.prune(data)
+    state.save(data)
+    print(f"已推播 {len(upcoming)} 場開賽提醒。")
+    return 0
+
+
+def cmd_tick(args) -> int:
+    """排程每次醒來要做的事：先提醒即將開賽，再推播剛結束的賽果。
+
+    合併成一個指令是為了讓排程只跑一個 job —— 兩個 job 各自 commit
+    同一個 state.json 會互相衝突，而且重複的 checkout / pip install 很浪費。
+    """
+    codes = [cmd_remind(args), cmd_results(args)]
+    return max(codes)
+
+
 def cmd_results(_args) -> int:
     print("檢查已結束的比賽…")
     games = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=0)
@@ -163,13 +223,13 @@ def cmd_results(_args) -> int:
     if first_run:
         for game in games:
             if game.finished:
-                state.mark_notified(data, game.uid)
+                state.mark(data, "notified", game.uid)
         state.save(data)
         print(f"首次執行：已把 {len(data['notified'])} 場既有賽果設為基準，未發送通知。")
         return 0
     pending = [
         g for g in games
-        if g.finished and not state.already_notified(data, g.uid)
+        if g.finished and not state.already(data, "notified", g.uid)
     ]
 
     if not pending:
@@ -192,7 +252,7 @@ def cmd_results(_args) -> int:
 
     # 推播成功才記錄，失敗時下次排程會重試
     for game in pending:
-        state.mark_notified(data, game.uid)
+        state.mark(data, "notified", game.uid)
     removed = state.prune(data)
     state.save(data)
     print(f"已推播 {len(pending)} 場賽果。（清掉 {removed} 筆過期紀錄）")
@@ -241,6 +301,8 @@ def cmd_test_notify(_args) -> int:
 COMMANDS = {
     "chat-id": cmd_chat_id,
     "preview": cmd_preview,
+    "remind": cmd_remind,
+    "tick": cmd_tick,
     "calendar": cmd_calendar,
     "digest": cmd_digest,
     "results": cmd_results,

@@ -12,8 +12,20 @@ SCHEDULE_DAYS_AHEAD = 14
 # 查賽果時往回看幾天（跨時區的比賽可能跨日，所以至少 2 天）
 RESULTS_LOOKBACK_DAYS = 2
 
-# 開賽前幾分鐘提醒（由 iPhone 行事曆負責響，不靠伺服器）
-ALARM_MINUTES_BEFORE = 15
+# 行事曆檔裡要不要放提醒（VALARM）。
+#
+# 設 0 = 不放。因為開賽提醒已經改由 Telegram 負責（見下面的 REMIND_LEAD_MINUTES），
+# 如果這裡也放提醒，同一場比賽會同時跳行事曆通知和 Telegram 通知。
+# 想改回讓 iPhone 行事曆響鈴，把這個設成 15、並把 notify.yml 的排程關掉即可。
+ALARM_MINUTES_BEFORE = 0
+
+# Telegram 開賽提醒：比賽開始前幾分鐘內就推提醒。
+#
+# 這是一個「視窗」而不是精準時點 —— GitHub Actions 的排程不保證準時
+# （尖峰可能延遲 5-15 分鐘），所以做法是每 10 分鐘檢查一次，
+# 把「還沒開打、且距離開賽在這個分鐘數以內」的比賽推出去。
+# 實際送達時間會落在開賽前約 20 到 5 分鐘之間。
+REMIND_LEAD_MINUTES = 20
 
 # 賽果推播已送出的紀錄保留幾天（避免 state.json 無限長大）
 STATE_RETENTION_DAYS = 14
