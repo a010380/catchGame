@@ -8,20 +8,73 @@ X-WR-TIMEZONE:Asia/Taipei
 REFRESH-INTERVAL;VALUE=DURATION:PT4H
 X-PUBLISHED-TTL:PT4H
 BEGIN:VEVENT
-UID:cpbl-cpbl.g.260916333@catchgame
-DTSTAMP:20260920T215834Z
-DTSTART:20260916T103500Z
-DTEND:20260916T140500Z
-SUMMARY:⚾ 富邦 6 - 0 味全 (終)
-DESCRIPTION:聯賽：CPBL\n開賽（Asia/Taipei）：2026-09-16 18:35\n狀
- 態：Final\nhttps://tw.sports.yahoo.com/cpbl/scoreboard
-CATEGORIES:CPBL
+UID:mlb-401816966@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T000500Z
+DTEND:20260917T033500Z
+SUMMARY:⚾ Red Sox 3 - 7 Rangers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-17 08:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816966/red-sox-rang
+ ers
+CATEGORIES:MLB
 TRANSP:TRANSPARENT
-URL:https://tw.sports.yahoo.com/cpbl/scoreboard
+URL:https://www.espn.com/mlb/game/_/gameId/401816966/red-sox-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816967@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T001000Z
+DTEND:20260917T034000Z
+SUMMARY:⚾ Royals 5 - 2 Astros (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-17 08:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816967/royals-astro
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816967/royals-astros
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816970@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T004000Z
+DTEND:20260917T041000Z
+SUMMARY:⚾ Padres 9 - 3 Rockies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-17 08:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816970/padres-rocki
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816970/padres-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816972@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T013800Z
+DTEND:20260917T050800Z
+SUMMARY:⚾ Mariners 7 - 2 Angels (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-17 09:38\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816972/mariners-ang
+ els
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816972/mariners-angels
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816971@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T014000Z
+DTEND:20260917T051000Z
+SUMMARY:⚾ Marlins 4 - 3 Diamondbacks (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-17 09:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816971/marlins-diam
+ ondbacks
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816971/marlins-diamondbacks
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260917335@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260917T103500Z
 DTEND:20260917T140500Z
 SUMMARY:⚾ 樂天 0 - 1 富邦 (終)
@@ -33,7 +86,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260917336@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260917T103500Z
 DTEND:20260917T140500Z
 SUMMARY:⚾ 台鋼 6 - 1 味全 (終)
@@ -45,7 +98,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260917334@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260917T103500Z
 DTEND:20260917T140500Z
 SUMMARY:⚾ 統一 2 - 4 中信 (終)
@@ -56,8 +109,162 @@ TRANSP:TRANSPARENT
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401816975@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T163500Z
+DTEND:20260917T200500Z
+SUMMARY:⚾ Brewers 4 - 7 Pirates (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 00:35\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816975/brewers-pira
+ tes
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816975/brewers-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816974@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T164000Z
+DTEND:20260917T201000Z
+SUMMARY:⚾ Dodgers 8 - 2 Reds (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 00:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816974/dodgers-reds
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816974/dodgers-reds
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882874@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T170000Z
+DTEND:20260917T190000Z
+SUMMARY:⚽ Getafe 0 - 1 Betis (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-18 01:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882874/getafe-r
+ eal-betis
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882874/getafe-real-betis
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816973@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T171000Z
+DTEND:20260917T204000Z
+SUMMARY:⚾ Athletics 1 - 10 Rays (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 01:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816973/athletics-ra
+ ys
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816973/athletics-rays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816980@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T191000Z
+DTEND:20260917T224000Z
+SUMMARY:⚾ Padres 9 - 2 Rockies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 03:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816980/padres-rocki
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816980/padres-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882869@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T193000Z
+DTEND:20260917T213000Z
+SUMMARY:⚽ Villarreal 3 - 1 Málaga (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-18 03:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882869/villarre
+ al-malaga
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882869/villarreal-malaga
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816976@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T231500Z
+DTEND:20260918T024500Z
+SUMMARY:⚾ Phillies 3 - 0 Mets (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 07:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816976/phillies-met
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816976/phillies-mets
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816979@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T231500Z
+DTEND:20260918T024500Z
+SUMMARY:⚾ Royals 2 - 6 Astros (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 07:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816979/royals-astro
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816979/royals-astros
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816978@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260917T234000Z
+DTEND:20260918T031000Z
+SUMMARY:⚾ Tigers 1 - 3 White Sox (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 07:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816978/tigers-white
+ -sox
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816978/tigers-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816977@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T000500Z
+DTEND:20260918T033500Z
+SUMMARY:⚾ Red Sox 4 - 3 Rangers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 08:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816977/red-sox-rang
+ ers
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816977/red-sox-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872932@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T001500Z
+DTEND:20260918T033000Z
+SUMMARY:🏈 Lions 31 - 41 Bills (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-18 08:15\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872932/lions-bills
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872932/lions-bills
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816981@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T013800Z
+DTEND:20260918T050800Z
+SUMMARY:⚾ Twins 4 - 5 Angels (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-18 09:38\n狀
+ 態：Final/10\nhttps://www.espn.com/mlb/game/_/gameId/401816981/twins-ang
+ els
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816981/twins-angels
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260918338@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260918T103500Z
 DTEND:20260918T140500Z
 SUMMARY:⚾ 樂天 1 - 2 富邦 (終)
@@ -69,7 +276,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260918339@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260918T103500Z
 DTEND:20260918T140500Z
 SUMMARY:⚾ 台鋼 2 - 3 味全 (終)
@@ -81,7 +288,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260918337@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260918T103500Z
 DTEND:20260918T140500Z
 SUMMARY:⚾ 統一 4 - 5 中信 (終)
@@ -92,8 +299,226 @@ TRANSP:TRANSPARENT
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:epl-401879275@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T190000Z
+DTEND:20260918T210000Z
+SUMMARY:⚽ Chelsea 0 - 3 Brentford (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-19 03:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879275/chelsea-
+ brentford
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879275/chelsea-brentford
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882862@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T190000Z
+DTEND:20260918T210000Z
+SUMMARY:⚽ Elche 3 - 1 Espanyol (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-19 03:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882862/elche-es
+ panyol
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882862/elche-espanyol
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816984@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T224000Z
+DTEND:20260919T021000Z
+SUMMARY:⚾ Cubs 4 - 6 Reds (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 06:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816984/cubs-reds
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816984/cubs-reds
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816985@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T224000Z
+DTEND:20260919T021000Z
+SUMMARY:⚾ Royals 5 - 8 Pirates (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 06:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816985/royals-pirat
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816985/royals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816986@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T230500Z
+DTEND:20260919T023500Z
+SUMMARY:⚾ Brewers 6 - 5 Orioles (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 07:05\n狀
+ 態：Final/10\nhttps://www.espn.com/mlb/game/_/gameId/401816986/brewers-o
+ rioles
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816986/brewers-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816982@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T231000Z
+DTEND:20260919T024000Z
+SUMMARY:⚾ Athletics 3 - 5 Guardians (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 07:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816982/athletics-gu
+ ardians
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816982/athletics-guardians
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816983@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T231000Z
+DTEND:20260919T024000Z
+SUMMARY:⚾ Red Sox 4 - 2 Rays (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 07:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816983/red-sox-rays
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816983/red-sox-rays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816987@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T231000Z
+DTEND:20260919T024000Z
+SUMMARY:⚾ Phillies 3 - 6 Mets (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 07:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816987/phillies-met
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816987/phillies-mets
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816989@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260918T234000Z
+DTEND:20260919T031000Z
+SUMMARY:⚾ Tigers 11 - 8 White Sox (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 07:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816989/tigers-white
+ -sox
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816989/tigers-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816990@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T000500Z
+DTEND:20260919T033500Z
+SUMMARY:⚾ Blue Jays 1 - 7 Rangers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 08:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816990/blue-jays-ra
+ ngers
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816990/blue-jays-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816988@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T001000Z
+DTEND:20260919T034000Z
+SUMMARY:⚾ Braves 6 - 2 Astros (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 08:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816988/braves-astro
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816988/braves-astros
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816992@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T001000Z
+DTEND:20260919T034000Z
+SUMMARY:⚾ Mariners 5 - 4 Rockies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 08:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816992/mariners-roc
+ kies
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816992/mariners-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816991@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T001500Z
+DTEND:20260919T034500Z
+SUMMARY:⚾ Nationals 9 - 1 Cardinals (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 08:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816991/nationals-ca
+ rdinals
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816991/nationals-cardinals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816994@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T013800Z
+DTEND:20260919T050800Z
+SUMMARY:⚾ Twins 3 - 0 Angels (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 09:38\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816994/twins-angels
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816994/twins-angels
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816993@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T014000Z
+DTEND:20260919T051000Z
+SUMMARY:⚾ Marlins 2 - 8 Padres (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 09:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816993/marlins-padr
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816993/marlins-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816995@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T014000Z
+DTEND:20260919T051000Z
+SUMMARY:⚾ Yankees 9 - 2 Diamondbacks (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 09:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816995/yankees-diam
+ ondbacks
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816995/yankees-diamondbacks
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816996@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T021500Z
+DTEND:20260919T054500Z
+SUMMARY:⚾ Giants 2 - 8 Dodgers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-19 10:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816996/giants-dodge
+ rs
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816996/giants-dodgers
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260919340@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260919T080500Z
 DTEND:20260919T113500Z
 SUMMARY:⚾ 富邦 3 - 4 統一 (終)
@@ -105,7 +530,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260919342@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260919T090500Z
 DTEND:20260919T123500Z
 SUMMARY:⚾ 台鋼 11 - 5 樂天 (終)
@@ -117,7 +542,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260919341@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260919T090500Z
 DTEND:20260919T123500Z
 SUMMARY:⚾ 味全 3 - 4 中信 (終)
@@ -128,8 +553,326 @@ TRANSP:TRANSPARENT
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:epl-401879269@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T113000Z
+DTEND:20260919T133000Z
+SUMMARY:⚽ Aston Villa 3 - 2 Spurs (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-19 19:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879269/aston-vi
+ lla-tottenham-hotspur
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879269/aston-villa-totten
+ ham-hotspur
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882860@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T120000Z
+DTEND:20260919T140000Z
+SUMMARY:⚽ Rayo 1 - 1 Osasuna (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-19 20:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882860/rayo-val
+ lecano-osasuna
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882860/rayo-vallecano-osa
+ suna
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879274@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T140000Z
+DTEND:20260919T160000Z
+SUMMARY:⚽ Arsenal 0 - 3 Brighton (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-19 22:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879274/arsenal-
+ brighton-hove-albion
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879274/arsenal-brighton-h
+ ove-albion
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878778@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T140000Z
+DTEND:20260919T160000Z
+SUMMARY:⚽ Ipswich 0 - 1 Everton (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-19 22:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401878778/ipswich-
+ town-everton
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401878778/ipswich-town-evert
+ on
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879271@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T140000Z
+DTEND:20260919T160000Z
+SUMMARY:⚽ Hull 1 - 2 Newcastle (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-19 22:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879271/hull-cit
+ y-newcastle-united
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879271/hull-city-newcastl
+ e-united
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882866@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T141500Z
+DTEND:20260919T161500Z
+SUMMARY:⚽ Alavés 0 - 0 Athletic (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-19 22:15\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882866/alaves-a
+ thletic-club
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882866/alaves-athletic-cl
+ ub
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879270@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T163000Z
+DTEND:20260919T183000Z
+SUMMARY:⚽ Coventry 1 - 0 Nottm Forest (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 00:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879270/coventry
+ -city-nottingham-forest
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879270/coventry-city-nott
+ ingham-forest
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882864@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T163000Z
+DTEND:20260919T183000Z
+SUMMARY:⚽ Racing 0 - 5 Celta Vigo (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 00:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882864/racing-s
+ antander-celta-vigo
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882864/racing-santander-c
+ elta-vigo
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817004@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T181000Z
+DTEND:20260919T214000Z
+SUMMARY:⚾ Tigers 1 - 3 White Sox (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 02:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817004/tigers-white
+ -sox
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817004/tigers-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882859@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T190000Z
+DTEND:20260919T210000Z
+SUMMARY:⚽ Barcelona 3 - 1 Sevilla (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 03:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882859/barcelon
+ a-sevilla
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882859/barcelona-sevilla
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817001@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T200500Z
+DTEND:20260919T233500Z
+SUMMARY:⚾ Brewers 1 - 0 Orioles (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 04:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817001/brewers-orio
+ les
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817001/brewers-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816998@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T201000Z
+DTEND:20260919T234000Z
+SUMMARY:⚾ Red Sox 1 - 2 Rays (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 04:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816998/red-sox-rays
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816998/red-sox-rays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817002@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T201000Z
+DTEND:20260919T234000Z
+SUMMARY:⚾ Phillies 3 - 10 Mets (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 04:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817002/phillies-met
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817002/phillies-mets
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816997@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T221000Z
+DTEND:20260920T014000Z
+SUMMARY:⚾ Athletics 6 - 12 Guardians (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 06:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816997/athletics-gu
+ ardians
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816997/athletics-guardians
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401816999@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T224000Z
+DTEND:20260920T021000Z
+SUMMARY:⚾ Cubs 5 - 2 Reds (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 06:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401816999/cubs-reds
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401816999/cubs-reds
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817000@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T224000Z
+DTEND:20260920T021000Z
+SUMMARY:⚾ Royals 5 - 6 Pirates (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 06:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817000/royals-pirat
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817000/royals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817005@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T230500Z
+DTEND:20260920T023500Z
+SUMMARY:⚾ Blue Jays 2 - 6 Rangers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 07:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817005/blue-jays-ra
+ ngers
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817005/blue-jays-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817003@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T231000Z
+DTEND:20260920T024000Z
+SUMMARY:⚾ Braves 6 - 3 Astros (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 07:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817003/braves-astro
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817003/braves-astros
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817006@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260919T231500Z
+DTEND:20260920T024500Z
+SUMMARY:⚾ Nationals 8 - 5 Cardinals (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 07:15\n狀
+ 態：Final/11\nhttps://www.espn.com/mlb/game/_/gameId/401817006/nationals
+ -cardinals
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817006/nationals-cardinals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817007@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T001000Z
+DTEND:20260920T034000Z
+SUMMARY:⚾ Mariners 3 - 5 Rockies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817007/mariners-roc
+ kies
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817007/mariners-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817010@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T001000Z
+DTEND:20260920T034000Z
+SUMMARY:⚾ Yankees 3 - 5 Diamondbacks (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817010/yankees-diam
+ ondbacks
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817010/yankees-diamondbacks
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817008@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T004000Z
+DTEND:20260920T041000Z
+SUMMARY:⚾ Marlins 6 - 7 Padres (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:40\n狀
+ 態：Final/10\nhttps://www.espn.com/mlb/game/_/gameId/401817008/marlins-p
+ adres
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817008/marlins-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817011@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T011000Z
+DTEND:20260920T044000Z
+SUMMARY:⚾ Giants 4 - 10 Dodgers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 09:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817011/giants-dodge
+ rs
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817011/giants-dodgers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817009@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T013800Z
+DTEND:20260920T050800Z
+SUMMARY:⚾ Twins 5 - 6 Angels (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 09:38\n狀
+ 態：Final/11\nhttps://www.espn.com/mlb/game/_/gameId/401817009/twins-ang
+ els
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817009/twins-angels
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260920343@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260920T070500Z
 DTEND:20260920T103500Z
 SUMMARY:⚾ 味全 1 - 2 中信 (終)
@@ -141,7 +884,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260920344@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260920T080500Z
 DTEND:20260920T113500Z
 SUMMARY:⚾ 富邦 4 - 3 統一 (終)
@@ -153,7 +896,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260920345@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260920T090500Z
 DTEND:20260920T123500Z
 SUMMARY:⚾ 台鋼 1 - 10 樂天 (終)
@@ -164,8 +907,553 @@ TRANSP:TRANSPARENT
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:laliga-401882861@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T120000Z
+DTEND:20260920T140000Z
+SUMMARY:⚽ Málaga 0 - 1 Getafe (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 20:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882861/malaga-g
+ etafe
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882861/malaga-getafe
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879276@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T130000Z
+DTEND:20260920T150000Z
+SUMMARY:⚽ Liverpool 1 - 0 Bournemouth (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879276/liverpoo
+ l-afc-bournemouth
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879276/liverpool-afc-bour
+ nemouth
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879273@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T130000Z
+DTEND:20260920T150000Z
+SUMMARY:⚽ C Palace 0 - 0 Leeds (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879273/crystal-
+ palace-leeds-united
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879273/crystal-palace-lee
+ ds-united
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879272@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T130000Z
+DTEND:20260920T150000Z
+SUMMARY:⚽ Sunderland 3 - 5 Man City (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879272/sunderla
+ nd-manchester-city
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401879272/sunderland-manches
+ ter-city
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882865@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T141500Z
+DTEND:20260920T161500Z
+SUMMARY:⚽ Real Madrid 1 - 2 Atlético (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 22:15\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882865/real-mad
+ rid-atletico-madrid
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882865/real-madrid-atleti
+ co-madrid
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878777@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T153000Z
+DTEND:20260920T173000Z
+SUMMARY:⚽ Man United 1 - 1 Fulham (終)
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 23:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401878777/manchest
+ er-united-fulham
+CATEGORIES:英超
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401878777/manchester-united-
+ fulham
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882863@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T163000Z
+DTEND:20260920T183000Z
+SUMMARY:⚽ Betis 1 - 1 Deportivo (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 00:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882863/real-bet
+ is-deportivo
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882863/real-betis-deporti
+ vo
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882857@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T163000Z
+DTEND:20260920T183000Z
+SUMMARY:⚽ Levante 1 - 3 Villarreal (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 00:30\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882857/levante-
+ villarreal
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882857/levante-villarreal
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872933@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Panthers 34 - 3 Falcons (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872933/panthers-fal
+ cons
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872933/panthers-falcons
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872937@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Vikings 9 - 3 Bears (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872937/vikings-bear
+ s
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872937/vikings-bears
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872939@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Eagles 24 - 20 Titans (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872939/eagles-titan
+ s
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872939/eagles-titans
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872946@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Steelers 3 - 20 Patriots (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872946/steelers-pat
+ riots
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872946/steelers-patriots
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872936@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Packers 20 - 17 Jets (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final/OT\nhttps://www.espn.com/nfl/game/_/gameId/401872936/packers-j
+ ets
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872936/packers-jets
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872935@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Browns 23 - 19 Buccaneers (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872935/browns-bucca
+ neers
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872935/browns-buccaneers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872938@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Saints 24 - 17 Ravens (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872938/saints-raven
+ s
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872938/saints-ravens
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872934@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T170000Z
+DTEND:20260920T201500Z
+SUMMARY:🏈 Bengals 20 - 6 Texans (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872934/bengals-texa
+ ns
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872934/bengals-texans
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817017@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T171000Z
+DTEND:20260920T204000Z
+SUMMARY:⚾ Phillies 7 - 2 Mets (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817017/phillies-met
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817017/phillies-mets
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817015@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T173500Z
+DTEND:20260920T210500Z
+SUMMARY:⚾ Royals 3 - 4 Pirates (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:35\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817015/royals-pirat
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817015/royals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817012@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T174000Z
+DTEND:20260920T211000Z
+SUMMARY:⚾ Athletics 0 - 1 Guardians (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817012/athletics-gu
+ ardians
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817012/athletics-guardians
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817013@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T174000Z
+DTEND:20260920T211000Z
+SUMMARY:⚾ Red Sox 1 - 5 Rays (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817013/red-sox-rays
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817013/red-sox-rays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817014@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T174000Z
+DTEND:20260920T211000Z
+SUMMARY:⚾ Cubs 9 - 1 Reds (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817014/cubs-reds
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817014/cubs-reds
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817018@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T181000Z
+DTEND:20260920T214000Z
+SUMMARY:⚾ Braves 4 - 2 Astros (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817018/braves-astro
+ s
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817018/braves-astros
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817019@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T181000Z
+DTEND:20260920T214000Z
+SUMMARY:⚾ Tigers 1 - 8 White Sox (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817019/tigers-white
+ -sox
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817019/tigers-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817021@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T181500Z
+DTEND:20260920T214500Z
+SUMMARY:⚾ Nationals 3 - 5 Cardinals (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817021/nationals-ca
+ rdinals
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817021/nationals-cardinals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817020@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T183500Z
+DTEND:20260920T220500Z
+SUMMARY:⚾ Blue Jays 7 - 2 Rangers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:35\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817020/blue-jays-ra
+ ngers
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817020/blue-jays-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882858@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T190000Z
+DTEND:20260920T210000Z
+SUMMARY:⚽ Real Sociedad 3 - 2 Valencia (終)
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 03:00\n
+ 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882858/real-soc
+ iedad-valencia
+CATEGORIES:西甲
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/soccer/match/_/gameId/401882858/real-sociedad-vale
+ ncia
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817022@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T191000Z
+DTEND:20260920T224000Z
+SUMMARY:⚾ Mariners 2 - 1 Rockies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 03:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817022/mariners-roc
+ kies
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817022/mariners-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872940@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T200500Z
+DTEND:20260920T232000Z
+SUMMARY:🏈 Jaguars 13 - 20 Broncos (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:05\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872940/jaguars-bron
+ cos
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872940/jaguars-broncos
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872941@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T200500Z
+DTEND:20260920T232000Z
+SUMMARY:🏈 Raiders 26 - 14 Chargers (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:05\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872941/raiders-char
+ gers
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872941/raiders-chargers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817024@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T200700Z
+DTEND:20260920T233700Z
+SUMMARY:⚾ Twins 8 - 0 Angels (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:07\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817024/twins-angels
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817024/twins-angels
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817023@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T201000Z
+DTEND:20260920T234000Z
+SUMMARY:⚾ Marlins 3 - 7 Padres (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817023/marlins-padr
+ es
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817023/marlins-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817025@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T201000Z
+DTEND:20260920T234000Z
+SUMMARY:⚾ Yankees 4 - 8 Diamondbacks (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817025/yankees-diam
+ ondbacks
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817025/yankees-diamondbacks
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817026@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T201000Z
+DTEND:20260920T234000Z
+SUMMARY:⚾ Giants 1 - 3 Dodgers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817026/giants-dodge
+ rs
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817026/giants-dodgers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872944@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T202500Z
+DTEND:20260920T234000Z
+SUMMARY:🏈 Commanders 20 - 37 Cowboys (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872944/commanders-c
+ owboys
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872944/commanders-cowboys
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872943@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T202500Z
+DTEND:20260920T234000Z
+SUMMARY:🏈 Seahawks 31 - 7 Cardinals (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872943/seahawks-car
+ dinals
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872943/seahawks-cardinals
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872942@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T202500Z
+DTEND:20260920T234000Z
+SUMMARY:🏈 Dolphins 13 - 35 49ers (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872942/dolphins-49e
+ rs
+CATEGORIES:NFL
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/nfl/game/_/gameId/401872942/dolphins-49ers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817016@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260920T232000Z
+DTEND:20260921T025000Z
+SUMMARY:⚾ Brewers 3 - 0 Orioles (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 07:20\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817016/brewers-orio
+ les
+CATEGORIES:MLB
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817016/brewers-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872945@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260921T002000Z
+DTEND:20260921T033500Z
+SUMMARY:🏈 Colts @ Chiefs
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 08:20\n備
+ 註：3:15 - 4th\nhttps://www.espn.com/nfl/game?gameId=401872945
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game?gameId=401872945
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817027@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260921T223500Z
+DTEND:20260922T020500Z
+SUMMARY:⚾ Blue Jays @ Orioles
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-22 06:35\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817027/blue-jays-orioles
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817027/blue-jays-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817028@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260921T224000Z
+DTEND:20260922T021000Z
+SUMMARY:⚾ Nationals @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-22 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817028/nationals-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817028/nationals-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872947@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T001500Z
+DTEND:20260922T033000Z
+SUMMARY:🏈 Giants @ Rams
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-22 08:15\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872947/giants-rams
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872947/giants-rams
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817029@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T014500Z
+DTEND:20260922T051500Z
+SUMMARY:⚾ Twins @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-22 09:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817029/twins-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817029/twins-giants
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922197@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 台鋼 @ 樂天
@@ -177,7 +1465,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922287@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -189,7 +1477,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922196@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -200,8 +1488,380 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401873648@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T170500Z
+DTEND:20260922T203500Z
+SUMMARY:⚾ Rays @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 01:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401873648/rays-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401873648/rays-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817035@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T223500Z
+DTEND:20260923T020500Z
+SUMMARY:⚾ Blue Jays @ Orioles
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 06:35\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817035/blue-jays-orioles
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817035/blue-jays-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817032@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T224000Z
+DTEND:20260923T021000Z
+SUMMARY:⚾ Brewers @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817032/brewers-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817032/brewers-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817033@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T224000Z
+DTEND:20260923T021000Z
+SUMMARY:⚾ Cardinals @ Pirates
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817033/cardinals-pirates
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817033/cardinals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817036@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T224000Z
+DTEND:20260923T021000Z
+SUMMARY:⚾ Nationals @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817036/nationals-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817036/nationals-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817031@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T224500Z
+DTEND:20260923T021500Z
+SUMMARY:⚾ Guardians @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 06:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817031/guardians-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817031/guardians-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817034@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T230500Z
+DTEND:20260923T023500Z
+SUMMARY:⚾ Rays @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 07:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817034/rays-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817034/rays-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817030@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T231500Z
+DTEND:20260923T024500Z
+SUMMARY:⚾ Reds @ Braves
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817030/reds-braves
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817030/reds-braves
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817037@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T234000Z
+DTEND:20260923T031000Z
+SUMMARY:⚾ White Sox @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817037/white-sox-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817037/white-sox-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817038@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260922T234000Z
+DTEND:20260923T031000Z
+SUMMARY:⚾ Marlins @ Cubs
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817038/marlins-cubs
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817038/marlins-cubs
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817039@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T000500Z
+DTEND:20260923T033500Z
+SUMMARY:⚾ Mets @ Rangers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 08:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817039/mets-rangers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817039/mets-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817040@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T004000Z
+DTEND:20260923T041000Z
+SUMMARY:⚾ Diamondbacks @ Rockies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 08:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817040/diamondbacks-rockies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817040/diamondbacks-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817041@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T014000Z
+DTEND:20260923T051000Z
+SUMMARY:⚾ Angels @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817041/angels-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817041/angels-athletics
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817042@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T014000Z
+DTEND:20260923T051000Z
+SUMMARY:⚾ Astros @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817042/astros-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817042/astros-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817043@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T014500Z
+DTEND:20260923T051500Z
+SUMMARY:⚾ Twins @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 09:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817043/twins-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817043/twins-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817044@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T021000Z
+DTEND:20260923T054000Z
+SUMMARY:⚾ Padres @ Dodgers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-23 10:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817044/padres-dodgers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817044/padres-dodgers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817051@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T171000Z
+DTEND:20260923T204000Z
+SUMMARY:⚾ Nationals @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 01:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817051/nationals-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817051/nationals-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817058@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T194500Z
+DTEND:20260923T231500Z
+SUMMARY:⚾ Twins @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 03:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817058/twins-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817058/twins-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817050@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T223500Z
+DTEND:20260924T020500Z
+SUMMARY:⚾ Blue Jays @ Orioles
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 06:35\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817050/blue-jays-orioles
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817050/blue-jays-orioles
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817047@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T224000Z
+DTEND:20260924T021000Z
+SUMMARY:⚾ Brewers @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817047/brewers-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817047/brewers-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817048@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T224000Z
+DTEND:20260924T021000Z
+SUMMARY:⚾ Cardinals @ Pirates
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817048/cardinals-pirates
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817048/cardinals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817046@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T230000Z
+DTEND:20260924T023000Z
+SUMMARY:⚾ Guardians @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 07:00\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817046/guardians-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817046/guardians-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817049@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T230500Z
+DTEND:20260924T023500Z
+SUMMARY:⚾ Rays @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 07:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817049/rays-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817049/rays-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817045@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T231500Z
+DTEND:20260924T024500Z
+SUMMARY:⚾ Reds @ Braves
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817045/reds-braves
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817045/reds-braves
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817052@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T234000Z
+DTEND:20260924T031000Z
+SUMMARY:⚾ White Sox @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817052/white-sox-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817052/white-sox-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817053@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260923T234000Z
+DTEND:20260924T031000Z
+SUMMARY:⚾ Marlins @ Cubs
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817053/marlins-cubs
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817053/marlins-cubs
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817054@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T000500Z
+DTEND:20260924T033500Z
+SUMMARY:⚾ Mets @ Rangers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 08:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817054/mets-rangers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817054/mets-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817055@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T004000Z
+DTEND:20260924T041000Z
+SUMMARY:⚾ Diamondbacks @ Rockies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 08:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817055/diamondbacks-rockies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817055/diamondbacks-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817056@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T014000Z
+DTEND:20260924T051000Z
+SUMMARY:⚾ Angels @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817056/angels-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817056/angels-athletics
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817057@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T020000Z
+DTEND:20260924T053000Z
+SUMMARY:⚾ Astros @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 10:00\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817057/astros-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817057/astros-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817059@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T021000Z
+DTEND:20260924T054000Z
+SUMMARY:⚾ Padres @ Dodgers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-24 10:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817059/padres-dodgers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817059/padres-dodgers
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924347@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 中信 @ 樂天
@@ -213,7 +1873,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924348@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -225,7 +1885,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924346@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 富邦 @ 台鋼
@@ -236,8 +1896,164 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401817063@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T163500Z
+DTEND:20260924T200500Z
+SUMMARY:⚾ Cardinals @ Pirates
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 00:35\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817063/cardinals-pirates
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817063/cardinals-pirates
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817065@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T181000Z
+DTEND:20260924T214000Z
+SUMMARY:⚾ White Sox @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 02:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817065/white-sox-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817065/white-sox-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817066@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T182000Z
+DTEND:20260924T215000Z
+SUMMARY:⚾ Marlins @ Cubs
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 02:20\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817066/marlins-cubs
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817066/marlins-cubs
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817067@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T183500Z
+DTEND:20260924T220500Z
+SUMMARY:⚾ Mets @ Rangers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 02:35\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817067/mets-rangers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817067/mets-rangers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817068@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T191000Z
+DTEND:20260924T224000Z
+SUMMARY:⚾ Diamondbacks @ Rockies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817068/diamondbacks-rockies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817068/diamondbacks-rockies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817062@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T220500Z
+DTEND:20260925T013500Z
+SUMMARY:⚾ Brewers @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817062/brewers-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817062/brewers-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817061@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T224500Z
+DTEND:20260925T021500Z
+SUMMARY:⚾ Guardians @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817061/guardians-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817061/guardians-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817064@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T230500Z
+DTEND:20260925T023500Z
+SUMMARY:⚾ Rays @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817064/rays-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817064/rays-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817060@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260924T231500Z
+DTEND:20260925T024500Z
+SUMMARY:⚾ Reds @ Braves
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817060/reds-braves
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817060/reds-braves
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872948@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T001500Z
+DTEND:20260925T033000Z
+SUMMARY:🏈 Falcons @ Packers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-25 08:15\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872948/falcons-packers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872948/falcons-packers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817069@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T014000Z
+DTEND:20260925T051000Z
+SUMMARY:⚾ Angels @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817069/angels-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817069/angels-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817070@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T014000Z
+DTEND:20260925T051000Z
+SUMMARY:⚾ Astros @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817070/astros-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817070/astros-athletics
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817071@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T021000Z
+DTEND:20260925T054000Z
+SUMMARY:⚾ Padres @ Dodgers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 10:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817071/padres-dodgers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817071/padres-dodgers
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925351@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260925T080500Z
 DTEND:20260925T113500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -249,7 +2065,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925349@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260925T080500Z
 DTEND:20260925T113500Z
 SUMMARY:⚾ 富邦 @ 台鋼
@@ -261,7 +2077,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925350@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260925T090500Z
 DTEND:20260925T123500Z
 SUMMARY:⚾ 中信 @ 樂天
@@ -272,8 +2088,188 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401817077@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T224000Z
+DTEND:20260926T021000Z
+SUMMARY:⚾ Pirates @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817077/pirates-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817077/pirates-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817078@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T224000Z
+DTEND:20260926T021000Z
+SUMMARY:⚾ Rays @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 06:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817078/rays-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817078/rays-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817076@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T224500Z
+DTEND:20260926T021500Z
+SUMMARY:⚾ Mets @ Nationals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 06:45\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817076/mets-nationals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817076/mets-nationals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817073@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T230500Z
+DTEND:20260926T023500Z
+SUMMARY:⚾ Orioles @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817073/orioles-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817073/orioles-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817075@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T230700Z
+DTEND:20260926T023700Z
+SUMMARY:⚾ Reds @ Blue Jays
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:07\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817075/reds-blue-jays
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817075/reds-blue-jays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817072@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T231000Z
+DTEND:20260926T024000Z
+SUMMARY:⚾ Braves @ Marlins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817072/braves-marlins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817072/braves-marlins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817074@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T231000Z
+DTEND:20260926T024000Z
+SUMMARY:⚾ Cubs @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817074/cubs-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817074/cubs-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817079@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T234000Z
+DTEND:20260926T031000Z
+SUMMARY:⚾ Guardians @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817079/guardians-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817079/guardians-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817080@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T234000Z
+DTEND:20260926T031000Z
+SUMMARY:⚾ Rockies @ White Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817080/rockies-white-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817080/rockies-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817081@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260925T234000Z
+DTEND:20260926T031000Z
+SUMMARY:⚾ Cardinals @ Brewers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 07:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817081/cardinals-brewers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817081/cardinals-brewers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817082@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T001000Z
+DTEND:20260926T034000Z
+SUMMARY:⚾ Rangers @ Twins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 08:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817082/rangers-twins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817082/rangers-twins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817084@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T014000Z
+DTEND:20260926T051000Z
+SUMMARY:⚾ Diamondbacks @ Padres
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817084/diamondbacks-padres
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817084/diamondbacks-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817085@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T014000Z
+DTEND:20260926T051000Z
+SUMMARY:⚾ Astros @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817085/astros-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817085/astros-athletics
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817083@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T021000Z
+DTEND:20260926T054000Z
+SUMMARY:⚾ Angels @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 10:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817083/angels-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817083/angels-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817086@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T021500Z
+DTEND:20260926T054500Z
+SUMMARY:⚾ Dodgers @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-26 10:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817086/dodgers-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817086/dodgers-giants
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926352@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260926T080500Z
 DTEND:20260926T113500Z
 SUMMARY:⚾ 統一 @ 台鋼
@@ -285,7 +2281,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926354@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260926T090500Z
 DTEND:20260926T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -297,7 +2293,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926353@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260926T090500Z
 DTEND:20260926T123500Z
 SUMMARY:⚾ 樂天 @ 味全
@@ -308,8 +2304,188 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401817092@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T171000Z
+DTEND:20260926T204000Z
+SUMMARY:⚾ Pirates @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 01:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817092/pirates-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817092/pirates-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817090@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T190700Z
+DTEND:20260926T223700Z
+SUMMARY:⚾ Reds @ Blue Jays
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 03:07\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817090/reds-blue-jays
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817090/reds-blue-jays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817091@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T200500Z
+DTEND:20260926T233500Z
+SUMMARY:⚾ Mets @ Nationals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 04:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817091/mets-nationals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817091/mets-nationals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817101@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T200500Z
+DTEND:20260926T233500Z
+SUMMARY:⚾ Dodgers @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 04:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817101/dodgers-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817101/dodgers-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817087@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T201000Z
+DTEND:20260926T234000Z
+SUMMARY:⚾ Braves @ Marlins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 04:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817087/braves-marlins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817087/braves-marlins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817097@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T201000Z
+DTEND:20260926T234000Z
+SUMMARY:⚾ Rangers @ Twins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 04:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817097/rangers-twins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817097/rangers-twins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817094@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231000Z
+DTEND:20260927T024000Z
+SUMMARY:⚾ Guardians @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817094/guardians-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817094/guardians-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817095@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231000Z
+DTEND:20260927T024000Z
+SUMMARY:⚾ Rockies @ White Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817095/rockies-white-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817095/rockies-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817096@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231000Z
+DTEND:20260927T024000Z
+SUMMARY:⚾ Cardinals @ Brewers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817096/cardinals-brewers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817096/cardinals-brewers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817088@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231500Z
+DTEND:20260927T024500Z
+SUMMARY:⚾ Orioles @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817088/orioles-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817088/orioles-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817089@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231500Z
+DTEND:20260927T024500Z
+SUMMARY:⚾ Cubs @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817089/cubs-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817089/cubs-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817093@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260926T231500Z
+DTEND:20260927T024500Z
+SUMMARY:⚾ Rays @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 07:15\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817093/rays-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817093/rays-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817099@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T004000Z
+DTEND:20260927T041000Z
+SUMMARY:⚾ Diamondbacks @ Padres
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 08:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817099/diamondbacks-padres
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817099/diamondbacks-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817098@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T014000Z
+DTEND:20260927T051000Z
+SUMMARY:⚾ Angels @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817098/angels-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817098/angels-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817100@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T014000Z
+DTEND:20260927T051000Z
+SUMMARY:⚾ Astros @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-27 09:40\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817100/astros-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817100/astros-athletics
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927355@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260927T070500Z
 DTEND:20260927T103500Z
 SUMMARY:⚾ 統一 @ 台鋼
@@ -321,7 +2497,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927356@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260927T080500Z
 DTEND:20260927T113500Z
 SUMMARY:⚾ 樂天 @ 味全
@@ -333,7 +2509,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927357@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260927T090500Z
 DTEND:20260927T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -344,8 +2520,356 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:nfl-401872953@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Chargers @ Bills
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872953/chargers-bills
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872953/chargers-bills
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872949@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Panthers @ Browns
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872949/panthers-browns
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872949/panthers-browns
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872954@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Jets @ Lions
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872954/jets-lions
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872954/jets-lions
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872951@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Texans @ Colts
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872951/texans-colts
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872951/texans-colts
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872952@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Chiefs @ Dolphins
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872952/chiefs-dolphins
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872952/chiefs-dolphins
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872956@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Titans @ Giants
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872956/titans-giants
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872956/titans-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872950@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Bengals @ Steelers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872950/bengals-steelers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872950/bengals-steelers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872955@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Seahawks @ Commanders
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872955/seahawks-commanders
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872955/seahawks-commanders
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872957@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T170000Z
+DTEND:20260927T201500Z
+SUMMARY:🏈 Patriots @ Jaguars
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872957/patriots-jaguars
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872957/patriots-jaguars
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817104@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190500Z
+DTEND:20260927T223500Z
+SUMMARY:⚾ Cubs @ Red Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817104/cubs-red-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817104/cubs-red-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817106@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190500Z
+DTEND:20260927T223500Z
+SUMMARY:⚾ Mets @ Nationals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817106/mets-nationals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817106/mets-nationals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817108@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190500Z
+DTEND:20260927T223500Z
+SUMMARY:⚾ Rays @ Phillies
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817108/rays-phillies
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817108/rays-phillies
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817115@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190500Z
+DTEND:20260927T223500Z
+SUMMARY:⚾ Astros @ Athletics
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817115/astros-athletics
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817115/astros-athletics
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817116@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190500Z
+DTEND:20260927T223500Z
+SUMMARY:⚾ Dodgers @ Giants
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:05\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817116/dodgers-giants
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817116/dodgers-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817105@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T190700Z
+DTEND:20260927T223700Z
+SUMMARY:⚾ Reds @ Blue Jays
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:07\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817105/reds-blue-jays
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817105/reds-blue-jays
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817102@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Braves @ Marlins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817102/braves-marlins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817102/braves-marlins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817107@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Pirates @ Tigers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817107/pirates-tigers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817107/pirates-tigers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817109@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Guardians @ Royals
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817109/guardians-royals
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817109/guardians-royals
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817110@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Rockies @ White Sox
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817110/rockies-white-sox
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817110/rockies-white-sox
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817111@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Cardinals @ Brewers
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817111/cardinals-brewers
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817111/cardinals-brewers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817112@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Rangers @ Twins
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817112/rangers-twins
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817112/rangers-twins
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817113@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Angels @ Mariners
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817113/angels-mariners
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817113/angels-mariners
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817114@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T191000Z
+DTEND:20260927T224000Z
+SUMMARY:⚾ Diamondbacks @ Padres
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:10\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817114/diamondbacks-padres
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817114/diamondbacks-padres
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401817103@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T192000Z
+DTEND:20260927T225000Z
+SUMMARY:⚾ Orioles @ Yankees
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-28 03:20\nhttps
+ ://www.espn.com/mlb/game/_/gameId/401817103/orioles-yankees
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401817103/orioles-yankees
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872958@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T200500Z
+DTEND:20260927T232000Z
+SUMMARY:🏈 Cardinals @ 49ers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 04:05\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872958/cardinals-49ers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872958/cardinals-49ers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872959@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T200500Z
+DTEND:20260927T232000Z
+SUMMARY:🏈 Vikings @ Buccaneers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 04:05\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872959/vikings-buccaneers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872959/vikings-buccaneers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872960@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T202500Z
+DTEND:20260927T234000Z
+SUMMARY:🏈 Ravens @ Cowboys
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 04:25\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872960/ravens-cowboys
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872960/ravens-cowboys
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872961@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260927T202500Z
+DTEND:20260927T234000Z
+SUMMARY:🏈 Raiders @ Saints
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 04:25\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872961/raiders-saints
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872961/raiders-saints
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872962@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260928T002000Z
+DTEND:20260928T033500Z
+SUMMARY:🏈 Rams @ Broncos
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-28 08:20\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872962/rams-broncos
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872962/rams-broncos
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928359@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 統一 @ 樂天
@@ -357,7 +2881,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928360@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 味全 @ 富邦
@@ -369,7 +2893,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928358@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 台鋼 @ 中信
@@ -380,8 +2904,132 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:nfl-401872963@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260929T001500Z
+DTEND:20260929T033000Z
+SUMMARY:🏈 Eagles @ Bears
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-29 08:15\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872963/eagles-bears
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872963/eagles-bears
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907896@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260929T040000Z
+DTEND:20260929T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-29 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907896
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907896/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907924@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260929T040000Z
+DTEND:20260929T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-29 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907924
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907924/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907965@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260929T040000Z
+DTEND:20260929T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-29 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907965
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907965/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907974@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260929T040000Z
+DTEND:20260929T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-29 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907974
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907974/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907897@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260930T040000Z
+DTEND:20260930T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-30 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907897
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907897/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907963@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260930T040000Z
+DTEND:20260930T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-30 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907963
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907963/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907972@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260930T040000Z
+DTEND:20260930T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-30 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907972
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907972/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907975@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20260930T040000Z
+DTEND:20260930T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-30 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907975
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907975/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930255@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 統一 @ 富邦
@@ -393,7 +3041,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930302@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 中信 @ 台鋼
@@ -405,7 +3053,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930254@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 味全 @ 樂天
@@ -416,8 +3064,64 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401907898@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261001T040000Z
+DTEND:20261001T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-01 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907898
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907898/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907964@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261001T040000Z
+DTEND:20261001T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-01 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907964
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907964/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907973@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261001T040000Z
+DTEND:20261001T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-01 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907973
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907973/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907976@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261001T040000Z
+DTEND:20261001T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-01 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907976
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907976/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.261001326@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261001T103500Z
 DTEND:20261001T140500Z
 SUMMARY:⚾ 統一 @ 味全
@@ -429,7 +3133,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261001277@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261001T103500Z
 DTEND:20261001T140500Z
 SUMMARY:⚾ 樂天 @ 台鋼
@@ -440,8 +3144,20 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:nfl-401872964@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261002T001500Z
+DTEND:20261002T033000Z
+SUMMARY:🏈 Steelers @ Browns
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-02 08:15\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872964/steelers-browns
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872964/steelers-browns
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.261002283@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261002T103500Z
 DTEND:20261002T140500Z
 SUMMARY:⚾ 樂天 @ 台鋼
@@ -453,7 +3169,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261002279@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261002T103500Z
 DTEND:20261002T140500Z
 SUMMARY:⚾ 味全 @ 富邦
@@ -464,8 +3180,64 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:mlb-401907985@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261003T040000Z
+DTEND:20261003T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907985
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907985/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907990@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261003T040000Z
+DTEND:20261003T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907990
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907990/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908002@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261003T040000Z
+DTEND:20261003T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908002
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908002/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908007@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261003T040000Z
+DTEND:20261003T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908007
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908007/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003200@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -477,7 +3249,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003201@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 台鋼 @ 樂天
@@ -489,7 +3261,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003199@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -500,8 +3272,48 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:nba-401902644@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261003T230000Z
+DTEND:20261004T013000Z
+SUMMARY:🏀 Heat @ Raptors
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-04 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401902644/heat-raptors
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401902644/heat-raptors
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908003@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T040000Z
+DTEND:20261004T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-04 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908003
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908003/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908014@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T040000Z
+DTEND:20261004T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-04 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908014
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908014/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004252@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 統一 @ 富邦
@@ -513,7 +3325,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004270@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 台鋼 @ 中信
@@ -525,7 +3337,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004251@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 味全 @ 樂天
@@ -536,8 +3348,228 @@ TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
+UID:nfl-401872965@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T133000Z
+DTEND:20261004T164500Z
+SUMMARY:🏈 Colts @ Commanders
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-04 21:30\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872965/colts-commanders
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872965/colts-commanders
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872971@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Patriots @ Bills
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872971/patriots-bills
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872971/patriots-bills
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872972@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Jets @ Bears
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872972/jets-bears
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872972/jets-bears
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872969@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Jaguars @ Bengals
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872969/jaguars-bengals
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872969/jaguars-bengals
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872966@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Cardinals @ Giants
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872966/cardinals-giants
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872966/cardinals-giants
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872970@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Rams @ Eagles
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872970/rams-eagles
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872970/rams-eagles
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872968@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Packers @ Buccaneers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872968/packers-buccaneers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872968/packers-buccaneers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872973@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Titans @ Ravens
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872973/titans-ravens
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872973/titans-ravens
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872967@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T170000Z
+DTEND:20261004T201500Z
+SUMMARY:🏈 Cowboys @ Texans
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 01:00\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872967/cowboys-texans
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872967/cowboys-texans
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872974@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T200500Z
+DTEND:20261004T232000Z
+SUMMARY:🏈 Dolphins @ Vikings
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 04:05\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872974/dolphins-vikings
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872974/dolphins-vikings
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872976@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T202500Z
+DTEND:20261004T234000Z
+SUMMARY:🏈 Chiefs @ Raiders
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 04:25\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872976/chiefs-raiders
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872976/chiefs-raiders
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872975@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T202500Z
+DTEND:20261004T234000Z
+SUMMARY:🏈 Broncos @ 49ers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 04:25\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872975/broncos-49ers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872975/broncos-49ers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872977@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T202500Z
+DTEND:20261004T234000Z
+SUMMARY:🏈 Chargers @ Seahawks
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 04:25\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872977/chargers-seahawks
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872977/chargers-seahawks
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401914127@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T230000Z
+DTEND:20261005T013000Z
+SUMMARY:🏀 Jazz @ Nuggets
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-05 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401914127/jazz-nuggets
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401914127/jazz-nuggets
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401918010@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261004T230000Z
+DTEND:20261005T013000Z
+SUMMARY:🏀 Warriors @ Clippers
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-05 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401918010/warriors-clippers
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401918010/warriors-clippers
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872978@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T002000Z
+DTEND:20261005T033500Z
+SUMMARY:🏈 Lions @ Panthers
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-05 08:20\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872978/lions-panthers
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872978/lions-panthers
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907986@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T040000Z
+DTEND:20261005T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-05 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907986
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907986/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907991@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T040000Z
+DTEND:20261005T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-05 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907991
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907991/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
 UID:cpbl-cpbl.g.261005274@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261005T103500Z
 DTEND:20261005T140500Z
 SUMMARY:⚾ 富邦 @ 樂天
@@ -549,7 +3581,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261005014@catchgame
-DTSTAMP:20260920T215834Z
+DTSTAMP:20260921T030815Z
 DTSTART:20261005T103500Z
 DTEND:20261005T140500Z
 SUMMARY:⚾ 統一 @ 中信
@@ -558,5 +3590,117 @@ DESCRIPTION:聯賽：CPBL\n開賽（Asia/Taipei）：2026-10-05 18:35\nhttp
 CATEGORIES:CPBL
 TRANSP:OPAQUE
 URL:https://tw.sports.yahoo.com/cpbl/scoreboard
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401898388@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T230000Z
+DTEND:20261006T013000Z
+SUMMARY:🏀 Grizzlies @ Hawks
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-06 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401898388/grizzlies-hawks
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401898388/grizzlies-hawks
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401908947@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T230000Z
+DTEND:20261006T013000Z
+SUMMARY:🏀 Suns @ Pistons
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-06 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401908947/suns-pistons
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401908947/suns-pistons
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401914101@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261005T230000Z
+DTEND:20261006T013000Z
+SUMMARY:🏀 Knicks @ 76ers
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-06 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401914101/knicks-76ers
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401914101/knicks-76ers
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401914102@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T000000Z
+DTEND:20261006T023000Z
+SUMMARY:🏀 Timberwolves @ Bucks
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-06 08:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401914102/timberwolves-bucks
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401914102/timberwolves-bucks
+END:VEVENT
+BEGIN:VEVENT
+UID:nfl-401872979@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T001500Z
+DTEND:20261006T033000Z
+SUMMARY:🏈 Falcons @ Saints
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-10-06 08:15\nhttps
+ ://www.espn.com/nfl/game/_/gameId/401872979/falcons-saints
+CATEGORIES:NFL
+TRANSP:OPAQUE
+URL:https://www.espn.com/nfl/game/_/gameId/401872979/falcons-saints
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401898716@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T020000Z
+DTEND:20261006T043000Z
+SUMMARY:🏀 Lakers @ Kings
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-06 10:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401898716/lakers-kings
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401898716/lakers-kings
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908004@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T040000Z
+DTEND:20261006T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-06 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908004
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908004/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401908015@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T040000Z
+DTEND:20261006T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-06 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908015
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401908015/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401901820@catchgame
+DTSTAMP:20260921T030815Z
+DTSTART:20261006T230000Z
+DTEND:20261007T013000Z
+SUMMARY:🏀 Nets @ Hornets
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-07 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401901820/nets-hornets
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401901820/nets-hornets
 END:VEVENT
 END:VCALENDAR

@@ -3,7 +3,8 @@
 用法：
   python main.py preview      抓賽程印在畫面上（不碰 Telegram，最適合第一次測試）
   python main.py calendar     產生 docs/calendar.ics（給 iPhone 行事曆訂閱）
-  python main.py digest       推播「接下來 24 小時」摘要
+  python main.py digest       推播「接下來 24 小時」摘要（一天只送一次）
+  python main.py digest --force   忽略時間與去重限制，強制送出
   python main.py remind       推播即將開賽的比賽（開賽前 20 分鐘內）
   python main.py results      推播剛結束的比賽比分（會記錄避免重複）
   python main.py tick         remind + results，排程實際跑的就是這個
@@ -42,7 +43,7 @@ def _tz() -> ZoneInfo:
 def collect(days_back: int, days_ahead: int) -> tuple[list[Game], list[str]]:
     """抓取所有啟用聯賽在指定區間內的比賽。
 
-    回傳 (比賽清單, 抓取失敗的聯賽名稱)。單一聯賽抓失敗時只記錄不中斷 ——
+    回傳 (比賽清單, 抓取失敗的聯賽 key)。單一聯賽抓失敗時只記錄不中斷 ——
     一個聯賽的 API 掛掉不該讓其他聯賽的提醒也停擺 —— 但失敗必須被回報出去，
     否則「資料源全掛」跟「這個時段沒比賽」在 Actions 上長得一模一樣，都是綠燈。
     """
@@ -65,29 +66,68 @@ def collect(days_back: int, days_ahead: int) -> tuple[list[Game], list[str]]:
             print(f"  {league['name']}: {len(fetched)} 場")
         except Exception as err:
             print(f"  {league['name']}: 抓取失敗 — {err}", file=sys.stderr)
-            failed.append(league["name"])
+            failed.append(league["key"])
     games.sort(key=lambda g: g.start)
     return games, failed
 
 
-def _report_failures(failed: list[str]) -> int:
+def _league_name(key: str) -> str:
+    for league in config.LEAGUES:
+        if league["key"] == key:
+            return league["name"]
+    return key
+
+
+def _report_failures(data: dict, failed: list[str]) -> int:
     """把抓取失敗變成 Actions 頁面上看得到的訊號。
 
-    全部聯賽都失敗 = 真的壞了（對方改版、被 WAF 擋、網路不通），這次一定不會
-    有任何通知，所以回傳 1 讓 workflow 紅燈、寄信通知你。
+    判斷的依據是「連續失敗次數」而不是「這次失敗幾個聯賽」。原因是舊做法
+    只在全部聯賽都失敗時才紅燈，結果英超與西甲因為 ESPN 不吃日期區間而
+    從頭到尾抓不到，卻因為只是「部分失敗」而永遠只印 warning —— 沒有人會去
+    翻每 10 分鐘一次的 run 頁面，於是兩個聯賽悄悄掛了好幾天沒人知道。
 
-    只有部分失敗就不紅燈 —— 其他聯賽的通知照送，而每 10 分鐘一次的排程
-    偶發 API 抖動是正常的，天天寄紅燈信只會讓你之後全部忽略。改用
-    ::warning:: 標在 run 頁面上（workflow command 讀的是 stdout，不能寫 stderr）。
+    改成：偶發抖動（連續次數還沒到門檻）維持 warning 不紅燈，天天寄紅燈信
+    只會讓你之後全部忽略；但只要有聯賽連續失敗到 FAIL_STREAK_ALERT 次，
+    就紅燈寄信，即使其他聯賽都還活著。全部聯賽同時失敗一樣立刻紅燈 ——
+    那種情況這次鐵定不會有任何通知。
+
+    （workflow command 讀的是 stdout，不能寫 stderr。）
     """
+    for league in config.enabled_leagues():
+        state.record_fetch(data, league["key"], league["key"] not in failed)
+
     if not failed:
         return 0
-    names = "、".join(failed)
+
+    names = "、".join(_league_name(k) for k in failed)
     if len(failed) >= len(config.enabled_leagues()):
         print(f"::error::所有聯賽都抓取失敗（{names}），這次不會有任何通知。")
         return 1
+
+    threshold = config.FAIL_STREAK_ALERT
+    chronic = [k for k in failed if state.fail_streak(data, k) >= threshold]
+    if chronic:
+        detail = "、".join(
+            f"{_league_name(k)}（連續 {state.fail_streak(data, k)} 次）"
+            for k in chronic
+        )
+        print(f"::error::{detail} 持續抓取失敗，這些聯賽已經沒有通知了。")
+        return 1
+
     print(f"::warning::{names} 抓取失敗，其他聯賽照常處理。")
     return 0
+
+
+def _league_order(game: Game) -> int:
+    """config.LEAGUES 裡的順序，用來讓同一個聯賽的比賽排在一起。
+
+    訊息裡的聯賽表頭是「跟上一場不同才印」，所以清單必須先按聯賽分群，
+    否則時間排序下 MLB -> NFL -> MLB 會印出兩個 MLB 表頭。
+    """
+    for i, league in enumerate(config.LEAGUES):
+        if league["key"] == game.league_key:
+            return i
+    return len(config.LEAGUES)
 
 
 def _fmt_time(game: Game) -> str:
@@ -135,10 +175,50 @@ def cmd_calendar(_args) -> int:
     return 0
 
 
-def cmd_digest(_args) -> int:
+def _mark_digest_sent(data: dict) -> None:
+    state.mark(data, "digest", datetime.now(_tz()).date().isoformat())
+    state.prune(data)
+    state.save(data)
+
+
+def _digest_gate(data: dict, force: bool) -> str | None:
+    """判斷這次該不該送每日摘要。回傳跳過的原因，None 表示可以送。
+
+    排程掛了三個時間點（台灣 05:00 / 06:00 / 07:00），因為 GitHub 的排程會
+    遲到、幅度又不固定（實測每日摘要遲了 103-118 分鐘）。這裡負責兩件事：
+    還太早就不送、交給下一次排程；今天已經送過就不再送。
+
+    這樣不論 GitHub 遲到 0 到 2 小時，摘要都會落在 DIGEST_NOT_BEFORE 之後
+    且只送一次 —— 比把 cron 往前推去賭遲到幅度不變可靠得多。
+    """
+    local = datetime.now(_tz())
+    key = local.date().isoformat()
+
+    if not force and state.already(data, "digest", key):
+        return f"今天（{key}）的摘要已經送過了，跳過。"
+
+    hour, _, minute = config.DIGEST_NOT_BEFORE.partition(":")
+    earliest = local.replace(
+        hour=int(hour), minute=int(minute or 0), second=0, microsecond=0
+    )
+    if not force and local < earliest:
+        return (f"現在 {local:%H:%M} 早於 {config.DIGEST_NOT_BEFORE}，"
+                f"這次不送，交給下一次排程。")
+    return None
+
+
+def cmd_digest(args) -> int:
+    force = bool(getattr(args, "force", False))
+    data = state.load()
+
+    skip = _digest_gate(data, force)
+    if skip:
+        print(skip)
+        return 0
+
     print("抓取接下來 24 小時的賽程…")
     games, failed = collect(days_back=0, days_ahead=2)
-    code = _report_failures(failed)
+    code = _report_failures(data, failed)
 
     now = datetime.now(timezone.utc)
     horizon = now + timedelta(hours=DIGEST_HOURS)
@@ -154,26 +234,26 @@ def cmd_digest(_args) -> int:
     )
     if not upcoming:
         notify.send(f"{header}\n\n這段時間沒有你關注的比賽。")
+        _mark_digest_sent(data)
         print("接下來 24 小時沒有比賽，已送出空摘要。")
         return code
 
+    # 摘要的重點是「接下來會發生什麼」，所以按時間排、不按聯賽分群，
+    # 聯賽名稱標在每一場旁邊。分群反而會讓你看不出先後順序。
     lines = [header, ""]
-    current_league = None
     current_day = None
     for game in upcoming:
-        if game.league_name != current_league:
-            current_league = game.league_name
-            current_day = None
-            lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
         day = game.local_start().date()
         if day != current_day:
             current_day = day
-            lines.append(f"  <u>{day:%m/%d (%a)}</u>")
+            lines.append(f"<u>{day:%m/%d (%a)}</u>")
         note = f" <i>({notify.esc(game.note)})</i>" if game.note else ""
         lines.append(
-            f"    {game.local_start():%H:%M}  {notify.esc(game.matchup)}{note}"
+            f"  {game.local_start():%H:%M}  {game.emoji} "
+            f"{notify.esc(game.league_name)}  {notify.esc(game.matchup)}{note}"
         )
     notify.send("\n".join(lines))
+    _mark_digest_sent(data)
     print(f"已推播 {len(upcoming)} 場比賽。")
     return code
 
@@ -185,14 +265,13 @@ def cmd_remind(_args) -> int:
     十幾場擠在同一個時段，一場一則會變成連續轟炸。
     """
     print("檢查即將開賽的比賽…")
+    data = state.load()
     games, failed = collect(days_back=0, days_ahead=1)
-    code = _report_failures(failed)
+    code = _report_failures(data, failed)
 
     now = datetime.now(timezone.utc)
     lead = timedelta(minutes=config.REMIND_LEAD_MINUTES)
     catchup = timedelta(minutes=config.REMIND_CATCHUP_MINUTES)
-
-    data = state.load()
     # 視窗刻意往回延伸 catchup。只看未來（now < start）的話，排程一旦延遲超過
     # lead，比賽開打的瞬間就從視窗裡消失，那場比賽永遠不會被提醒也不留痕跡 ——
     # 而 GitHub Actions 延遲 20-60 分鐘甚至整槍被丟掉是常態，不是例外。
@@ -212,7 +291,7 @@ def cmd_remind(_args) -> int:
 
     lines = ["<b>🔔 即將開賽</b>", ""]
     current_league = None
-    for game in upcoming:
+    for game in sorted(upcoming, key=lambda g: (_league_order(g), g.start)):
         if game.league_name != current_league:
             current_league = game.league_name
             lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
@@ -263,13 +342,13 @@ def cmd_tick(args) -> int:
 
 def cmd_results(_args) -> int:
     print("檢查已結束的比賽…")
-    games, failed = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=0)
-    code = _report_failures(failed)
-
     # 第一次執行時 state.json 還不存在，如果照常推播會一次補送過去幾天
     # 所有比賽的賽果。這種情況只建立基準，不發通知。
     first_run = not state.STATE_PATH.exists()
     data = state.load()
+
+    games, failed = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=0)
+    code = _report_failures(data, failed)
 
     if first_run:
         for game in games:
@@ -291,7 +370,7 @@ def cmd_results(_args) -> int:
 
     lines = ["<b>🏁 賽果</b>", ""]
     current_league = None
-    for game in pending:
+    for game in sorted(pending, key=lambda g: (_league_order(g), g.start)):
         if game.league_name != current_league:
             current_league = game.league_name
             lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
@@ -366,6 +445,11 @@ def main() -> int:
         description="多聯賽賽程整合：行事曆訂閱 + Telegram 賽果推播",
     )
     parser.add_argument("command", choices=sorted(COMMANDS), help="要執行的動作")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="digest 專用：忽略「太早」與「今天已送過」的限制，直接送出",
+    )
     args = parser.parse_args()
     try:
         return COMMANDS[args.command](args)

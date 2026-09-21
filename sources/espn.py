@@ -85,18 +85,42 @@ def _tags(competitor: dict) -> list[str]:
     ]
 
 
-def fetch(league: dict, start: date, end: date) -> list[Game]:
-    dates = f"{start:%Y%m%d}-{end:%Y%m%d}"
-    url = f"{BASE}/{league['path']}/scoreboard?dates={dates}&limit=400"
-    payload = _get(url)
+def _months(start: date, end: date) -> list[str]:
+    """把 start..end 展開成 YYYYMM 清單（含頭尾）。"""
+    out, year, month = [], start.year, start.month
+    while (year, month) <= (end.year, end.month):
+        out.append(f"{year:04d}{month:02d}")
+        year, month = (year + 1, 1) if month == 12 else (year, month + 1)
+    return out
 
+
+def fetch(league: dict, start: date, end: date) -> list[Game]:
+    """逐月查詢再自己過濾出 start..end。
+
+    為什麼不用 `dates=YYYYMMDD-YYYYMMDD` 區間：ESPN 的 scoreboard 端點對區間
+    一律回 400 Bad Request（足球從一開始就不吃，其他運動也已經不吃了）。
+    能用的只有單日 `YYYYMMDD` 與整月 `YYYYMM`，所以選整月 —— 兩週的視窗最多
+    一到兩個請求，比逐日查 15 次輕得多，而且整月的量（MLB 旺季約 380 場）
+    還在 limit 之內。
+    """
     games: list[Game] = []
-    for event in payload.get("events") or []:
-        try:
-            games.append(_to_game(league, event))
-        except Exception:
-            # 單場解析失敗（欄位結構異常、對手未定等）就略過，不影響其他場次
-            continue
+    seen: set[str] = set()
+    for dates in _months(start, end):
+        url = f"{BASE}/{league['path']}/scoreboard?dates={dates}&limit=1000"
+        payload = _get(url)
+
+        for event in payload.get("events") or []:
+            try:
+                game = _to_game(league, event)
+            except Exception:
+                # 單場解析失敗（欄位結構異常、對手未定等）就略過，不影響其他場次
+                continue
+            # 整月查詢會帶回區間外的場次，在這裡切回要的視窗；
+            # seen 擋掉月份邊界可能的重複。
+            if not (start <= game.start.date() <= end) or game.uid in seen:
+                continue
+            seen.add(game.uid)
+            games.append(game)
     games.sort(key=lambda g: g.start)
     return games
 
