@@ -8,594 +8,8 @@ X-WR-TIMEZONE:Asia/Taipei
 REFRESH-INTERVAL;VALUE=DURATION:PT4H
 X-PUBLISHED-TTL:PT4H
 BEGIN:VEVENT
-UID:mlb-401817007@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T001000Z
-DTEND:20260920T034000Z
-SUMMARY:⚾ Mariners 3 - 5 Rockies (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817007/mariners-roc
- kies
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817007/mariners-rockies
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817010@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T001000Z
-DTEND:20260920T034000Z
-SUMMARY:⚾ Yankees 3 - 5 Diamondbacks (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817010/yankees-diam
- ondbacks
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817010/yankees-diamondbacks
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817008@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T004000Z
-DTEND:20260920T041000Z
-SUMMARY:⚾ Marlins 6 - 7 Padres (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 08:40\n狀
- 態：Final/10\nhttps://www.espn.com/mlb/game/_/gameId/401817008/marlins-p
- adres
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817008/marlins-padres
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817011@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T011000Z
-DTEND:20260920T044000Z
-SUMMARY:⚾ Giants 4 - 10 Dodgers (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 09:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817011/giants-dodge
- rs
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817011/giants-dodgers
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817009@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T013800Z
-DTEND:20260920T050800Z
-SUMMARY:⚾ Twins 5 - 6 Angels (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-20 09:38\n狀
- 態：Final/11\nhttps://www.espn.com/mlb/game/_/gameId/401817009/twins-ang
- els
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817009/twins-angels
-END:VEVENT
-BEGIN:VEVENT
-UID:cpbl-cpbl.g.260920343@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T070500Z
-DTEND:20260920T103500Z
-SUMMARY:⚾ 味全 1 - 2 中信 (終)
-DESCRIPTION:聯賽：CPBL\n開賽（Asia/Taipei）：2026-09-20 15:05\n狀
- 態：Final\nhttps://tw.sports.yahoo.com/cpbl/scoreboard
-CATEGORIES:CPBL
-TRANSP:TRANSPARENT
-URL:https://tw.sports.yahoo.com/cpbl/scoreboard
-END:VEVENT
-BEGIN:VEVENT
-UID:cpbl-cpbl.g.260920344@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T080500Z
-DTEND:20260920T113500Z
-SUMMARY:⚾ 富邦 4 - 3 統一 (終)
-DESCRIPTION:聯賽：CPBL\n開賽（Asia/Taipei）：2026-09-20 16:05\n狀
- 態：Final\nhttps://tw.sports.yahoo.com/cpbl/scoreboard
-CATEGORIES:CPBL
-TRANSP:TRANSPARENT
-URL:https://tw.sports.yahoo.com/cpbl/scoreboard
-END:VEVENT
-BEGIN:VEVENT
-UID:cpbl-cpbl.g.260920345@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T090500Z
-DTEND:20260920T123500Z
-SUMMARY:⚾ 台鋼 1 - 10 樂天 (終)
-DESCRIPTION:聯賽：CPBL\n開賽（Asia/Taipei）：2026-09-20 17:05\n狀
- 態：Final\nhttps://tw.sports.yahoo.com/cpbl/scoreboard
-CATEGORIES:CPBL
-TRANSP:TRANSPARENT
-URL:https://tw.sports.yahoo.com/cpbl/scoreboard
-END:VEVENT
-BEGIN:VEVENT
-UID:laliga-401882861@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T120000Z
-DTEND:20260920T140000Z
-SUMMARY:⚽ Málaga 0 - 1 Getafe (終)
-DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 20:00\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882861/malaga-g
- etafe
-CATEGORIES:西甲
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401882861/malaga-getafe
-END:VEVENT
-BEGIN:VEVENT
-UID:epl-401879276@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T130000Z
-DTEND:20260920T150000Z
-SUMMARY:⚽ Liverpool 1 - 0 Bournemouth (終)
-DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879276/liverpoo
- l-afc-bournemouth
-CATEGORIES:英超
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401879276/liverpool-afc-bour
- nemouth
-END:VEVENT
-BEGIN:VEVENT
-UID:epl-401879273@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T130000Z
-DTEND:20260920T150000Z
-SUMMARY:⚽ C Palace 0 - 0 Leeds (終)
-DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879273/crystal-
- palace-leeds-united
-CATEGORIES:英超
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401879273/crystal-palace-lee
- ds-united
-END:VEVENT
-BEGIN:VEVENT
-UID:epl-401879272@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T130000Z
-DTEND:20260920T150000Z
-SUMMARY:⚽ Sunderland 3 - 5 Man City (終)
-DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 21:00\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401879272/sunderla
- nd-manchester-city
-CATEGORIES:英超
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401879272/sunderland-manches
- ter-city
-END:VEVENT
-BEGIN:VEVENT
-UID:laliga-401882865@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T141500Z
-DTEND:20260920T161500Z
-SUMMARY:⚽ Real Madrid 1 - 2 Atlético (終)
-DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-20 22:15\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882865/real-mad
- rid-atletico-madrid
-CATEGORIES:西甲
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401882865/real-madrid-atleti
- co-madrid
-END:VEVENT
-BEGIN:VEVENT
-UID:epl-401878777@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T153000Z
-DTEND:20260920T173000Z
-SUMMARY:⚽ Man United 1 - 1 Fulham (終)
-DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-09-20 23:30\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401878777/manchest
- er-united-fulham
-CATEGORIES:英超
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401878777/manchester-united-
- fulham
-END:VEVENT
-BEGIN:VEVENT
-UID:laliga-401882863@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T163000Z
-DTEND:20260920T183000Z
-SUMMARY:⚽ Betis 1 - 1 Deportivo (終)
-DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 00:30\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882863/real-bet
- is-deportivo
-CATEGORIES:西甲
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401882863/real-betis-deporti
- vo
-END:VEVENT
-BEGIN:VEVENT
-UID:laliga-401882857@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T163000Z
-DTEND:20260920T183000Z
-SUMMARY:⚽ Levante 1 - 3 Villarreal (終)
-DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 00:30\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882857/levante-
- villarreal
-CATEGORIES:西甲
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401882857/levante-villarreal
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872933@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Panthers 34 - 3 Falcons (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872933/panthers-fal
- cons
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872933/panthers-falcons
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872937@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Vikings 9 - 3 Bears (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872937/vikings-bear
- s
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872937/vikings-bears
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872939@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Eagles 24 - 20 Titans (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872939/eagles-titan
- s
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872939/eagles-titans
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872946@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Steelers 3 - 20 Patriots (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872946/steelers-pat
- riots
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872946/steelers-patriots
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872936@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Packers 20 - 17 Jets (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final/OT\nhttps://www.espn.com/nfl/game/_/gameId/401872936/packers-j
- ets
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872936/packers-jets
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872935@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Browns 23 - 19 Buccaneers (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872935/browns-bucca
- neers
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872935/browns-buccaneers
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872938@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Saints 24 - 17 Ravens (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872938/saints-raven
- s
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872938/saints-ravens
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872934@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T170000Z
-DTEND:20260920T201500Z
-SUMMARY:🏈 Bengals 20 - 6 Texans (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 01:00\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872934/bengals-texa
- ns
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872934/bengals-texans
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817017@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T171000Z
-DTEND:20260920T204000Z
-SUMMARY:⚾ Phillies 7 - 2 Mets (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817017/phillies-met
- s
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817017/phillies-mets
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817015@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T173500Z
-DTEND:20260920T210500Z
-SUMMARY:⚾ Royals 3 - 4 Pirates (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:35\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817015/royals-pirat
- es
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817015/royals-pirates
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817012@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T174000Z
-DTEND:20260920T211000Z
-SUMMARY:⚾ Athletics 0 - 1 Guardians (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817012/athletics-gu
- ardians
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817012/athletics-guardians
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817013@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T174000Z
-DTEND:20260920T211000Z
-SUMMARY:⚾ Red Sox 1 - 5 Rays (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817013/red-sox-rays
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817013/red-sox-rays
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817014@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T174000Z
-DTEND:20260920T211000Z
-SUMMARY:⚾ Cubs 9 - 1 Reds (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 01:40\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817014/cubs-reds
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817014/cubs-reds
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817018@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T181000Z
-DTEND:20260920T214000Z
-SUMMARY:⚾ Braves 4 - 2 Astros (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817018/braves-astro
- s
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817018/braves-astros
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817019@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T181000Z
-DTEND:20260920T214000Z
-SUMMARY:⚾ Tigers 1 - 8 White Sox (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817019/tigers-white
- -sox
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817019/tigers-white-sox
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817021@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T181500Z
-DTEND:20260920T214500Z
-SUMMARY:⚾ Nationals 3 - 5 Cardinals (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:15\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817021/nationals-ca
- rdinals
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817021/nationals-cardinals
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817020@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T183500Z
-DTEND:20260920T220500Z
-SUMMARY:⚾ Blue Jays 7 - 2 Rangers (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 02:35\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817020/blue-jays-ra
- ngers
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817020/blue-jays-rangers
-END:VEVENT
-BEGIN:VEVENT
-UID:laliga-401882858@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T190000Z
-DTEND:20260920T210000Z
-SUMMARY:⚽ Real Sociedad 3 - 2 Valencia (終)
-DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-09-21 03:00\n
- 狀態：FT\nhttps://www.espn.com/soccer/match/_/gameId/401882858/real-soc
- iedad-valencia
-CATEGORIES:西甲
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/soccer/match/_/gameId/401882858/real-sociedad-vale
- ncia
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817022@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T191000Z
-DTEND:20260920T224000Z
-SUMMARY:⚾ Mariners 2 - 1 Rockies (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 03:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817022/mariners-roc
- kies
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817022/mariners-rockies
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872940@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T200500Z
-DTEND:20260920T232000Z
-SUMMARY:🏈 Jaguars 13 - 20 Broncos (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:05\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872940/jaguars-bron
- cos
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872940/jaguars-broncos
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872941@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T200500Z
-DTEND:20260920T232000Z
-SUMMARY:🏈 Raiders 26 - 14 Chargers (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:05\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872941/raiders-char
- gers
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872941/raiders-chargers
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817024@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T200700Z
-DTEND:20260920T233700Z
-SUMMARY:⚾ Twins 8 - 0 Angels (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:07\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817024/twins-angels
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817024/twins-angels
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817023@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T201000Z
-DTEND:20260920T234000Z
-SUMMARY:⚾ Marlins 3 - 7 Padres (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817023/marlins-padr
- es
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817023/marlins-padres
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817025@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T201000Z
-DTEND:20260920T234000Z
-SUMMARY:⚾ Yankees 4 - 8 Diamondbacks (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817025/yankees-diam
- ondbacks
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817025/yankees-diamondbacks
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817026@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T201000Z
-DTEND:20260920T234000Z
-SUMMARY:⚾ Giants 1 - 3 Dodgers (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 04:10\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817026/giants-dodge
- rs
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817026/giants-dodgers
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872944@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T202500Z
-DTEND:20260920T234000Z
-SUMMARY:🏈 Commanders 20 - 37 Cowboys (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872944/commanders-c
- owboys
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872944/commanders-cowboys
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872943@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T202500Z
-DTEND:20260920T234000Z
-SUMMARY:🏈 Seahawks 31 - 7 Cardinals (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872943/seahawks-car
- dinals
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872943/seahawks-cardinals
-END:VEVENT
-BEGIN:VEVENT
-UID:nfl-401872942@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T202500Z
-DTEND:20260920T234000Z
-SUMMARY:🏈 Dolphins 13 - 35 49ers (終)
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-21 04:25\n狀
- 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872942/dolphins-49e
- rs
-CATEGORIES:NFL
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/nfl/game/_/gameId/401872942/dolphins-49ers
-END:VEVENT
-BEGIN:VEVENT
-UID:mlb-401817016@catchgame
-DTSTAMP:20260924T224559Z
-DTSTART:20260920T232000Z
-DTEND:20260921T025000Z
-SUMMARY:⚾ Brewers 3 - 0 Orioles (終)
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-21 07:20\n狀
- 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817016/brewers-orio
- les
-CATEGORIES:MLB
-TRANSP:TRANSPARENT
-URL:https://www.espn.com/mlb/game/_/gameId/401817016/brewers-orioles
-END:VEVENT
-BEGIN:VEVENT
 UID:nfl-401872945@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260921T002000Z
 DTEND:20260921T033500Z
 SUMMARY:🏈 Colts 30 - 33 Chiefs (終)
@@ -608,7 +22,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872945/colts-chiefs
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817027@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260921T223500Z
 DTEND:20260922T020500Z
 SUMMARY:⚾ Blue Jays 3 - 4 Orioles (終)
@@ -621,7 +35,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817027/blue-jays-orioles
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817028@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260921T224000Z
 DTEND:20260922T021000Z
 SUMMARY:⚾ Nationals 2 - 9 Tigers (終)
@@ -634,7 +48,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817028/nationals-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872947@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T001500Z
 DTEND:20260922T033000Z
 SUMMARY:🏈 Giants 6 - 28 Rams (終)
@@ -646,7 +60,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872947/giants-rams
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817029@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T014500Z
 DTEND:20260922T051500Z
 SUMMARY:⚾ Twins 2 - 5 Giants (終)
@@ -658,7 +72,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817029/twins-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922197@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 台鋼 5 - 6 樂天 (終)
@@ -670,7 +84,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922287@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 味全 13 - 1 統一 (終)
@@ -682,7 +96,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260922196@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T103500Z
 DTEND:20260922T140500Z
 SUMMARY:⚾ 中信 9 - 8 富邦 (終)
@@ -694,7 +108,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401873648@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T170500Z
 DTEND:20260922T203500Z
 SUMMARY:⚾ Rays 0 - 2 Yankees (終)
@@ -706,7 +120,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401873648/rays-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817035@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T223500Z
 DTEND:20260923T020500Z
 SUMMARY:⚾ Blue Jays 0 - 0 Orioles (終)
@@ -719,7 +133,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817035/blue-jays-orioles
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817032@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T224000Z
 DTEND:20260923T021000Z
 SUMMARY:⚾ Brewers 4 - 6 Phillies (終)
@@ -732,7 +146,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817032/brewers-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817033@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T224000Z
 DTEND:20260923T021000Z
 SUMMARY:⚾ Cardinals 0 - 2 Pirates (終)
@@ -745,7 +159,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817033/cardinals-pirates
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817036@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T224000Z
 DTEND:20260923T021000Z
 SUMMARY:⚾ Nationals 3 - 1 Tigers (終)
@@ -758,7 +172,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817036/nationals-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817031@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T224500Z
 DTEND:20260923T021500Z
 SUMMARY:⚾ Guardians 3 - 2 Red Sox (終)
@@ -771,7 +185,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817031/guardians-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817034@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T230500Z
 DTEND:20260923T023500Z
 SUMMARY:⚾ Rays 6 - 1 Yankees (終)
@@ -783,7 +197,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817034/rays-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817030@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T231500Z
 DTEND:20260923T024500Z
 SUMMARY:⚾ Reds 4 - 0 Braves (終)
@@ -795,7 +209,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817030/reds-braves
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817037@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T234000Z
 DTEND:20260923T031000Z
 SUMMARY:⚾ White Sox 14 - 11 Royals (終)
@@ -808,7 +222,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817037/white-sox-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817038@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260922T234000Z
 DTEND:20260923T031000Z
 SUMMARY:⚾ Marlins 8 - 2 Cubs (終)
@@ -821,7 +235,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817038/marlins-cubs
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817039@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T000500Z
 DTEND:20260923T033500Z
 SUMMARY:⚾ Mets 6 - 3 Rangers (終)
@@ -833,7 +247,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817039/mets-rangers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817040@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T004000Z
 DTEND:20260923T041000Z
 SUMMARY:⚾ Diamondbacks 7 - 2 Rockies (終)
@@ -846,7 +260,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817040/diamondbacks-rockies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817041@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T014000Z
 DTEND:20260923T051000Z
 SUMMARY:⚾ Angels 7 - 9 Athletics (終)
@@ -859,7 +273,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817041/angels-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817042@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T014000Z
 DTEND:20260923T051000Z
 SUMMARY:⚾ Astros 7 - 0 Mariners (終)
@@ -872,7 +286,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817042/astros-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817043@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T014500Z
 DTEND:20260923T051500Z
 SUMMARY:⚾ Twins 3 - 2 Giants (終)
@@ -884,7 +298,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817043/twins-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817044@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T021000Z
 DTEND:20260923T054000Z
 SUMMARY:⚾ Padres 0 - 7 Dodgers (終)
@@ -897,7 +311,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817044/padres-dodgers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817051@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T171000Z
 DTEND:20260923T204000Z
 SUMMARY:⚾ Nationals 4 - 2 Tigers (終)
@@ -910,7 +324,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817051/nationals-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401923610@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T173500Z
 DTEND:20260923T210500Z
 SUMMARY:⚾ Blue Jays 2 - 4 Orioles (終)
@@ -923,7 +337,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401923610/blue-jays-orioles
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817058@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T194500Z
 DTEND:20260923T231500Z
 SUMMARY:⚾ Twins 4 - 2 Giants (終)
@@ -935,7 +349,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817058/twins-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817050@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T223500Z
 DTEND:20260924T020500Z
 SUMMARY:⚾ Blue Jays 2 - 4 Orioles (終)
@@ -948,7 +362,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817050/blue-jays-orioles
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817047@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T224000Z
 DTEND:20260924T021000Z
 SUMMARY:⚾ Brewers 4 - 1 Phillies (終)
@@ -961,7 +375,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817047/brewers-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817048@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T224000Z
 DTEND:20260924T021000Z
 SUMMARY:⚾ Cardinals 5 - 1 Pirates (終)
@@ -974,7 +388,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817048/cardinals-pirates
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817046@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T230000Z
 DTEND:20260924T023000Z
 SUMMARY:⚾ Guardians 0 - 1 Red Sox (終)
@@ -987,7 +401,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817046/guardians-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817049@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T230500Z
 DTEND:20260924T023500Z
 SUMMARY:⚾ Rays 2 - 9 Yankees (終)
@@ -999,7 +413,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817049/rays-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817045@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T231500Z
 DTEND:20260924T024500Z
 SUMMARY:⚾ Reds 2 - 3 Braves (終)
@@ -1012,7 +426,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817045/reds-braves
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817052@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T234000Z
 DTEND:20260924T031000Z
 SUMMARY:⚾ White Sox 4 - 5 Royals (終)
@@ -1025,7 +439,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817052/white-sox-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817053@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260923T234000Z
 DTEND:20260924T031000Z
 SUMMARY:⚾ Marlins 3 - 2 Cubs (終)
@@ -1037,7 +451,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817053/marlins-cubs
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817054@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T000500Z
 DTEND:20260924T033500Z
 SUMMARY:⚾ Mets 7 - 2 Rangers (終)
@@ -1049,7 +463,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817054/mets-rangers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817055@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T004000Z
 DTEND:20260924T041000Z
 SUMMARY:⚾ Diamondbacks 5 - 3 Rockies (終)
@@ -1062,7 +476,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817055/diamondbacks-rockies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817056@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T014000Z
 DTEND:20260924T051000Z
 SUMMARY:⚾ Angels 3 - 7 Athletics (終)
@@ -1075,7 +489,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817056/angels-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817057@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T020000Z
 DTEND:20260924T053000Z
 SUMMARY:⚾ Astros 5 - 6 Mariners (終)
@@ -1088,7 +502,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817057/astros-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817059@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T021000Z
 DTEND:20260924T054000Z
 SUMMARY:⚾ Padres 5 - 1 Dodgers (終)
@@ -1101,7 +515,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817059/padres-dodgers
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924347@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 中信 5 - 6 樂天 (終)
@@ -1113,7 +527,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924348@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 味全 2 - 4 統一 (終)
@@ -1125,7 +539,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260924346@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T103500Z
 DTEND:20260924T140500Z
 SUMMARY:⚾ 富邦 8 - 0 台鋼 (終)
@@ -1137,7 +551,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817063@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T163500Z
 DTEND:20260924T200500Z
 SUMMARY:⚾ Cardinals 1 - 2 Pirates (終)
@@ -1150,7 +564,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817063/cardinals-pirates
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817065@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T181000Z
 DTEND:20260924T214000Z
 SUMMARY:⚾ White Sox 9 - 1 Royals (終)
@@ -1163,7 +577,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817065/white-sox-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817066@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T182000Z
 DTEND:20260924T215000Z
 SUMMARY:⚾ Marlins 1 - 2 Cubs (終)
@@ -1175,7 +589,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817066/marlins-cubs
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817067@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T183500Z
 DTEND:20260924T220500Z
 SUMMARY:⚾ Mets 1 - 3 Rangers (終)
@@ -1187,7 +601,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817067/mets-rangers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817068@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T191000Z
 DTEND:20260924T224000Z
 SUMMARY:⚾ Diamondbacks 12 - 8 Rockies (終)
@@ -1200,103 +614,109 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817068/diamondbacks-rockies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817062@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T220500Z
 DTEND:20260925T013500Z
-SUMMARY:⚾ Brewers @ Phillies
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:05\n備
- 註：Bot 2nd\nhttps://www.espn.com/mlb/game/_/gameId/401817062
+SUMMARY:⚾ Brewers 5 - 1 Phillies (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817062/brewers-phil
+ lies
 CATEGORIES:MLB
-TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401817062
+TRANSP:TRANSPARENT
+URL:https://www.espn.com/mlb/game/_/gameId/401817062/brewers-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817061@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T224500Z
 DTEND:20260925T021500Z
-SUMMARY:⚾ Guardians @ Red Sox
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:45\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817061/guardians-red-sox
+SUMMARY:⚾ Guardians 1 - 0 Red Sox (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 06:45\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817061/guardians-re
+ d-sox
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817061/guardians-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817064@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T230500Z
 DTEND:20260925T023500Z
-SUMMARY:⚾ Rays @ Yankees
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:05\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817064/rays-yankees
+SUMMARY:⚾ Rays 4 - 6 Yankees (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:05\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817064/rays-yankees
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817064/rays-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817060@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260924T231500Z
 DTEND:20260925T024500Z
-SUMMARY:⚾ Reds @ Braves
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:15\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817060/reds-braves
+SUMMARY:⚾ Reds 7 - 6 Braves (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 07:15\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817060/reds-braves
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817060/reds-braves
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872948@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T001500Z
 DTEND:20260925T033000Z
-SUMMARY:🏈 Falcons @ Packers
-DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-25 08:15\nhttps
- ://www.espn.com/nfl/game/_/gameId/401872948/falcons-packers
+SUMMARY:🏈 Falcons 35 - 14 Packers (終)
+DESCRIPTION:聯賽：NFL\n開賽（Asia/Taipei）：2026-09-25 08:15\n狀
+ 態：Final\nhttps://www.espn.com/nfl/game/_/gameId/401872948/falcons-pack
+ ers
 CATEGORIES:NFL
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/nfl/game/_/gameId/401872948/falcons-packers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817069@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T014000Z
 DTEND:20260925T051000Z
-SUMMARY:⚾ Angels @ Mariners
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817069/angels-mariners
+SUMMARY:⚾ Angels 6 - 4 Mariners (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817069/angels-marin
+ ers
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817069/angels-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817070@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T014000Z
 DTEND:20260925T051000Z
-SUMMARY:⚾ Astros @ Athletics
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817070/astros-athletics
+SUMMARY:⚾ Astros 7 - 5 Athletics (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 09:40\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817070/astros-athle
+ tics
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817070/astros-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817071@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T021000Z
 DTEND:20260925T054000Z
-SUMMARY:⚾ Padres @ Dodgers
-DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 10:10\nhttps
- ://www.espn.com/mlb/game/_/gameId/401817071/padres-dodgers
+SUMMARY:⚾ Padres 4 - 2 Dodgers (終)
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-25 10:10\n狀
+ 態：Final\nhttps://www.espn.com/mlb/game/_/gameId/401817071/padres-dodge
+ rs
 CATEGORIES:MLB
-TRANSP:OPAQUE
+TRANSP:TRANSPARENT
 URL:https://www.espn.com/mlb/game/_/gameId/401817071/padres-dodgers
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925351@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T080500Z
 DTEND:20260925T113500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -1308,7 +728,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925349@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T080500Z
 DTEND:20260925T113500Z
 SUMMARY:⚾ 富邦 @ 台鋼
@@ -1320,7 +740,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260925350@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T090500Z
 DTEND:20260925T123500Z
 SUMMARY:⚾ 中信 @ 樂天
@@ -1332,7 +752,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817104@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T170500Z
 DTEND:20260925T203500Z
 SUMMARY:⚾ Cubs @ Red Sox
@@ -1344,7 +764,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817104/cubs-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817088@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T200500Z
 DTEND:20260925T233500Z
 SUMMARY:⚾ Orioles @ Yankees
@@ -1356,7 +776,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817088/orioles-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817074@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T220000Z
 DTEND:20260926T013000Z
 SUMMARY:⚾ Cubs @ Red Sox
@@ -1368,7 +788,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817074/cubs-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817077@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T224000Z
 DTEND:20260926T021000Z
 SUMMARY:⚾ Pirates @ Tigers
@@ -1380,7 +800,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817077/pirates-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817078@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T224000Z
 DTEND:20260926T021000Z
 SUMMARY:⚾ Rays @ Phillies
@@ -1392,7 +812,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817078/rays-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817076@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T224500Z
 DTEND:20260926T021500Z
 SUMMARY:⚾ Mets @ Nationals
@@ -1404,7 +824,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817076/mets-nationals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817073@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T230500Z
 DTEND:20260926T023500Z
 SUMMARY:⚾ Orioles @ Yankees
@@ -1416,7 +836,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817073/orioles-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817075@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T230700Z
 DTEND:20260926T023700Z
 SUMMARY:⚾ Reds @ Blue Jays
@@ -1428,7 +848,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817075/reds-blue-jays
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817072@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T231000Z
 DTEND:20260926T024000Z
 SUMMARY:⚾ Braves @ Marlins
@@ -1440,7 +860,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817072/braves-marlins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817079@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T234000Z
 DTEND:20260926T031000Z
 SUMMARY:⚾ Guardians @ Royals
@@ -1452,7 +872,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817079/guardians-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817080@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T234000Z
 DTEND:20260926T031000Z
 SUMMARY:⚾ Rockies @ White Sox
@@ -1464,7 +884,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817080/rockies-white-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817081@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260925T234000Z
 DTEND:20260926T031000Z
 SUMMARY:⚾ Cardinals @ Brewers
@@ -1476,7 +896,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817081/cardinals-brewers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817082@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T001000Z
 DTEND:20260926T034000Z
 SUMMARY:⚾ Rangers @ Twins
@@ -1488,7 +908,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817082/rangers-twins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817084@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T014000Z
 DTEND:20260926T051000Z
 SUMMARY:⚾ Diamondbacks @ Padres
@@ -1500,7 +920,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817084/diamondbacks-padres
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817085@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T014000Z
 DTEND:20260926T051000Z
 SUMMARY:⚾ Astros @ Athletics
@@ -1512,7 +932,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817085/astros-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817083@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T021000Z
 DTEND:20260926T054000Z
 SUMMARY:⚾ Angels @ Mariners
@@ -1524,7 +944,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817083/angels-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817086@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T021500Z
 DTEND:20260926T054500Z
 SUMMARY:⚾ Dodgers @ Giants
@@ -1536,7 +956,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817086/dodgers-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926352@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T080500Z
 DTEND:20260926T113500Z
 SUMMARY:⚾ 統一 @ 台鋼
@@ -1548,7 +968,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926354@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T090500Z
 DTEND:20260926T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -1560,7 +980,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260926353@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T090500Z
 DTEND:20260926T123500Z
 SUMMARY:⚾ 樂天 @ 味全
@@ -1572,7 +992,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817092@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T171000Z
 DTEND:20260926T204000Z
 SUMMARY:⚾ Pirates @ Tigers
@@ -1584,7 +1004,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817092/pirates-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817090@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T190700Z
 DTEND:20260926T223700Z
 SUMMARY:⚾ Reds @ Blue Jays
@@ -1596,7 +1016,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817090/reds-blue-jays
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817091@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T200500Z
 DTEND:20260926T233500Z
 SUMMARY:⚾ Mets @ Nationals
@@ -1608,7 +1028,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817091/mets-nationals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817101@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T200500Z
 DTEND:20260926T233500Z
 SUMMARY:⚾ Dodgers @ Giants
@@ -1620,7 +1040,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817101/dodgers-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817087@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T201000Z
 DTEND:20260926T234000Z
 SUMMARY:⚾ Braves @ Marlins
@@ -1632,7 +1052,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817087/braves-marlins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817097@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T201000Z
 DTEND:20260926T234000Z
 SUMMARY:⚾ Rangers @ Twins
@@ -1644,7 +1064,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817097/rangers-twins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817094@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T231000Z
 DTEND:20260927T024000Z
 SUMMARY:⚾ Guardians @ Royals
@@ -1656,7 +1076,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817094/guardians-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817095@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T231000Z
 DTEND:20260927T024000Z
 SUMMARY:⚾ Rockies @ White Sox
@@ -1668,7 +1088,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817095/rockies-white-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817096@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T231000Z
 DTEND:20260927T024000Z
 SUMMARY:⚾ Cardinals @ Brewers
@@ -1680,7 +1100,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817096/cardinals-brewers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817089@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T231500Z
 DTEND:20260927T024500Z
 SUMMARY:⚾ Cubs @ Red Sox
@@ -1692,7 +1112,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817089/cubs-red-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817093@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260926T231500Z
 DTEND:20260927T024500Z
 SUMMARY:⚾ Rays @ Phillies
@@ -1704,7 +1124,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817093/rays-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817099@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T004000Z
 DTEND:20260927T041000Z
 SUMMARY:⚾ Diamondbacks @ Padres
@@ -1716,7 +1136,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817099/diamondbacks-padres
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817098@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T014000Z
 DTEND:20260927T051000Z
 SUMMARY:⚾ Angels @ Mariners
@@ -1728,7 +1148,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817098/angels-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817100@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T014000Z
 DTEND:20260927T051000Z
 SUMMARY:⚾ Astros @ Athletics
@@ -1740,7 +1160,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817100/astros-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927355@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T070500Z
 DTEND:20260927T103500Z
 SUMMARY:⚾ 統一 @ 台鋼
@@ -1752,7 +1172,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927356@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T080500Z
 DTEND:20260927T113500Z
 SUMMARY:⚾ 樂天 @ 味全
@@ -1764,7 +1184,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260927357@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T090500Z
 DTEND:20260927T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -1776,7 +1196,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872953@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Chargers @ Bills
@@ -1788,7 +1208,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872953/chargers-bills
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872949@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Panthers @ Browns
@@ -1800,7 +1220,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872949/panthers-browns
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872954@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Jets @ Lions
@@ -1812,7 +1232,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872954/jets-lions
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872951@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Texans @ Colts
@@ -1824,7 +1244,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872951/texans-colts
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872952@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Chiefs @ Dolphins
@@ -1836,7 +1256,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872952/chiefs-dolphins
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872956@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Titans @ Giants
@@ -1848,7 +1268,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872956/titans-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872950@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Bengals @ Steelers
@@ -1860,7 +1280,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872950/bengals-steelers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872955@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Seahawks @ Commanders
@@ -1872,7 +1292,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872955/seahawks-commanders
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872957@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T170000Z
 DTEND:20260927T201500Z
 SUMMARY:🏈 Patriots @ Jaguars
@@ -1884,7 +1304,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872957/patriots-jaguars
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817106@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T190500Z
 DTEND:20260927T223500Z
 SUMMARY:⚾ Mets @ Nationals
@@ -1896,7 +1316,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817106/mets-nationals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817108@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T190500Z
 DTEND:20260927T223500Z
 SUMMARY:⚾ Rays @ Phillies
@@ -1908,7 +1328,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817108/rays-phillies
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817115@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T190500Z
 DTEND:20260927T223500Z
 SUMMARY:⚾ Astros @ Athletics
@@ -1920,7 +1340,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817115/astros-athletics
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817116@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T190500Z
 DTEND:20260927T223500Z
 SUMMARY:⚾ Dodgers @ Giants
@@ -1932,7 +1352,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817116/dodgers-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817105@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T190700Z
 DTEND:20260927T223700Z
 SUMMARY:⚾ Reds @ Blue Jays
@@ -1944,7 +1364,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817105/reds-blue-jays
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817102@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Braves @ Marlins
@@ -1956,7 +1376,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817102/braves-marlins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817107@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Pirates @ Tigers
@@ -1968,7 +1388,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817107/pirates-tigers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817109@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Guardians @ Royals
@@ -1980,7 +1400,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817109/guardians-royals
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817110@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Rockies @ White Sox
@@ -1992,7 +1412,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817110/rockies-white-sox
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817111@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Cardinals @ Brewers
@@ -2004,7 +1424,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817111/cardinals-brewers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817112@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Rangers @ Twins
@@ -2016,7 +1436,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817112/rangers-twins
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817113@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Angels @ Mariners
@@ -2028,7 +1448,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817113/angels-mariners
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817114@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T191000Z
 DTEND:20260927T224000Z
 SUMMARY:⚾ Diamondbacks @ Padres
@@ -2040,7 +1460,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817114/diamondbacks-padres
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401817103@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T192000Z
 DTEND:20260927T225000Z
 SUMMARY:⚾ Orioles @ Yankees
@@ -2052,7 +1472,7 @@ URL:https://www.espn.com/mlb/game/_/gameId/401817103/orioles-yankees
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872958@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T200500Z
 DTEND:20260927T232000Z
 SUMMARY:🏈 Cardinals @ 49ers
@@ -2064,7 +1484,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872958/cardinals-49ers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872959@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T200500Z
 DTEND:20260927T232000Z
 SUMMARY:🏈 Vikings @ Buccaneers
@@ -2076,7 +1496,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872959/vikings-buccaneers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872960@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T202500Z
 DTEND:20260927T234000Z
 SUMMARY:🏈 Ravens @ Cowboys
@@ -2088,7 +1508,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872960/ravens-cowboys
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872961@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260927T202500Z
 DTEND:20260927T234000Z
 SUMMARY:🏈 Raiders @ Saints
@@ -2100,7 +1520,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872961/raiders-saints
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872962@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260928T002000Z
 DTEND:20260928T033500Z
 SUMMARY:🏈 Rams @ Broncos
@@ -2112,7 +1532,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872962/rams-broncos
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928359@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 統一 @ 樂天
@@ -2124,7 +1544,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928360@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 味全 @ 富邦
@@ -2136,7 +1556,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260928358@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260928T090500Z
 DTEND:20260928T123500Z
 SUMMARY:⚾ 台鋼 @ 中信
@@ -2148,7 +1568,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872963@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260929T001500Z
 DTEND:20260929T033000Z
 SUMMARY:🏈 Eagles @ Bears
@@ -2160,7 +1580,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872963/eagles-bears
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907896@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260929T040000Z
 DTEND:20260929T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2174,7 +1594,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907924@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260929T040000Z
 DTEND:20260929T073000Z
 SUMMARY:⚾ TBD @ Yankees
@@ -2188,21 +1608,21 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907965@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260929T040000Z
 DTEND:20260929T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Braves
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-29 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907965
- /tbd-tbd
+ /tbd-braves
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401907965/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401907965/tbd-braves
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907974@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260929T040000Z
 DTEND:20260929T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2216,7 +1636,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907897@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T040000Z
 DTEND:20260930T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2230,7 +1650,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907963@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T040000Z
 DTEND:20260930T073000Z
 SUMMARY:⚾ TBD @ Yankees
@@ -2244,21 +1664,21 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907972@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T040000Z
 DTEND:20260930T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Braves
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-09-30 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907972
- /tbd-tbd
+ /tbd-braves
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401907972/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401907972/tbd-braves
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907975@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T040000Z
 DTEND:20260930T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2272,7 +1692,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930255@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 統一 @ 富邦
@@ -2284,7 +1704,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930302@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 中信 @ 台鋼
@@ -2296,7 +1716,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.260930254@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20260930T103500Z
 DTEND:20260930T140500Z
 SUMMARY:⚾ 味全 @ 樂天
@@ -2308,7 +1728,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907898@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T040000Z
 DTEND:20261001T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2322,7 +1742,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907964@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T040000Z
 DTEND:20261001T073000Z
 SUMMARY:⚾ TBD @ Yankees
@@ -2336,21 +1756,21 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907973@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T040000Z
 DTEND:20261001T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Braves
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-01 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907973
- /tbd-tbd
+ /tbd-braves
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401907973/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401907973/tbd-braves
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907976@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T040000Z
 DTEND:20261001T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2364,7 +1784,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261001326@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T103500Z
 DTEND:20261001T140500Z
 SUMMARY:⚾ 統一 @ 味全
@@ -2376,7 +1796,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261001277@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261001T103500Z
 DTEND:20261001T140500Z
 SUMMARY:⚾ 樂天 @ 台鋼
@@ -2388,7 +1808,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872964@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261002T001500Z
 DTEND:20261002T033000Z
 SUMMARY:🏈 Steelers @ Browns
@@ -2400,7 +1820,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872964/steelers-browns
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261002283@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261002T103500Z
 DTEND:20261002T140500Z
 SUMMARY:⚾ 樂天 @ 台鋼
@@ -2412,7 +1832,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261002279@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261002T103500Z
 DTEND:20261002T140500Z
 SUMMARY:⚾ 味全 @ 富邦
@@ -2424,7 +1844,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907985@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T040000Z
 DTEND:20261003T073000Z
 SUMMARY:⚾ TBD @ Rays
@@ -2438,7 +1858,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907990@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T040000Z
 DTEND:20261003T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2452,35 +1872,35 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908002@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T040000Z
 DTEND:20261003T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Brewers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908002
- /tbd-tbd
+ /tbd-brewers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908002/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908002/tbd-brewers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908007@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T040000Z
 DTEND:20261003T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Dodgers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-03 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908007
- /tbd-tbd
+ /tbd-dodgers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908007/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908007/tbd-dodgers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003200@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 中信 @ 富邦
@@ -2492,7 +1912,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003201@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 台鋼 @ 樂天
@@ -2504,7 +1924,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261003199@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T090500Z
 DTEND:20261003T123500Z
 SUMMARY:⚾ 味全 @ 統一
@@ -2516,7 +1936,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401902644@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261003T230000Z
 DTEND:20261004T013000Z
 SUMMARY:🏀 Heat @ Raptors
@@ -2528,35 +1948,35 @@ URL:https://www.espn.com/nba/game/_/gameId/401902644/heat-raptors
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908003@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T040000Z
 DTEND:20261004T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Brewers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-04 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908003
- /tbd-tbd
+ /tbd-brewers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908003/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908003/tbd-brewers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908014@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T040000Z
 DTEND:20261004T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Dodgers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-04 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908014
- /tbd-tbd
+ /tbd-dodgers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908014/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908014/tbd-dodgers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004252@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 統一 @ 富邦
@@ -2568,7 +1988,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004270@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 台鋼 @ 中信
@@ -2580,7 +2000,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261004251@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T090500Z
 DTEND:20261004T123500Z
 SUMMARY:⚾ 味全 @ 樂天
@@ -2592,7 +2012,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872965@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T133000Z
 DTEND:20261004T164500Z
 SUMMARY:🏈 Colts @ Commanders
@@ -2604,7 +2024,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872965/colts-commanders
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872971@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Patriots @ Bills
@@ -2616,7 +2036,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872971/patriots-bills
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872972@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Jets @ Bears
@@ -2628,7 +2048,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872972/jets-bears
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872969@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Jaguars @ Bengals
@@ -2640,7 +2060,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872969/jaguars-bengals
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872966@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Cardinals @ Giants
@@ -2652,7 +2072,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872966/cardinals-giants
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872970@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Rams @ Eagles
@@ -2664,7 +2084,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872970/rams-eagles
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872968@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Packers @ Buccaneers
@@ -2676,7 +2096,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872968/packers-buccaneers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872973@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Titans @ Ravens
@@ -2688,7 +2108,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872973/titans-ravens
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872967@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T170000Z
 DTEND:20261004T201500Z
 SUMMARY:🏈 Cowboys @ Texans
@@ -2700,7 +2120,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872967/cowboys-texans
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872974@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T200500Z
 DTEND:20261004T232000Z
 SUMMARY:🏈 Dolphins @ Vikings
@@ -2712,7 +2132,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872974/dolphins-vikings
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872976@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T202500Z
 DTEND:20261004T234000Z
 SUMMARY:🏈 Chiefs @ Raiders
@@ -2724,7 +2144,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872976/chiefs-raiders
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872975@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T202500Z
 DTEND:20261004T234000Z
 SUMMARY:🏈 Broncos @ 49ers
@@ -2736,7 +2156,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872975/broncos-49ers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872977@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T202500Z
 DTEND:20261004T234000Z
 SUMMARY:🏈 Chargers @ Seahawks
@@ -2748,7 +2168,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872977/chargers-seahawks
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914127@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T230000Z
 DTEND:20261005T013000Z
 SUMMARY:🏀 Jazz @ Nuggets
@@ -2760,7 +2180,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914127/jazz-nuggets
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401918010@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261004T230000Z
 DTEND:20261005T013000Z
 SUMMARY:🏀 Warriors @ Clippers
@@ -2772,7 +2192,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401918010/warriors-clippers
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872978@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T002000Z
 DTEND:20261005T033500Z
 SUMMARY:🏈 Lions @ Panthers
@@ -2784,7 +2204,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872978/lions-panthers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907986@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T040000Z
 DTEND:20261005T073000Z
 SUMMARY:⚾ TBD @ Rays
@@ -2798,7 +2218,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907991@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T040000Z
 DTEND:20261005T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -2812,7 +2232,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261005274@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T103500Z
 DTEND:20261005T140500Z
 SUMMARY:⚾ 富邦 @ 樂天
@@ -2824,7 +2244,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:cpbl-cpbl.g.261005014@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T103500Z
 DTEND:20261005T140500Z
 SUMMARY:⚾ 統一 @ 中信
@@ -2836,7 +2256,7 @@ URL:https://tw.sports.yahoo.com/cpbl/scoreboard
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898388@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T230000Z
 DTEND:20261006T013000Z
 SUMMARY:🏀 Grizzlies @ Hawks
@@ -2848,7 +2268,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898388/grizzlies-hawks
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401908947@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T230000Z
 DTEND:20261006T013000Z
 SUMMARY:🏀 Suns @ Pistons
@@ -2860,7 +2280,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401908947/suns-pistons
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914101@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261005T230000Z
 DTEND:20261006T013000Z
 SUMMARY:🏀 Knicks @ 76ers
@@ -2872,7 +2292,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914101/knicks-76ers
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914102@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T000000Z
 DTEND:20261006T023000Z
 SUMMARY:🏀 Timberwolves @ Bucks
@@ -2884,7 +2304,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914102/timberwolves-bucks
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872979@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T001500Z
 DTEND:20261006T033000Z
 SUMMARY:🏈 Falcons @ Saints
@@ -2896,7 +2316,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872979/falcons-saints
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898716@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T020000Z
 DTEND:20261006T043000Z
 SUMMARY:🏀 Lakers @ Kings
@@ -2908,35 +2328,35 @@ URL:https://www.espn.com/nba/game/_/gameId/401898716/lakers-kings
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908004@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T040000Z
 DTEND:20261006T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ Brewers @ TBD
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-06 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908004
- /tbd-tbd
+ /brewers-tbd
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908004/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908004/brewers-tbd
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908015@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T040000Z
 DTEND:20261006T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ Dodgers @ TBD
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-06 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908015
- /tbd-tbd
+ /dodgers-tbd
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908015/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908015/dodgers-tbd
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401901820@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261006T230000Z
 DTEND:20261007T013000Z
 SUMMARY:🏀 Nets @ Hornets
@@ -2948,7 +2368,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401901820/nets-hornets
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898389@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T000000Z
 DTEND:20261007T023000Z
 SUMMARY:🏀 Pelicans @ Thunder
@@ -2960,7 +2380,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898389/pelicans-thunder
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914128@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T010000Z
 DTEND:20261007T033000Z
 SUMMARY:🏀 Nuggets @ Jazz
@@ -2972,7 +2392,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914128/nuggets-jazz
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898390@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T020000Z
 DTEND:20261007T043000Z
 SUMMARY:🏀 Lakers @ Warriors
@@ -2984,7 +2404,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898390/lakers-warriors
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907987@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T040000Z
 DTEND:20261007T073000Z
 SUMMARY:⚾ Rays @ TBD
@@ -2998,7 +2418,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907992@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T040000Z
 DTEND:20261007T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -3012,35 +2432,35 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908005@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T040000Z
 DTEND:20261007T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ Brewers @ TBD
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-07 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908005
- /tbd-tbd
+ /brewers-tbd
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908005/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908005/brewers-tbd
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908016@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T040000Z
 DTEND:20261007T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ Dodgers @ TBD
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-07 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908016
- /tbd-tbd
+ /dodgers-tbd
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908016/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908016/dodgers-tbd
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914123@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261007T230000Z
 DTEND:20261008T013000Z
 SUMMARY:🏀 Timberwolves @ Pacers
@@ -3052,7 +2472,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914123/timberwolves-pacers
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898391@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T000000Z
 DTEND:20261008T023000Z
 SUMMARY:🏀 Magic @ Grizzlies
@@ -3064,7 +2484,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898391/magic-grizzlies
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401908620@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T000000Z
 DTEND:20261008T023000Z
 SUMMARY:🏀 Bucks @ Thunder
@@ -3076,7 +2496,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401908620/bucks-thunder
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401908939@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T000000Z
 DTEND:20261008T023000Z
 SUMMARY:🏀 Suns @ Bulls
@@ -3088,7 +2508,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401908939/suns-bulls
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401914129@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T020000Z
 DTEND:20261008T043000Z
 SUMMARY:🏀 Warriors @ Trail Blazers
@@ -3100,7 +2520,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401914129/warriors-trail-blazers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907988@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T040000Z
 DTEND:20261008T073000Z
 SUMMARY:⚾ Rays @ TBD
@@ -3114,7 +2534,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401907993@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T040000Z
 DTEND:20261008T073000Z
 SUMMARY:⚾ TBD @ TBD
@@ -3128,7 +2548,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898392@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T230000Z
 DTEND:20261009T013000Z
 SUMMARY:🏀 Celtics @ Cavaliers
@@ -3140,7 +2560,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898392/celtics-cavaliers
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898393@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T233000Z
 DTEND:20261009T020000Z
 SUMMARY:🏀 Pelicans @ Heat
@@ -3152,7 +2572,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898393/pelicans-heat
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401901823@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T233000Z
 DTEND:20261009T020000Z
 SUMMARY:🏀 76ers @ Nets
@@ -3164,7 +2584,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401901823/76ers-nets
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401906508@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261008T233000Z
 DTEND:20261009T020000Z
 SUMMARY:🏀 Wizards @ Knicks
@@ -3176,7 +2596,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401906508/wizards-knicks
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898394@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T000000Z
 DTEND:20261009T023000Z
 SUMMARY:🏀 Hawks @ Spurs
@@ -3188,7 +2608,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898394/hawks-spurs
 END:VEVENT
 BEGIN:VEVENT
 UID:nfl-401872980@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T001500Z
 DTEND:20261009T033000Z
 SUMMARY:🏈 Buccaneers @ Cowboys
@@ -3200,7 +2620,7 @@ URL:https://www.espn.com/nfl/game/_/gameId/401872980/buccaneers-cowboys
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898717@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T023000Z
 DTEND:20261009T050000Z
 SUMMARY:🏀 Kings @ Lakers
@@ -3212,35 +2632,35 @@ URL:https://www.espn.com/nba/game/_/gameId/401898717/kings-lakers
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908006@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T040000Z
 DTEND:20261009T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Brewers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-09 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908006
- /tbd-tbd
+ /tbd-brewers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908006/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908006/tbd-brewers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:mlb-401908017@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T040000Z
 DTEND:20261009T073000Z
-SUMMARY:⚾ TBD @ TBD
+SUMMARY:⚾ TBD @ Dodgers
 DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-09 12:00\n備
  註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401908017
- /tbd-tbd
+ /tbd-dodgers
 CATEGORIES:MLB
 TRANSP:OPAQUE
-URL:https://www.espn.com/mlb/game/_/gameId/401908017/tbd-tbd
+URL:https://www.espn.com/mlb/game/_/gameId/401908017/tbd-dodgers
 STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:nba-401898395@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T120000Z
 DTEND:20261009T143000Z
 SUMMARY:🏀 Rockets @ Mavericks
@@ -3252,7 +2672,7 @@ URL:https://www.espn.com/nba/game/_/gameId/401898395/rockets-mavericks
 END:VEVENT
 BEGIN:VEVENT
 UID:laliga-401882851@catchgame
-DTSTAMP:20260924T224559Z
+DTSTAMP:20260925T064608Z
 DTSTART:20261009T190000Z
 DTEND:20261009T210000Z
 SUMMARY:⚽ Espanyol @ Málaga
@@ -3261,5 +2681,213 @@ DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-10-10 03:00\nht
 CATEGORIES:西甲
 TRANSP:OPAQUE
 URL:https://www.espn.com/soccer/match/_/gameId/401882851/espanyol-malaga
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401908940@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T000000Z
+DTEND:20261010T023000Z
+SUMMARY:🏀 Grizzlies @ Bulls
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-10 08:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401908940/grizzlies-bulls
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401908940/grizzlies-bulls
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907989@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T040000Z
+DTEND:20261010T073000Z
+SUMMARY:⚾ TBD @ Rays
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-10 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907989
+ /tbd-rays
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907989/tbd-rays
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:mlb-401907994@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T040000Z
+DTEND:20261010T073000Z
+SUMMARY:⚾ TBD @ TBD
+DESCRIPTION:聯賽：MLB\n開賽（Asia/Taipei）：2026-10-10 12:00\n備
+ 註：開賽時間未定\nhttps://www.espn.com/mlb/game/_/gameId/401907994
+ /tbd-tbd
+CATEGORIES:MLB
+TRANSP:OPAQUE
+URL:https://www.espn.com/mlb/game/_/gameId/401907994/tbd-tbd
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879268@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T113000Z
+DTEND:20261010T133000Z
+SUMMARY:⚽ Leeds @ Arsenal
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-10 19:30\nht
+ tps://www.espn.com/soccer/match/_/gameId/401879268/leeds-united-arsenal
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401879268/leeds-united-arsen
+ al
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882849@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T120000Z
+DTEND:20261010T140000Z
+SUMMARY:⚽ Athletic @ Rayo
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-10-10 20:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401882849/athletic-club-rayo-vall
+ ecano
+CATEGORIES:西甲
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401882849/athletic-club-rayo
+ -vallecano
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878776@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T140000Z
+DTEND:20261010T160000Z
+SUMMARY:⚽ Brentford @ Aston Villa
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-10 22:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401878776/brentford-aston-villa
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401878776/brentford-aston-vi
+ lla
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878775@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T140000Z
+DTEND:20261010T160000Z
+SUMMARY:⚽ Bournemouth @ Chelsea
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-10 22:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401878775/afc-bournemouth-chelsea
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401878775/afc-bournemouth-ch
+ elsea
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401879265@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T140000Z
+DTEND:20261010T160000Z
+SUMMARY:⚽ Fulham @ Ipswich
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-10 22:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401879265/fulham-ipswich-town
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401879265/fulham-ipswich-tow
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878772@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T140000Z
+DTEND:20261010T160000Z
+SUMMARY:⚽ Brighton @ Sunderland
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-10 22:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401878772/brighton-hove-albion-su
+ nderland
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401878772/brighton-hove-albi
+ on-sunderland
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882856@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T141500Z
+DTEND:20261010T161500Z
+SUMMARY:⚽ Atlético @ Alavés
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-10-10 22:15\nht
+ tps://www.espn.com/soccer/match/_/gameId/401882856/atletico-madrid-alaves
+CATEGORIES:西甲
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401882856/atletico-madrid-al
+ aves
+END:VEVENT
+BEGIN:VEVENT
+UID:epl-401878773@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T163000Z
+DTEND:20261010T183000Z
+SUMMARY:⚽ Spurs @ Man United
+DESCRIPTION:聯賽：英超\n開賽（Asia/Taipei）：2026-10-11 00:30\nht
+ tps://www.espn.com/soccer/match/_/gameId/401878773/tottenham-hotspur-manch
+ ester-united
+CATEGORIES:英超
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401878773/tottenham-hotspur-
+ manchester-united
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882853@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T163000Z
+DTEND:20261010T183000Z
+SUMMARY:⚽ Getafe @ Barcelona
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-10-11 00:30\nht
+ tps://www.espn.com/soccer/match/_/gameId/401882853/getafe-barcelona
+CATEGORIES:西甲
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401882853/getafe-barcelona
+END:VEVENT
+BEGIN:VEVENT
+UID:laliga-401882848@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T190000Z
+DTEND:20261010T210000Z
+SUMMARY:⚽ Villarreal @ Real Madrid
+DESCRIPTION:聯賽：西甲\n開賽（Asia/Taipei）：2026-10-11 03:00\nht
+ tps://www.espn.com/soccer/match/_/gameId/401882848/villarreal-real-madrid
+CATEGORIES:西甲
+TRANSP:OPAQUE
+URL:https://www.espn.com/soccer/match/_/gameId/401882848/villarreal-real-ma
+ drid
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401902645@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T223000Z
+DTEND:20261011T010000Z
+SUMMARY:🏀 Clippers @ Raptors
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-11 06:30\nhttps
+ ://www.espn.com/nba/game/_/gameId/401902645/clippers-raptors
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401902645/clippers-raptors
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401898396@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T230000Z
+DTEND:20261011T013000Z
+SUMMARY:🏀 Hawks @ Pacers
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-11 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401898396/hawks-pacers
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401898396/hawks-pacers
+END:VEVENT
+BEGIN:VEVENT
+UID:nba-401906510@catchgame
+DTSTAMP:20260925T064608Z
+DTSTART:20261010T230000Z
+DTEND:20261011T013000Z
+SUMMARY:🏀 Pistons @ Wizards
+DESCRIPTION:聯賽：NBA\n開賽（Asia/Taipei）：2026-10-11 07:00\nhttps
+ ://www.espn.com/nba/game/_/gameId/401906510/pistons-wizards
+CATEGORIES:NBA
+TRANSP:OPAQUE
+URL:https://www.espn.com/nba/game/_/gameId/401906510/pistons-wizards
 END:VEVENT
 END:VCALENDAR
