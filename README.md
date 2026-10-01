@@ -80,6 +80,8 @@ curl -s "https://api.github.com/repos/a010380/catchGame/actions/runs?event=sched
 | `main.py` | 進入點，所有指令都從這裡跑 |
 | `models.py` | 跨聯賽的統一賽事格式 `Game` |
 | `sources/espn.py` | ESPN 公開 API adapter（一支覆蓋 MLB/NBA/NFL/英超/西甲） |
+| `sources/yahoo.py` | Yahoo 運動 adapter（CPBL，隊名直接是中文） |
+| `sources/lolesports.py` | Riot Esports API adapter（LCK/LCP/MSI/Worlds，處理 BO 系列賽） |
 | `icsfile.py` | 產生符合 RFC 5545 的行事曆檔 |
 | `notify.py` | Telegram 推播 |
 | `state.py` | 記錄已推播的比賽，避免重複通知 |
@@ -97,7 +99,7 @@ pip install -r requirements.txt
 python main.py preview
 ```
 
-會印出未來兩週的 MLB 賽程（台灣時間）。`✓` 是已結束並附比分，`▶` 是進行中，空白是還沒打。
+會印出所有啟用聯賽未來兩週的賽程（台灣時間）。`✓` 是已結束並附比分，`▶` 是進行中，空白是還沒打。
 
 想調整關注範圍就改 [`config.py`](config.py)：
 
@@ -306,32 +308,56 @@ GitHub 對**沒有任何活動超過 60 天**的 repo 會自動停用排程 work
 
 ---
 
-## 之後要加的聯賽
+## 聯賽清單與開關
 
-### 已經接好，改一行就開（NBA / NFL / 英超 / 西甲）
+目前 10 個聯賽全部啟用，資料來源分三支 adapter：
 
-[`config.py`](config.py) 裡把對應聯賽的 `enabled` 改成 `True`：
+| 聯賽 | 資料來源 | 旺季（台灣時間的主要時段） |
+| --- | --- | --- |
+| **MLB** | ESPN | 4–10 月，清晨到上午 |
+| **NBA** | ESPN | 10 月–隔年 6 月，上午 |
+| **NFL** | ESPN | 9 月–隔年 2 月，週一二凌晨 |
+| **英超** | ESPN | 8 月–隔年 5 月，週末晚上到深夜 |
+| **西甲** | ESPN | 8 月–隔年 5 月，週末深夜 |
+| **CPBL** | Yahoo 運動 | 3–10 月，18:35 |
+| **LCK / LCP** | Riot Esports API | 1–8 月，下午 |
+| **MSI** | Riot Esports API | 6–7 月 |
+| **Worlds** | Riot Esports API | 10–11 月 |
+
+賽季外抓到 0 場是正常的，不是壞掉 —— 真的壞掉會走「聯賽壞掉了怎麼知道」那條路紅燈寄信。
+電競在對戰組合還沒定時會先顯示 `TBD vs TBD`，行事曆每 6 小時重抓一次，隊名確定後會自己補上。
+
+### 關掉不想看的聯賽
+
+[`config.py`](config.py) 裡把對應聯賽的 `enabled` 改成 `False`：
 
 ```python
 {
-    "key": "nba",
-    "enabled": True,     # ← 改這裡
+    "key": "nfl",
+    "enabled": False,    # ← 改這裡
     ...
 }
 ```
 
-先跑 `python main.py preview` 確認抓得到資料再 push。（NBA 在 7–9 月是休賽期，那段時間抓到 0 場是正常的。）
+### 只看特定球隊
 
-### 還需要寫 adapter（CPBL / 電競）
+同一個地方填 `teams`，隊名或縮寫都可以比對，留空 `[]` 就是整個聯賽都要：
 
-這兩個 ESPN 沒有，需要各自的資料來源：
+```python
+"teams": ["Yankees", "Dodgers"],   # MLB
+"teams": ["樂天", "中信"],          # CPBL 用中文短名
+"teams": ["T1", "GEN"],            # 電競用隊伍代號
+```
 
-| 聯賽 | 資料來源 | 難度 |
-| --- | --- | --- |
-| **CPBL** | 官方無開放 API，需要爬 `cpbl.com.tw` 的賽程與即時比分頁 | 中 — 網站改版就要修，但只要改 adapter，不用動其他程式 |
-| **LoL 電競**（LCK / LCP / MSI / Worlds） | Riot 的 Esports API（`esports-api.lolesports.com`）或 Leaguepedia API | 中 — 需要處理 BO3/BO5 的系列賽與單場的差別 |
+### 新增聯賽
 
-新增方式：在 [`sources/`](sources/) 下寫一個新檔案，提供 `fetch(league, start, end) -> list[Game]`，然後在 [`sources/__init__.py`](sources/__init__.py) 的 `_ADAPTERS` 註冊。行事曆、推播、去重的邏輯完全不用改。
+**ESPN 有的運動**（NHL、MLS、歐冠、各國聯賽……）不用寫程式，在 `LEAGUES` 加一筆、
+`source` 填 `"espn"`、`path` 填 ESPN 的路徑片段（例如 `hockey/nhl`、`soccer/uefa.champions`）
+就會生效。先跑 `python main.py preview` 確認抓得到再 push。
+
+**ESPN 沒有的**要寫新的 adapter：在 [`sources/`](sources/) 下新增一個檔案，提供
+`fetch(league, start, end) -> list[Game]`，然後在 [`sources/__init__.py`](sources/__init__.py)
+的 `_ADAPTERS` 註冊。行事曆、推播、去重的邏輯完全不用改 —— CPBL 與電競就是這樣接上來的。
 
 ---
 
