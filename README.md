@@ -192,7 +192,7 @@ git push -u origin main
 
 ### 步驟 4.5：確認 Actions 有寫入權限
 
-`calendar.yml` 和 `notify.yml` 需要把產生的 `.ics` 與推播紀錄 commit 回 repo，
+三個 workflow 都需要把產生的 `.ics` 與推播紀錄（`state.json`）commit 回 repo，
 所以 Actions 必須有寫入權限。
 
 到 **Settings → Actions → General → Workflow permissions**，確認選的是
@@ -283,7 +283,7 @@ GitHub 的排程會遲到，實測這個 workflow 遲了 **103～118 分鐘**。
 
 ### 用量
 
-`notify.yml` 每天 144 次、`calendar.yml` 4 次、`digest.yml` 1 次，每次約 1 分鐘，
+`notify.yml` 每天 144 次、`calendar.yml` 4 次、`digest.yml` 3 次（只有一次真的送），每次約 1 分鐘，
 合計約每月 4500 分鐘。**公開 repo 的 Actions 分鐘數無上限，所以這不用省。**
 如果你把 repo 改成 private，免費額度只有 2000 分鐘/月，會不夠 ——
 那就得把 `notify.yml` 的 cron 調成 `*/30` 並縮小到有比賽的時段。
