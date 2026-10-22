@@ -37,13 +37,17 @@ MAX_DAYS = 45
 # Yahoo 的 status_type 對應到本專案的統一狀態。
 # 已知值：status.type.pregame / status.type.final。
 # 其他（延賽、保留、進行中）用下面的關鍵字判斷。
+#
+# 延賽 / 取消 / 保留比賽要對應到 void 而不是 post：它們沒有正式比分，
+# 當成 post 會被推成一則「0 - 0」的假賽果（CPBL 雨天延賽很常見）。
 STATE_EXACT = {
     "status.type.pregame": "pre",
     "status.type.scheduled": "pre",
     "status.type.final": "post",
     "status.type.final_overtime": "post",
 }
-POST_KEYWORDS = ("final", "complete", "cancel", "postpone", "suspend")
+POST_KEYWORDS = ("final", "complete")
+VOID_KEYWORDS = ("cancel", "postpone", "suspend")
 
 
 def _get(day: date, path: str) -> dict:
@@ -70,6 +74,10 @@ def _map_state(status_type: str) -> str:
     if status_type in STATE_EXACT:
         return STATE_EXACT[status_type]
     lowered = (status_type or "").lower()
+    # void 要先判斷：Yahoo 可能出現 "final_suspended" 這類同時含兩組關鍵字的值，
+    # 那種仍然不算正式完賽
+    if any(k in lowered for k in VOID_KEYWORDS):
+        return "void"
     if any(k in lowered for k in POST_KEYWORDS):
         return "post"
     if "pre" in lowered or "sched" in lowered or "delay" in lowered:
@@ -129,7 +137,7 @@ def _to_game(league: dict, game_id: str, raw: dict, teams: dict) -> Game:
     state = _map_state(raw.get("status_type", ""))
     away_pts = raw.get("total_away_points")
     home_pts = raw.get("total_home_points")
-    if state == "pre":
+    if state in ("pre", "void"):
         away_pts = home_pts = None
 
     away_id, home_id = raw.get("away_team_id", ""), raw.get("home_team_id", "")
@@ -139,8 +147,10 @@ def _to_game(league: dict, game_id: str, raw: dict, teams: dict) -> Game:
         note = "開賽時間未定"
     elif state == "in":
         note = raw.get("status_description") or "進行中"
+    elif state == "void":
+        note = raw.get("status_description") or "延賽"
     elif state == "post" and raw.get("status_description") not in ("Final", None, ""):
-        # 延賽、保留比賽等非單純 Final 的結果，把原文帶上比較不會誤讀
+        # 延長賽等非單純 Final 的結果，把原文帶上比較不會誤讀
         note = raw["status_description"]
 
     return Game(

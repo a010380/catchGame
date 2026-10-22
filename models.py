@@ -12,8 +12,12 @@ import config
 
 # pre  = 還沒開打
 # in   = 進行中
-# post = 已結束
-STATES = ("pre", "in", "post")
+# post = 已結束（有正式比分）
+# void = 延賽 / 取消 / 中止 / 保留：原定時間不會打完，也沒有正式比分。
+#        要跟 post 分開，因為資料源常把它們也標成「結束」（ESPN 的 state
+#        是 post、CPBL 的關鍵字也落在結束那邊），混在一起就會推出一則
+#        「0 - 0」的假賽果；也要跟 pre 分開，否則原定時間一到會照樣提醒開賽。
+STATES = ("pre", "in", "post", "void")
 
 
 @dataclass
@@ -50,6 +54,10 @@ class Game:
     @property
     def finished(self) -> bool:
         return self.state == "post"
+
+    @property
+    def void(self) -> bool:
+        return self.state == "void"
 
     def local_start(self) -> datetime:
         return self.start.astimezone(ZoneInfo(config.TIMEZONE))

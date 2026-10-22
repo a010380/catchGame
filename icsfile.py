@@ -61,6 +61,9 @@ def _summary(game: Game) -> str:
     prefix = f"{game.emoji} ".strip() + " " if game.emoji else ""
     if game.finished:
         return f"{prefix}{game.score_line()} (終)"
+    if game.void:
+        # 行事曆上一眼就要看出這場不會打，不然會照原定時間去等
+        return f"{prefix}{game.matchup} ({game.note or '延賽'})"
     return f"{prefix}{game.matchup}"
 
 
@@ -96,7 +99,7 @@ def _event(game: Game, now: datetime) -> list[str]:
         lines.append("STATUS:TENTATIVE")
 
     # 只有還沒打的比賽需要提醒；已結束的再響就是騷擾
-    if not game.finished and config.ALARM_MINUTES_BEFORE > 0:
+    if not game.finished and not game.void and config.ALARM_MINUTES_BEFORE > 0:
         lines += [
             "BEGIN:VALARM",
             "ACTION:DISPLAY",

@@ -53,6 +53,18 @@ def _parse_dt(raw: str) -> datetime:
     return dt.astimezone(timezone.utc)
 
 
+# 「沒打完」的狀態對應的中文標示。這些場次 ESPN 的 state 都是 post，
+# 只有 completed 是 False —— 所以判斷靠 completed，這張表只負責顯示文字，
+# 沒列到的狀態會退回 ESPN 自己的 detail（例如 "Postponed"）。
+VOID_LABELS = {
+    "STATUS_POSTPONED": "延賽",
+    "STATUS_CANCELED": "取消",
+    "STATUS_ABANDONED": "比賽中止",
+    "STATUS_SUSPENDED": "暫停比賽",
+    "STATUS_FORFEIT": "沒收比賽",
+}
+
+
 def _side(competitors: list[dict], want: str) -> dict | None:
     for c in competitors:
         if c.get("homeAway") == want:
@@ -135,11 +147,15 @@ def _to_game(league: dict, event: dict) -> Game:
 
     status_type = ((comp.get("status") or event.get("status") or {}).get("type")) or {}
     state = status_type.get("state") or "pre"
+    # 延賽、取消、中止的場次 state 也是 post，唯一的差別是 completed=False。
+    # 不擋下來的話會被當成賽果，推出一則「0 - 0」。
+    if state == "post" and status_type.get("completed") is False:
+        state = "void"
 
     home_score = home.get("score")
     away_score = away.get("score")
-    if state == "pre":
-        # 未開打時 ESPN 會給 "0"，留著會誤導，直接清掉
+    if state in ("pre", "void"):
+        # 沒有正式比分時 ESPN 一樣會給 "0"，留著會誤導，直接清掉
         home_score = away_score = None
 
     note = ""
@@ -147,6 +163,12 @@ def _to_game(league: dict, event: dict) -> Game:
         note = "開賽時間未定"
     elif state == "in":
         note = status_type.get("shortDetail") or "進行中"
+    elif state == "void":
+        note = (
+            VOID_LABELS.get(status_type.get("name"))
+            or status_type.get("detail")
+            or "未完賽"
+        )
     elif comp.get("wasSuspended"):
         note = "比賽曾中斷"
 

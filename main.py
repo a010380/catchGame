@@ -151,7 +151,7 @@ def cmd_preview(_args) -> int:
         if day != current_day:
             current_day = day
             print(f"── {day:%Y-%m-%d (%a)} ──")
-        label = {"pre": " ", "in": "▶", "post": "✓"}.get(game.state, " ")
+        label = {"pre": " ", "in": "▶", "post": "✓", "void": "✗"}.get(game.state, " ")
         line = f" {label} {_fmt_time(game)}  {game.emoji} {game.league_name:6} {game.score_line()}"
         if game.note:
             line += f"  [{game.note}]"
@@ -276,9 +276,11 @@ def cmd_remind(_args) -> int:
     # lead，比賽開打的瞬間就從視窗裡消失，那場比賽永遠不會被提醒也不留痕跡 ——
     # 而 GitHub Actions 延遲 20-60 分鐘甚至整槍被丟掉是常態，不是例外。
     # 真正擋住重複推播的是 reminded 這個 bucket，不是視窗的左邊界。
+    # void（延賽、取消）要排除：原定時間到了也不會開打，提醒只會誤導。
     upcoming = [
         g for g in games
         if not g.finished
+        and not g.void
         and now - catchup <= g.start <= now + lead
         and not state.already(data, "reminded", g.uid)
     ]
