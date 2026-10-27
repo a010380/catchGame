@@ -356,6 +356,8 @@ def cmd_results(_args) -> int:
         for game in games:
             if game.finished:
                 state.mark(data, "notified", game.uid)
+            elif game.void:
+                state.mark(data, "voided", game.uid)
         state.save(data)
         print(f"首次執行：已把 {len(data['notified'])} 場既有賽果設為基準，未發送通知。")
         return code
@@ -363,33 +365,55 @@ def cmd_results(_args) -> int:
         g for g in games
         if g.finished and not state.already(data, "notified", g.uid)
     ]
+    # 延賽 / 取消也要主動講 —— 只是安靜地不推的話，你會以為賽果還沒出來，
+    # 一直等一場不會打的比賽。這個查詢的視窗到明天為止，所以提前公布的
+    # 延賽大約會在原定開賽前一天內送到。
+    voided = [
+        g for g in games
+        if g.void and not state.already(data, "voided", g.uid)
+    ]
 
-    if not pending:
+    if not pending and not voided:
         removed = state.prune(data)
         state.save(data)
-        print(f"沒有新結束的比賽。（清掉 {removed} 筆過期紀錄）")
+        print(f"沒有新結束或延賽的比賽。（清掉 {removed} 筆過期紀錄）")
         return code
 
-    lines = ["<b>🏁 賽果</b>", ""]
-    current_league = None
-    for game in sorted(pending, key=lambda g: (_league_order(g), g.start)):
-        if game.league_name != current_league:
-            current_league = game.league_name
-            lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
-        lines.append(
-            f"  {_fmt_time(game)}  {notify.esc(game.score_line())}"
-        )
-
-    notify.send("\n".join(lines))
+    # 兩種併成一則訊息，各自一段；只有其中一種時就只印那一段。
+    sections = []
+    if pending:
+        sections.append(_result_section(
+            "🏁 賽果", pending, lambda g: g.score_line()
+        ))
+    if voided:
+        sections.append(_result_section(
+            "⚠️ 延賽 / 取消", voided,
+            lambda g: f"{g.matchup}（{g.note or '延賽'}）",
+        ))
+    notify.send("\n\n".join(sections))
 
     # 推播成功才記錄，失敗時下次排程會重試
     for game in pending:
         state.mark(data, "notified", game.uid)
+    for game in voided:
+        state.mark(data, "voided", game.uid)
     removed = state.prune(data)
     state.save(data)
-    print(f"已推播 {len(pending)} 場賽果。（清掉 {removed} 筆過期紀錄）")
+    print(f"已推播 {len(pending)} 場賽果、{len(voided)} 場延賽／取消。"
+          f"（清掉 {removed} 筆過期紀錄）")
     return code
 
+
+def _result_section(title: str, games: list[Game], describe) -> str:
+    """一段「標題 + 依聯賽分群的清單」。describe 決定每場那一行要印什麼。"""
+    lines = [f"<b>{title}</b>", ""]
+    current_league = None
+    for game in sorted(games, key=lambda g: (_league_order(g), g.start)):
+        if game.league_name != current_league:
+            current_league = game.league_name
+            lines.append(f"{game.emoji} <b>{notify.esc(game.league_name)}</b>")
+        lines.append(f"  {_fmt_time(game)}  {notify.esc(describe(game))}")
+    return "\n".join(lines)
 
 def cmd_chat_id(_args) -> int:
     """找出你的 chat id —— 取代手動貼 getUpdates 網址的做法。"""

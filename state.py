@@ -3,6 +3,7 @@
 分成幾個獨立的桶（bucket）：
   notified  賽果已推播（key 是比賽 uid）
   reminded  開賽提醒已推播（key 是比賽 uid）
+  voided    延賽 / 取消通知已推播（key 是比賽 uid）
   digest    每日摘要已推播（key 是台灣日期，一天只送一次）
 彼此互不影響。
 
@@ -23,7 +24,7 @@ import config
 STATE_PATH = Path(__file__).with_name("state.json")
 
 
-BUCKETS = ("notified", "reminded", "digest")
+BUCKETS = ("notified", "reminded", "voided", "digest")
 
 # 連續失敗計數。值是 {"count": n, "since": iso}，不是時間戳，所以不能放進
 # BUCKETS —— prune() 會把裡面的值當 ISO 時間解析。
