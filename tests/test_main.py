@@ -180,3 +180,67 @@ def test_摘要_force_無視限制(tmp_state, monkeypatch):
     data = state.load()
     main._mark_digest_sent(data)
     assert main._digest_gate(state.load(), force=True) is None
+
+
+# ---------------------------------------------------------------- tick
+
+
+def test_tick_只抓一次_範圍涵蓋提醒與賽果(tmp_state, sent, monkeypatch):
+    calls = []
+
+    def fake_collect(**window):
+        calls.append(window)
+        return [
+            make_game("soon", minutes_from_now=10),
+            make_game("done", "post", minutes_from_now=-200, home_score="2", away_score="1"),
+        ], []
+
+    monkeypatch.setattr(main, "collect", fake_collect)
+
+    main.cmd_tick(None)
+
+    assert calls == [{"days_back": config.RESULTS_LOOKBACK_DAYS, "days_ahead": 1}]
+    assert len(sent) == 2
+    assert "即將開賽" in sent[0] and "soon-away" in sent[0]
+    assert "賽果" in sent[1] and "done-away 1 - 2 done-home" in sent[1]
+
+
+def test_tick_連續失敗一次只加一(tmp_state, sent, monkeypatch):
+    """舊版 remind 和 results 各自回報一次，一次 tick 加 2，20 分鐘就紅燈。"""
+    _feed(monkeypatch, [], failed=["epl"])
+    main.cmd_tick(None)
+    assert state.fail_streak(state.load(), "epl") == 1
+
+
+def test_tick_賽果失敗時提醒的紀錄不能丟(tmp_state, monkeypatch):
+    import notify
+
+    def send(text):
+        if "賽果" in text:
+            raise RuntimeError("Telegram 掛了")
+
+    monkeypatch.setattr(notify, "send", send)
+    _feed(monkeypatch, [
+        make_game("soon", minutes_from_now=10),
+        make_game("done", "post", minutes_from_now=-200, home_score="2", away_score="1"),
+    ])
+
+    assert main.cmd_tick(None) == 1
+
+    data = state.load()
+    assert state.already(data, "reminded", "soon")       # 送出去的要記住，不然會重送
+    assert not state.already(data, "notified", "done")   # 沒送出去的不能記，下次重試
+
+
+def test_tick_首次執行_賽果只建基準(tmp_state, sent, monkeypatch):
+    """舊版 remind 先跑、先把 state.json 建出來，results 就判斷不出是首次執行，
+    會把過去幾天的賽果一次全部補送。"""
+    tmp_state.unlink()
+    _feed(monkeypatch, [
+        make_game("done", "post", minutes_from_now=-200, home_score="2", away_score="1"),
+    ])
+
+    main.cmd_tick(None)
+
+    assert sent == []
+    assert state.already(state.load(), "notified", "done")

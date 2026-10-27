@@ -259,16 +259,80 @@ def cmd_digest(args) -> int:
 
 
 def cmd_remind(_args) -> int:
-    """推播即將開賽的比賽。
-
-    刻意把同一批比賽併成一則訊息 —— CPBL 三場同時 18:35 開打、MLB 常常
-    十幾場擠在同一個時段，一場一則會變成連續轟炸。
-    """
+    """推播即將開賽的比賽（單獨執行用；排程跑的是 tick）。"""
     print("檢查即將開賽的比賽…")
     data = state.load()
     games, failed = collect(days_back=0, days_ahead=1)
     code = _report_failures(data, failed)
+    _push_reminders(data, games)
+    state.prune(data)
+    state.save(data)
+    return code
 
+
+def cmd_results(_args) -> int:
+    """推播已結束的賽果與延賽（單獨執行用；排程跑的是 tick）。"""
+    print("檢查已結束的比賽…")
+    first_run = not state.STATE_PATH.exists()
+    data = state.load()
+    games, failed = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=0)
+    code = _report_failures(data, failed)
+    _push_results(data, games, first_run)
+    removed = state.prune(data)
+    state.save(data)
+    print(f"（清掉 {removed} 筆過期紀錄）")
+    return code
+
+
+def cmd_tick(_args) -> int:
+    """排程每次醒來要做的事：先提醒即將開賽，再推播剛結束的賽果。
+
+    合併成一個指令是為了讓排程只跑一個 job —— 兩個 job 各自 commit
+    同一個 state.json 會互相衝突，而且重複的 checkout / pip install 很浪費。
+
+    資料只抓一次、兩邊共用。舊版是 remind 和 results 各自 collect()，
+    每 10 分鐘把所有聯賽抓兩遍（Yahoo 逐日查，光 CPBL 一次 tick 就 9 個請求），
+    而且 _report_failures 也跟著跑兩次，連續失敗計數一次 tick 加 2 ——
+    FAIL_STREAK_ALERT=3 實際上 20 分鐘就紅燈，不是設計的 30 分鐘。
+    抓取範圍取兩者的聯集：往回 RESULTS_LOOKBACK_DAYS 天（賽果）、往後 1 天（提醒）。
+    """
+    print("抓取賽程中…")
+    first_run = not state.STATE_PATH.exists()
+    data = state.load()
+    games, failed = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=1)
+    codes = [_report_failures(data, failed)]
+
+    steps = (
+        ("開賽提醒", lambda: _push_reminders(data, games)),
+        ("賽果推播", lambda: _push_results(data, games, first_run)),
+    )
+    for label, run in steps:
+        try:
+            run()
+        except notify.NotConfigured:
+            raise  # 設定不完整會同時打死兩邊，交給 main() 印出完整說明
+        except Exception as err:
+            # 提醒那半邊爆掉（Telegram 剛好在維護）不該讓賽果也整批停擺，
+            # 所以各自 try 起來，最後回傳最嚴重的那個結果。
+            print(f"::error::{label} 執行失敗：{err}")
+            codes.append(1)
+        finally:
+            # 每一步之後都存：提醒送出了、賽果卻爆掉時，提醒的紀錄不能跟著丟，
+            # 否則下一次 tick 會再提醒一遍。save() 在內容沒變時不會寫檔。
+            state.save(data)
+
+    removed = state.prune(data)
+    state.save(data)
+    print(f"（清掉 {removed} 筆過期紀錄）")
+    return max(codes)
+
+
+def _push_reminders(data: dict, games: list[Game]) -> None:
+    """從 games 挑出即將開賽、還沒提醒過的比賽推播，並記錄到 data。
+
+    刻意把同一批比賽併成一則訊息 —— CPBL 三場同時 18:35 開打、MLB 常常
+    十幾場擠在同一個時段，一場一則會變成連續轟炸。
+    """
     now = datetime.now(timezone.utc)
     lead = timedelta(minutes=config.REMIND_LEAD_MINUTES)
     catchup = timedelta(minutes=config.REMIND_CATCHUP_MINUTES)
@@ -286,10 +350,8 @@ def cmd_remind(_args) -> int:
     ]
 
     if not upcoming:
-        state.prune(data)
-        state.save(data)
         print("這個時段沒有即將開賽的比賽。")
-        return code
+        return
 
     lines = ["<b>🔔 即將開賽</b>", ""]
     current_league = None
@@ -316,68 +378,37 @@ def cmd_remind(_args) -> int:
 
     for game in upcoming:
         state.mark(data, "reminded", game.uid)
-    state.prune(data)
-    state.save(data)
     print(f"已推播 {len(upcoming)} 場開賽提醒。")
-    return code
 
 
-def cmd_tick(args) -> int:
-    """排程每次醒來要做的事：先提醒即將開賽，再推播剛結束的賽果。
-
-    合併成一個指令是為了讓排程只跑一個 job —— 兩個 job 各自 commit
-    同一個 state.json 會互相衝突，而且重複的 checkout / pip install 很浪費。
-    """
-    codes = []
-    for label, run in (("開賽提醒", cmd_remind), ("賽果推播", cmd_results)):
-        try:
-            codes.append(run(args))
-        except notify.NotConfigured:
-            raise  # 設定不完整會同時打死兩邊，交給 main() 印出完整說明
-        except Exception as err:
-            # 提醒那半邊爆掉（ESPN 回了怪東西、Telegram 剛好在維護）不該讓
-            # 賽果也整批停擺，所以各自 try 起來，最後回傳最嚴重的那個結果。
-            print(f"::error::{label} 執行失敗：{err}")
-            codes.append(1)
-    return max(codes)
-
-
-def cmd_results(_args) -> int:
-    print("檢查已結束的比賽…")
+def _push_results(data: dict, games: list[Game], first_run: bool) -> None:
+    """從 games 挑出新結束的賽果與新出現的延賽推播，並記錄到 data。"""
     # 第一次執行時 state.json 還不存在，如果照常推播會一次補送過去幾天
     # 所有比賽的賽果。這種情況只建立基準，不發通知。
-    first_run = not state.STATE_PATH.exists()
-    data = state.load()
-
-    games, failed = collect(days_back=config.RESULTS_LOOKBACK_DAYS, days_ahead=0)
-    code = _report_failures(data, failed)
-
     if first_run:
         for game in games:
             if game.finished:
                 state.mark(data, "notified", game.uid)
             elif game.void:
                 state.mark(data, "voided", game.uid)
-        state.save(data)
         print(f"首次執行：已把 {len(data['notified'])} 場既有賽果設為基準，未發送通知。")
-        return code
+        return
+
     pending = [
         g for g in games
         if g.finished and not state.already(data, "notified", g.uid)
     ]
     # 延賽 / 取消也要主動講 —— 只是安靜地不推的話，你會以為賽果還沒出來，
-    # 一直等一場不會打的比賽。這個查詢的視窗到明天為止，所以提前公布的
-    # 延賽大約會在原定開賽前一天內送到。
+    # 一直等一場不會打的比賽。tick 的抓取範圍往後看 1 天，所以提前公布的
+    # 延賽大約會在原定開賽前一到兩天內送到。
     voided = [
         g for g in games
         if g.void and not state.already(data, "voided", g.uid)
     ]
 
     if not pending and not voided:
-        removed = state.prune(data)
-        state.save(data)
-        print(f"沒有新結束或延賽的比賽。（清掉 {removed} 筆過期紀錄）")
-        return code
+        print("沒有新結束或延賽的比賽。")
+        return
 
     # 兩種併成一則訊息，各自一段；只有其中一種時就只印那一段。
     sections = []
@@ -397,11 +428,7 @@ def cmd_results(_args) -> int:
         state.mark(data, "notified", game.uid)
     for game in voided:
         state.mark(data, "voided", game.uid)
-    removed = state.prune(data)
-    state.save(data)
-    print(f"已推播 {len(pending)} 場賽果、{len(voided)} 場延賽／取消。"
-          f"（清掉 {removed} 筆過期紀錄）")
-    return code
+    print(f"已推播 {len(pending)} 場賽果、{len(voided)} 場延賽／取消。")
 
 
 def _result_section(title: str, games: list[Game], describe) -> str:
