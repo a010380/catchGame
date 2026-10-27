@@ -48,6 +48,9 @@ STATE_EXACT = {
 }
 POST_KEYWORDS = ("final", "complete")
 VOID_KEYWORDS = ("cancel", "postpone", "suspend")
+# void 狀態的中文標示。Yahoo 的 status_description 就算指定中文也回英文
+# （"Postponed"），直接帶進通知會中英夾雜，所以照關鍵字自己翻。
+VOID_LABELS = (("postpone", "延賽"), ("cancel", "取消"), ("suspend", "保留比賽"))
 
 
 def _get(day: date, path: str) -> dict:
@@ -148,7 +151,11 @@ def _to_game(league: dict, game_id: str, raw: dict, teams: dict) -> Game:
     elif state == "in":
         note = raw.get("status_description") or "進行中"
     elif state == "void":
-        note = raw.get("status_description") or "延賽"
+        lowered = (raw.get("status_type") or "").lower()
+        note = next(
+            (label for key, label in VOID_LABELS if key in lowered),
+            raw.get("status_description") or "延賽",
+        )
     elif state == "post" and raw.get("status_description") not in ("Final", None, ""):
         # 延長賽等非單純 Final 的結果，把原文帶上比較不會誤讀
         note = raw["status_description"]

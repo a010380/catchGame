@@ -85,8 +85,9 @@ curl -s "https://api.github.com/repos/a010380/catchGame/actions/runs?event=sched
 | `icsfile.py` | 產生符合 RFC 5545 的行事曆檔 |
 | `notify.py` | Telegram 推播 |
 | `state.py` | 記錄已推播的比賽，避免重複通知 |
+| `tests/` | 自動化測試，`tests/fixtures/` 是存下來的真實 API 回應 |
 | `docs/calendar.ics` | 產生出來的行事曆，由 GitHub Pages 對外提供 |
-| `.github/workflows/` | 三個排程：更新行事曆、推播賽果、今日摘要 |
+| `.github/workflows/` | 三個排程（更新行事曆、推播賽果、今日摘要）＋ push 時跑的測試 |
 
 ---
 
@@ -358,6 +359,22 @@ GitHub 對**沒有任何活動超過 60 天**的 repo 會自動停用排程 work
 **ESPN 沒有的**要寫新的 adapter：在 [`sources/`](sources/) 下新增一個檔案，提供
 `fetch(league, start, end) -> list[Game]`，然後在 [`sources/__init__.py`](sources/__init__.py)
 的 `_ADAPTERS` 註冊。行事曆、推播、去重的邏輯完全不用改 —— CPBL 與電競就是這樣接上來的。
+
+---
+
+## 測試
+
+```bash
+pip install pytest
+python -m pytest
+```
+
+測試**不碰網路、不碰真的 `state.json`、不送 Telegram**，一秒內跑完。push 程式碼時
+`tests.yml` 會自動跑一次（排程產生的 `state.json` / `calendar.ics` commit 不會觸發）。
+
+資料源的解析是用 `tests/fixtures/` 裡存下來的**真實 API 回應**測的，其中刻意收了幾場
+出過事的比賽：被推成「0 - 0」的取消、中止、延賽場次。對方 API 改格式時，先抓一份
+新的回應換掉 fixture，再看哪些測試壞掉，就知道 adapter 要改哪裡。
 
 ---
 

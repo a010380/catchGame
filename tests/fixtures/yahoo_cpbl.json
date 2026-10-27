@@ -1,0 +1,860 @@
+{
+ "final": {
+  "games": {
+   "cpbl.g.260320017": {
+    "gameid": "cpbl.g.260320017",
+    "global_gameid": null,
+    "start_time": "Fri, 20 Mar 2026 10:35:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.preseason",
+    "game_type": "熱身賽",
+    "winning_team_id": "cpbl.t.6",
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": "outcome.type.won",
+    "home_team_id": "cpbl.t.2",
+    "away_team_id": "cpbl.t.6",
+    "navigation_links": {
+     "boxscore": {
+      "url": "/cpbl/樂天-桃猿-統一-獅-260320017/"
+     },
+     "match_page": {
+      "url": "/cpbl/樂天-桃猿-統一-獅-260320017/"
+     },
+     "league_home": {
+      "url": "/cpbl/"
+     },
+     "league_scores": {
+      "url": "/cpbl/scoreboard/"
+     }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=cpbl.g.260320017&sport=cpbl",
+    "status_display_name": "Final",
+    "status_description": "Final",
+    "status_type": "status.type.final",
+    "total_away_points": "5",
+    "current_period_id": 9,
+    "total_home_points": "4",
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": [
+     {
+      "runs": "4"
+     },
+     {
+      "hits": "10"
+     },
+     {
+      "errors": "1"
+     }
+    ],
+    "away_team_stats": [
+     {
+      "runs": "5"
+     },
+     {
+      "hits": "12"
+     },
+     {
+      "errors": "0"
+     }
+    ],
+    "game_period_balls": "0",
+    "game_period_strikes": "0",
+    "game_period_outs": "3",
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": "end",
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": 9,
+    "game_periods": [
+     {
+      "period_id": 1,
+      "display_name": "1st",
+      "short_name": 1,
+      "full_name": "1st Inning",
+      "away_points": "0",
+      "home_points": "0"
+     },
+     {
+      "period_id": 2,
+      "display_name": "2nd",
+      "short_name": 2,
+      "full_name": "2nd Inning",
+      "away_points": "0",
+      "home_points": "0"
+     },
+     {
+      "period_id": 3,
+      "display_name": "3rd",
+      "short_name": 3,
+      "full_name": "3rd Inning",
+      "away_points": "0",
+      "home_points": "2"
+     },
+     {
+      "period_id": 4,
+      "display_name": "4th",
+      "short_name": 4,
+      "full_name": "4th Inning",
+      "away_points": "1",
+      "home_points": "0"
+     },
+     {
+      "period_id": 5,
+      "display_name": "5th",
+      "short_name": 5,
+      "full_name": "5th Inning",
+      "away_points": "0",
+      "home_points": "0"
+     },
+     {
+      "period_id": 6,
+      "display_name": "6th",
+      "short_name": 6,
+      "full_name": "6th Inning",
+      "away_points": "1",
+      "home_points": "0"
+     },
+     {
+      "period_id": 7,
+      "display_name": "7th",
+      "short_name": 7,
+      "full_name": "7th Inning",
+      "away_points": "0",
+      "home_points": "1"
+     },
+     {
+      "period_id": 8,
+      "display_name": "8th",
+      "short_name": 8,
+      "full_name": "8th Inning",
+      "away_points": "0",
+      "home_points": "0"
+     },
+     {
+      "period_id": 9,
+      "display_name": "9th",
+      "short_name": 9,
+      "full_name": "9th Inning",
+      "away_points": "3",
+      "home_points": "1"
+     }
+    ],
+    "baserunners": "000",
+    "season": "2026",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "",
+    "provider_coverage": null,
+    "seatgeek_id": null,
+    "last_updated": "2026-10-26 17:46:53",
+    "teams": [
+     "dataIslandPaths",
+     "cpbl.g.260320017",
+     "teams"
+    ],
+    "play_by_play": [
+     "gameplay_by_play",
+     "cpbl.g.260320017"
+    ],
+    "pitches": [
+     "gamepitches",
+     "cpbl.g.260320017"
+    ],
+    "at_bat": [
+     "gameat_bat",
+     "cpbl.g.260320017"
+    ],
+    "penalty_summary": [
+     "gamepenalty_summary",
+     "cpbl.g.260320017"
+    ],
+    "scoring_summary": [
+     "gamescoring_summary",
+     "cpbl.g.260320017"
+    ],
+    "stat_categories": [
+     "game_stat_leaders"
+    ],
+    "stadium": [
+     "gamestadium",
+     "cpbl.g.260320017"
+    ],
+    "stadium_id": [
+     "gamestadium_id",
+     "cpbl.g.260320017"
+    ],
+    "stadium_image": [
+     "gamestadium_image",
+     "cpbl.g.260320017"
+    ],
+    "attendance": [
+     "gameattendance",
+     "cpbl.g.260320017"
+    ],
+    "lineups": [
+     "gamelineups",
+     "cpbl.g.260320017"
+    ],
+    "top_performer": [
+     "gametop_performer",
+     "cpbl.g.260320017"
+    ],
+    "players": [
+     "dataIslandPaths",
+     "cpbl.g.260320017",
+     "players"
+    ],
+    "byline": [
+     "gamebyline",
+     "cpbl.g.260320017"
+    ],
+    "highlight": [
+     "gamehighlight",
+     "cpbl.g.260320017"
+    ],
+    "highlights": [
+     "gamehighlights",
+     "cpbl.g.260320017"
+    ],
+    "live_video": [
+     "gamelive_video",
+     "cpbl.g.260320017"
+    ],
+    "odds": [
+     "gameodds",
+     "cpbl.g.260320017"
+    ],
+    "current_players": [
+     "gamecurrent_players",
+     "cpbl.g.260320017"
+    ],
+    "last_play": [
+     "gamelast_play",
+     "cpbl.g.260320017"
+    ],
+    "series_type": [
+     "gameseries_type",
+     "cpbl.g.260320017"
+    ],
+    "series_status": [
+     "gameseries_status",
+     "cpbl.g.260320017"
+    ],
+    "games": [
+     "dataIslandPaths",
+     "cpbl.g.260320017",
+     "games"
+    ],
+    "series_games": [
+     "gameseries_games",
+     "cpbl.g.260320017"
+    ],
+    "game_details": [
+     "gamegame_details",
+     "cpbl.g.260320017"
+    ],
+    "section_notes": [
+     "gamesection_notes",
+     "cpbl.g.260320017"
+    ],
+    "articles": [
+     "dataIslandPaths",
+     "cpbl.g.260320017",
+     "gamearticles"
+    ],
+    "tweets": [
+     "gametweets",
+     "cpbl.g.260320017"
+    ],
+    "playoff_round": [
+     "gameplayoff_round",
+     "cpbl.g.260320017"
+    ],
+    "media_stream": [
+     "gamemedia_stream",
+     "cpbl.g.260320017"
+    ],
+    "playoff_series_status": [
+     "gameplayoff_series_status",
+     "cpbl.g.260320017"
+    ],
+    "playoff_series_details": [
+     "gameplayoff_series_details",
+     "cpbl.g.260320017"
+    ],
+    "drives": [
+     "gamedrives",
+     "cpbl.g.260320017"
+    ],
+    "user_teams_game": [
+     "gameuser_teams_game",
+     "cpbl.g.260320017"
+    ],
+    "page_metadata": [
+     "gamepage_metadata",
+     "cpbl.g.260320017"
+    ],
+    "penalty_box": [
+     "gamepenalty_box",
+     "cpbl.g.260320017"
+    ],
+    "starting_pitchers": [
+     "gamestarting_pitchers",
+     "cpbl.g.260320017"
+    ],
+    "unrestricted_streams": [
+     "gameunrestricted_streams",
+     "cpbl.g.260320017"
+    ],
+    "tv_details": [
+     "gametv_details",
+     "cpbl.g.260320017"
+    ],
+    "away_seed": null,
+    "home_seed": null
+   }
+  },
+  "teams": {
+   "cpbl.t.2": {
+    "team_id": "cpbl.t.2",
+    "display_name": "統一",
+    "first_name": "統一",
+    "last_name": "獅",
+    "full_name": "統一 獅",
+    "abbr": "統一",
+    "division_id": "1",
+    "division": "ALL",
+    "division_abbr": "",
+    "subdivision_id": null,
+    "subdivision": null,
+    "conference_id": "1",
+    "conference_abbr": "CPBL",
+    "conference_seed": null,
+    "conference": "Chinese Professional Baseball League",
+    "seatgeek_id": null,
+    "sportacularLogo": [
+     "teamsportacularLogo",
+     "cpbl.t.2"
+    ],
+    "sportacularLogoDark": [
+     "teamsportacularLogoDark",
+     "cpbl.t.2"
+    ],
+    "logo": [
+     "teamLogo",
+     "cpbl.t.2"
+    ],
+    "logoDark": [
+     "teamLogoDark",
+     "cpbl.t.2"
+    ],
+    "colorPrimary": [
+     "teamcolorPrimary",
+     "cpbl.t.2"
+    ],
+    "colorSecondary": [
+     "teamColorSecondary",
+     "cpbl.t.2"
+    ],
+    "record": [
+     "teamrecord",
+     "cpbl.t.2"
+    ],
+    "players": [
+     "players_info"
+    ],
+    "rankings": [
+     "teamrankings",
+     "cpbl.t.2"
+    ],
+    "stat_categories": [
+     "team_stats"
+    ],
+    "page_metadata": [
+     "teampage_metadata",
+     "cpbl.t.2"
+    ],
+    "teamHomeLink": "/cpbl/teams/統一/",
+    "teamScheduleLink": "/cpbl/teams/統一/schedule",
+    "conference_position": null,
+    "group_position": "2",
+    "playoff_seed": null
+   },
+   "cpbl.t.6": {
+    "team_id": "cpbl.t.6",
+    "display_name": "樂天",
+    "first_name": "樂天",
+    "last_name": "桃猿",
+    "full_name": "樂天 桃猿",
+    "abbr": "樂天",
+    "division_id": "1",
+    "division": "ALL",
+    "division_abbr": "",
+    "subdivision_id": null,
+    "subdivision": null,
+    "conference_id": "1",
+    "conference_abbr": "CPBL",
+    "conference_seed": null,
+    "conference": "Chinese Professional Baseball League",
+    "seatgeek_id": null,
+    "sportacularLogo": [
+     "teamsportacularLogo",
+     "cpbl.t.6"
+    ],
+    "sportacularLogoDark": [
+     "teamsportacularLogoDark",
+     "cpbl.t.6"
+    ],
+    "logo": [
+     "teamLogo",
+     "cpbl.t.6"
+    ],
+    "logoDark": [
+     "teamLogoDark",
+     "cpbl.t.6"
+    ],
+    "colorPrimary": [
+     "teamcolorPrimary",
+     "cpbl.t.6"
+    ],
+    "colorSecondary": [
+     "teamColorSecondary",
+     "cpbl.t.6"
+    ],
+    "record": [
+     "teamrecord",
+     "cpbl.t.6"
+    ],
+    "players": [
+     "players_info"
+    ],
+    "rankings": [
+     "teamrankings",
+     "cpbl.t.6"
+    ],
+    "stat_categories": [
+     "team_stats"
+    ],
+    "page_metadata": [
+     "teampage_metadata",
+     "cpbl.t.6"
+    ],
+    "teamHomeLink": "/cpbl/teams/樂天/",
+    "teamScheduleLink": "/cpbl/teams/樂天/schedule",
+    "conference_position": null,
+    "group_position": "4",
+    "playoff_seed": null
+   }
+  }
+ },
+ "postponed": {
+  "games": {
+   "cpbl.g.260404015": {
+    "gameid": "cpbl.g.260404015",
+    "global_gameid": null,
+    "start_time": "Sat, 04 Apr 2026 09:05:00 +0000",
+    "is_time_tba": false,
+    "season_phase_id": "season.phase.season",
+    "game_type": "例行賽",
+    "winning_team_id": null,
+    "is_rank_upset": null,
+    "is_spread_upset": null,
+    "outcome_type": null,
+    "home_team_id": "cpbl.t.5",
+    "away_team_id": "cpbl.t.6",
+    "navigation_links": {
+     "boxscore": {
+      "url": "/cpbl/樂天-桃猿-富邦-悍將-260404015/"
+     },
+     "match_page": {
+      "url": "/cpbl/樂天-桃猿-富邦-悍將-260404015/"
+     },
+     "league_home": {
+      "url": "/cpbl/"
+     },
+     "league_scores": {
+      "url": "/cpbl/scoreboard/"
+     }
+    },
+    "sportacular_url": "ysportacular://v2/scores/details?gameId=cpbl.g.260404015&sport=cpbl",
+    "status_display_name": "Ppd",
+    "status_description": "Postponed",
+    "status_type": "status.type.postponed",
+    "total_away_points": "0",
+    "current_period_id": 1,
+    "total_home_points": "0",
+    "total_away_shootout_points": null,
+    "total_home_shootout_points": null,
+    "home_team_stats": [
+     {
+      "runs": "0"
+     },
+     {
+      "hits": "0"
+     },
+     {
+      "errors": "0"
+     }
+    ],
+    "away_team_stats": [
+     {
+      "runs": "0"
+     },
+     {
+      "hits": "0"
+     },
+     {
+      "errors": "0"
+     }
+    ],
+    "game_period_balls": "0",
+    "game_period_strikes": "0",
+    "game_period_outs": "0",
+    "yards_to_endzone": null,
+    "start_yardline": null,
+    "distance": null,
+    "down": null,
+    "team_in_possession": null,
+    "power_play_strength_home": null,
+    "power_play_strength_away": null,
+    "game_time_elapsed": null,
+    "game_time_elapsed_display": null,
+    "inning_status": "top",
+    "away_timeouts": null,
+    "home_timeouts": null,
+    "is_halftime": null,
+    "minimum_periods": 9,
+    "game_periods": [
+     {
+      "period_id": 1,
+      "display_name": "1st",
+      "short_name": 1,
+      "full_name": "1st Inning",
+      "away_points": false,
+      "home_points": false
+     }
+    ],
+    "baserunners": "000",
+    "season": "2026",
+    "subleague": null,
+    "subleague_display_name": null,
+    "agg_score": null,
+    "leg_number": null,
+    "tv_coverage": "",
+    "provider_coverage": null,
+    "seatgeek_id": null,
+    "last_updated": "2026-10-26 17:46:53",
+    "teams": [
+     "dataIslandPaths",
+     "cpbl.g.260404015",
+     "teams"
+    ],
+    "play_by_play": [
+     "gameplay_by_play",
+     "cpbl.g.260404015"
+    ],
+    "pitches": [
+     "gamepitches",
+     "cpbl.g.260404015"
+    ],
+    "at_bat": [
+     "gameat_bat",
+     "cpbl.g.260404015"
+    ],
+    "penalty_summary": [
+     "gamepenalty_summary",
+     "cpbl.g.260404015"
+    ],
+    "scoring_summary": [
+     "gamescoring_summary",
+     "cpbl.g.260404015"
+    ],
+    "stat_categories": [
+     "game_stat_leaders"
+    ],
+    "stadium": [
+     "gamestadium",
+     "cpbl.g.260404015"
+    ],
+    "stadium_id": [
+     "gamestadium_id",
+     "cpbl.g.260404015"
+    ],
+    "stadium_image": [
+     "gamestadium_image",
+     "cpbl.g.260404015"
+    ],
+    "attendance": [
+     "gameattendance",
+     "cpbl.g.260404015"
+    ],
+    "lineups": [
+     "gamelineups",
+     "cpbl.g.260404015"
+    ],
+    "top_performer": [
+     "gametop_performer",
+     "cpbl.g.260404015"
+    ],
+    "players": [
+     "dataIslandPaths",
+     "cpbl.g.260404015",
+     "players"
+    ],
+    "byline": [
+     "gamebyline",
+     "cpbl.g.260404015"
+    ],
+    "highlight": [
+     "gamehighlight",
+     "cpbl.g.260404015"
+    ],
+    "highlights": [
+     "gamehighlights",
+     "cpbl.g.260404015"
+    ],
+    "live_video": [
+     "gamelive_video",
+     "cpbl.g.260404015"
+    ],
+    "odds": [
+     "gameodds",
+     "cpbl.g.260404015"
+    ],
+    "current_players": [
+     "gamecurrent_players",
+     "cpbl.g.260404015"
+    ],
+    "last_play": [
+     "gamelast_play",
+     "cpbl.g.260404015"
+    ],
+    "series_type": [
+     "gameseries_type",
+     "cpbl.g.260404015"
+    ],
+    "series_status": [
+     "gameseries_status",
+     "cpbl.g.260404015"
+    ],
+    "games": [
+     "dataIslandPaths",
+     "cpbl.g.260404015",
+     "games"
+    ],
+    "series_games": [
+     "gameseries_games",
+     "cpbl.g.260404015"
+    ],
+    "game_details": [
+     "gamegame_details",
+     "cpbl.g.260404015"
+    ],
+    "section_notes": [
+     "gamesection_notes",
+     "cpbl.g.260404015"
+    ],
+    "articles": [
+     "dataIslandPaths",
+     "cpbl.g.260404015",
+     "gamearticles"
+    ],
+    "tweets": [
+     "gametweets",
+     "cpbl.g.260404015"
+    ],
+    "playoff_round": [
+     "gameplayoff_round",
+     "cpbl.g.260404015"
+    ],
+    "media_stream": [
+     "gamemedia_stream",
+     "cpbl.g.260404015"
+    ],
+    "playoff_series_status": [
+     "gameplayoff_series_status",
+     "cpbl.g.260404015"
+    ],
+    "playoff_series_details": [
+     "gameplayoff_series_details",
+     "cpbl.g.260404015"
+    ],
+    "drives": [
+     "gamedrives",
+     "cpbl.g.260404015"
+    ],
+    "user_teams_game": [
+     "gameuser_teams_game",
+     "cpbl.g.260404015"
+    ],
+    "page_metadata": [
+     "gamepage_metadata",
+     "cpbl.g.260404015"
+    ],
+    "penalty_box": [
+     "gamepenalty_box",
+     "cpbl.g.260404015"
+    ],
+    "starting_pitchers": [
+     "gamestarting_pitchers",
+     "cpbl.g.260404015"
+    ],
+    "unrestricted_streams": [
+     "gameunrestricted_streams",
+     "cpbl.g.260404015"
+    ],
+    "tv_details": [
+     "gametv_details",
+     "cpbl.g.260404015"
+    ],
+    "away_seed": null,
+    "home_seed": null
+   }
+  },
+  "teams": {
+   "cpbl.t.5": {
+    "team_id": "cpbl.t.5",
+    "display_name": "富邦",
+    "first_name": "富邦",
+    "last_name": "悍將",
+    "full_name": "富邦 悍將",
+    "abbr": "富邦",
+    "division_id": "1",
+    "division": "ALL",
+    "division_abbr": "",
+    "subdivision_id": null,
+    "subdivision": null,
+    "conference_id": "1",
+    "conference_abbr": "CPBL",
+    "conference_seed": null,
+    "conference": "Chinese Professional Baseball League",
+    "seatgeek_id": null,
+    "sportacularLogo": [
+     "teamsportacularLogo",
+     "cpbl.t.5"
+    ],
+    "sportacularLogoDark": [
+     "teamsportacularLogoDark",
+     "cpbl.t.5"
+    ],
+    "logo": [
+     "teamLogo",
+     "cpbl.t.5"
+    ],
+    "logoDark": [
+     "teamLogoDark",
+     "cpbl.t.5"
+    ],
+    "colorPrimary": [
+     "teamcolorPrimary",
+     "cpbl.t.5"
+    ],
+    "colorSecondary": [
+     "teamColorSecondary",
+     "cpbl.t.5"
+    ],
+    "record": [
+     "teamrecord",
+     "cpbl.t.5"
+    ],
+    "players": [
+     "players_info"
+    ],
+    "rankings": [
+     "teamrankings",
+     "cpbl.t.5"
+    ],
+    "stat_categories": [
+     "team_stats"
+    ],
+    "page_metadata": [
+     "teampage_metadata",
+     "cpbl.t.5"
+    ],
+    "teamHomeLink": "/cpbl/teams/富邦/",
+    "teamScheduleLink": "/cpbl/teams/富邦/schedule",
+    "conference_position": null,
+    "group_position": "3",
+    "playoff_seed": null
+   },
+   "cpbl.t.6": {
+    "team_id": "cpbl.t.6",
+    "display_name": "樂天",
+    "first_name": "樂天",
+    "last_name": "桃猿",
+    "full_name": "樂天 桃猿",
+    "abbr": "樂天",
+    "division_id": "1",
+    "division": "ALL",
+    "division_abbr": "",
+    "subdivision_id": null,
+    "subdivision": null,
+    "conference_id": "1",
+    "conference_abbr": "CPBL",
+    "conference_seed": null,
+    "conference": "Chinese Professional Baseball League",
+    "seatgeek_id": null,
+    "sportacularLogo": [
+     "teamsportacularLogo",
+     "cpbl.t.6"
+    ],
+    "sportacularLogoDark": [
+     "teamsportacularLogoDark",
+     "cpbl.t.6"
+    ],
+    "logo": [
+     "teamLogo",
+     "cpbl.t.6"
+    ],
+    "logoDark": [
+     "teamLogoDark",
+     "cpbl.t.6"
+    ],
+    "colorPrimary": [
+     "teamcolorPrimary",
+     "cpbl.t.6"
+    ],
+    "colorSecondary": [
+     "teamColorSecondary",
+     "cpbl.t.6"
+    ],
+    "record": [
+     "teamrecord",
+     "cpbl.t.6"
+    ],
+    "players": [
+     "players_info"
+    ],
+    "rankings": [
+     "teamrankings",
+     "cpbl.t.6"
+    ],
+    "stat_categories": [
+     "team_stats"
+    ],
+    "page_metadata": [
+     "teampage_metadata",
+     "cpbl.t.6"
+    ],
+    "teamHomeLink": "/cpbl/teams/樂天/",
+    "teamScheduleLink": "/cpbl/teams/樂天/schedule",
+    "conference_position": null,
+    "group_position": "4",
+    "playoff_seed": null
+   }
+  }
+ }
+}

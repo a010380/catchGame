@@ -1,0 +1,196 @@
+{
+ "data": {
+  "schedule": {
+   "events": [
+    {
+     "startTime": "2025-10-15T11:00:00Z",
+     "state": "completed",
+     "type": "match",
+     "blockName": "Swiss",
+     "league": {
+      "name": "Worlds",
+      "slug": "worlds"
+     },
+     "match": {
+      "id": "113475798006664582",
+      "flags": [
+       "hasVod"
+      ],
+      "teams": [
+       {
+        "name": "TOP ESPORTS",
+        "code": "TES",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "result": {
+         "outcome": "win",
+         "gameWins": 1
+        },
+        "record": {
+         "wins": 3,
+         "losses": 2
+        }
+       },
+       {
+        "name": "G2 Esports",
+        "code": "G2",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "result": {
+         "outcome": "loss",
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 3,
+         "losses": 1
+        }
+       }
+      ],
+      "strategy": {
+       "type": "bestOf",
+       "count": 1
+      }
+     }
+    },
+    {
+     "startTime": "2025-10-15T12:00:00Z",
+     "state": "completed",
+     "type": "match",
+     "blockName": "Swiss",
+     "league": {
+      "name": "Worlds",
+      "slug": "worlds"
+     },
+     "match": {
+      "id": "113475798006664584",
+      "flags": [
+       "hasVod"
+      ],
+      "teams": [
+       {
+        "name": "PSG Talon",
+        "code": "PSG",
+        "image": "http://static.lolesports.com/teams/1752559016251_PSG_TALON_COLOR.png",
+        "result": {
+         "outcome": "loss",
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 0,
+         "losses": 3
+        }
+       },
+       {
+        "name": "Gen.G Esports",
+        "code": "GEN",
+        "image": "http://static.lolesports.com/teams/1773829250929_GENGLOGO_GOLD.png",
+        "result": {
+         "outcome": "win",
+         "gameWins": 1
+        },
+        "record": {
+         "wins": 3,
+         "losses": 1
+        }
+       }
+      ],
+      "strategy": {
+       "type": "bestOf",
+       "count": 1
+      }
+     }
+    },
+    {
+     "startTime": "2026-10-28T20:00:00Z",
+     "state": "unstarted",
+     "type": "match",
+     "blockName": "Swiss",
+     "league": {
+      "name": "Worlds",
+      "slug": "worlds"
+     },
+     "match": {
+      "id": "115660540726095061",
+      "flags": [],
+      "teams": [
+       {
+        "name": "Movistar KOI",
+        "code": "MKOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "result": {
+         "outcome": null,
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 2,
+         "losses": 1
+        }
+       },
+       {
+        "name": "T1",
+        "code": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "result": {
+         "outcome": null,
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 2,
+         "losses": 1
+        }
+       }
+      ],
+      "strategy": {
+       "type": "bestOf",
+       "count": 3
+      }
+     }
+    },
+    {
+     "startTime": "2026-10-28T23:00:00Z",
+     "state": "unstarted",
+     "type": "match",
+     "blockName": "Swiss",
+     "league": {
+      "name": "Worlds",
+      "slug": "worlds"
+     },
+     "match": {
+      "id": "115660540726095065",
+      "flags": [],
+      "teams": [
+       {
+        "name": "LYON",
+        "code": "LYON",
+        "image": "http://static.lolesports.com/teams/1743717443673_isotypelyon-03.png",
+        "result": {
+         "outcome": null,
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 2,
+         "losses": 1
+        }
+       },
+       {
+        "name": "Invictus Gaming",
+        "code": "IG",
+        "image": "http://static.lolesports.com/teams/1634762917340_300px-Invictus_Gaming_logo.png",
+        "result": {
+         "outcome": null,
+         "gameWins": 0
+        },
+        "record": {
+         "wins": 2,
+         "losses": 1
+        }
+       }
+      ],
+      "strategy": {
+       "type": "bestOf",
+       "count": 3
+      }
+     }
+    }
+   ]
+  }
+ }
+}
