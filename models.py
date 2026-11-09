@@ -74,3 +74,27 @@ class Game:
             return True
         haystack = " ".join(self._tags).lower()
         return any(t.strip().lower() in haystack for t in teams if t.strip())
+
+
+@dataclass
+class StandingRow:
+    """戰績表的一列（一支球隊）。"""
+    team: str
+    wins: int
+    losses: int
+    ties: int = 0          # NFL 的和局；足球是「和」
+    win_pct: float = 0.0
+    games_behind: str = "" # 勝差，領先者是 "-"
+    streak: str = ""       # 連勝連敗，例如 W3 / L1
+    played: int = 0        # 足球用：已賽場數
+    points: int = 0        # 足球用：積分
+    goal_diff: str = ""    # 足球用：淨勝球，帶正負號
+    rank: int = 0          # 足球用：官方排名
+
+
+@dataclass
+class StandingTable:
+    """一個分組的戰績表。足球沒有分區，conference / division 都留空。"""
+    conference: str
+    division: str
+    rows: list[StandingRow]

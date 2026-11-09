@@ -10,9 +10,11 @@ from datetime import date, datetime, timezone
 
 import requests
 
-from models import Game
+from models import Game, StandingRow, StandingTable
 
 BASE = "https://site.api.espn.com/apis/site/v2/sports"
+# 戰績用的是另一組路徑（apis/v2，不是 apis/site/v2），scoreboard 的那組沒有戰績
+STANDINGS_BASE = "https://site.api.espn.com/apis/v2/sports"
 TIMEOUT = 25
 RETRIES = 3
 
@@ -195,3 +197,105 @@ def _to_game(league: dict, event: dict) -> Game:
         note=note,
         _tags=_tags(home) + _tags(away),
     )
+
+
+# ---------------------------------------------------------------- 戰績
+
+# 聯盟 / 分區名稱的中文。沒列到的就照 ESPN 原文顯示，不會壞。
+CONFERENCE_NAMES = {
+    "Eastern Conference": "東區",
+    "Western Conference": "西區",
+    "American Football Conference": "AFC",
+    "National Football Conference": "NFC",
+    "American League": "美聯",
+    "National League": "國聯",
+}
+DIVISION_NAMES = {
+    # NBA
+    "Atlantic": "大西洋組", "Central": "中央組", "Southeast": "東南組",
+    "Northwest": "西北組", "Pacific": "太平洋組", "Southwest": "西南組",
+    # NFL
+    "AFC East": "東區", "AFC North": "北區", "AFC South": "南區", "AFC West": "西區",
+    "NFC East": "東區", "NFC North": "北區", "NFC South": "南區", "NFC West": "西區",
+    # MLB
+    "American League East": "東區", "American League Central": "中區",
+    "American League West": "西區", "National League East": "東區",
+    "National League Central": "中區", "National League West": "西區",
+}
+
+
+def fetch_standings(league: dict) -> list[StandingTable]:
+    """抓戰績，回傳每個分組一張表。
+
+    level=3 會把美國職業運動拆到最細的分組（NBA 六組、NFL 八組、MLB 六區）；
+    足球沒有分組，ESPN 不管 level 都只回一張 20 隊的積分榜。
+    """
+    payload = _get(f"{STANDINGS_BASE}/{league['path']}/standings?level=3")
+    soccer = league["path"].startswith("soccer/")
+
+    tables: list[StandingTable] = []
+    for conf in payload.get("children") or []:
+        divisions = conf.get("children") or [conf]  # 足球沒有下一層
+        for div in divisions:
+            entries = (div.get("standings") or {}).get("entries") or []
+            rows = [_standing_row(e) for e in entries]
+            if not rows:
+                continue
+            if soccer:
+                tables.append(StandingTable("", "", _sort_table(rows)))
+            else:
+                tables.append(StandingTable(
+                    conference=CONFERENCE_NAMES.get(conf.get("name"), conf.get("name") or ""),
+                    division=DIVISION_NAMES.get(div.get("name"), div.get("name") or ""),
+                    rows=_sort_division(rows),
+                ))
+    return tables
+
+
+def _standing_row(entry: dict) -> StandingRow:
+    stats = {s.get("name"): s for s in entry.get("stats") or [] if s.get("name")}
+
+    def num(name: str) -> float:
+        value = (stats.get(name) or {}).get("value")
+        return float(value) if value is not None else 0.0
+
+    def text(name: str) -> str:
+        return str((stats.get(name) or {}).get("displayValue") or "")
+
+    team = entry.get("team") or {}
+    return StandingRow(
+        team=team.get("shortDisplayName") or team.get("displayName") or "?",
+        wins=int(num("wins")),
+        losses=int(num("losses")),
+        ties=int(num("ties")),
+        win_pct=num("winPercent"),
+        games_behind=text("gamesBehind"),
+        streak=text("streak"),
+        played=int(num("gamesPlayed")),
+        points=int(num("points")),
+        goal_diff=text("pointDifferential"),
+        rank=int(num("rank")),
+    )
+
+
+def _sort_division(rows: list[StandingRow]) -> list[StandingRow]:
+    """ESPN 回的順序沒有排過（大西洋組第一筆可能是墊底的球隊），自己排。
+
+    勝率高的在前；勝率一樣時勝場多的在前（打比較多場還維持同樣勝率）。
+    官方的同勝率破除規則（對戰成績、分區戰績…）這裡不處理。
+    """
+    return sorted(rows, key=lambda r: (-r.win_pct, -r.wins, r.losses))
+
+
+def _sort_table(rows: list[StandingRow]) -> list[StandingRow]:
+    """足球照 ESPN 給的官方排名；沒有排名時退回積分、淨勝球。"""
+    if all(r.rank for r in rows):
+        return sorted(rows, key=lambda r: r.rank)
+
+    def gd(row: StandingRow) -> int:
+        try:
+            return int(row.goal_diff.replace("+", ""))
+        except ValueError:
+            return 0
+
+    return sorted(rows, key=lambda r: (-r.points, -gd(r), -r.wins))

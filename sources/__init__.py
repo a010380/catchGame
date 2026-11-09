@@ -6,7 +6,7 @@
 
 from datetime import date
 
-from models import Game
+from models import Game, StandingTable
 from sources import espn, lolesports, yahoo
 
 _ADAPTERS = {
@@ -14,6 +14,21 @@ _ADAPTERS = {
     "lolesports": lolesports.fetch,
     "yahoo": yahoo.fetch,
 }
+
+
+# 有提供戰績的資料源。CPBL（Yahoo 沒有戰績端點）與電競（瑞士輪 / 淘汰賽，
+# 沒有傳統戰績表）不在這裡。
+_STANDINGS = {
+    "espn": espn.fetch_standings,
+}
+
+
+def supports_standings(league: dict) -> bool:
+    return league.get("standings", False) and league.get("source") in _STANDINGS
+
+
+def fetch_standings(league: dict) -> list[StandingTable]:
+    return _STANDINGS[league["source"]](league)
 
 
 def fetch(league: dict, start: date, end: date) -> list[Game]:

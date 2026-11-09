@@ -23,7 +23,7 @@ import icsfile
 import notify
 import sources
 import state
-from models import Game
+from models import Game, StandingTable
 
 CALENDAR_PATH = Path(__file__).parent / "docs" / "calendar.ics"
 
@@ -429,6 +429,129 @@ def _push_results(data: dict, games: list[Game], first_run: bool) -> None:
     for game in voided:
         state.mark(data, "voided", game.uid)
     print(f"已推播 {len(pending)} 場賽果、{len(voided)} 場延賽／取消。")
+
+    _push_standings(pending, games)
+
+
+# ---------------------------------------------------------------- 戰績
+
+
+def _push_standings(pending: list[Game], games: list[Game]) -> None:
+    """賽果之後，替「這一輪剛打完」的聯賽另外推一則戰績。
+
+    只看這次有新賽果的聯賽：沒有新賽果，戰績就不會變，不用再推一次。
+    戰績失敗不影響賽果 —— 賽果已經送出也記錄了，這裡爆掉只印警告。
+    """
+    ready = _leagues_ready_for_standings(pending, games)
+    if not ready:
+        return
+
+    blocks = []
+    for league in ready:
+        try:
+            tables = sources.fetch_standings(league)
+        except Exception as err:
+            print(f"::warning::{league['name']} 戰績抓取失敗：{err}")
+            continue
+        if tables:
+            blocks.append(_standings_block(league, tables))
+    if not blocks:
+        return
+
+    try:
+        for message in _pack(["<b>📊 戰績</b>"] + blocks):
+            notify.send(message)
+    except notify.NotConfigured:
+        raise
+    except Exception as err:
+        print(f"::warning::戰績推播失敗：{err}")
+        return
+    print(f"已推播戰績：{'、'.join(lg['name'] for lg in ready)}")
+
+
+def _leagues_ready_for_standings(pending: list[Game], games: list[Game]) -> list[dict]:
+    """這次有新賽果、而且「這一輪」已經打完的聯賽。
+
+    打完的定義：這個聯賽沒有比賽在進行中，接下來 STANDINGS_QUIET_HOURS 小時內
+    也沒有比賽要開打。NBA 一個比賽日的十幾場是陸續結束的，不等最後一場打完，
+    一個早上就會收到好幾則只差一兩場的戰績。
+    """
+    now = datetime.now(timezone.utc)
+    horizon = now + timedelta(hours=config.STANDINGS_QUIET_HOURS)
+    with_results = {g.league_key for g in pending}
+
+    ready = []
+    for league in config.LEAGUES:
+        key = league["key"]
+        if key not in with_results or not sources.supports_standings(league):
+            continue
+        busy = any(
+            g.league_key == key
+            and (g.state == "in" or (g.state == "pre" and g.start <= horizon))
+            for g in games
+        )
+        if not busy:
+            ready.append(league)
+    return ready
+
+
+# 隊名欄寬。<pre> 是等寬字，手機上一行大約 35-40 字，再寬就會折行。
+_TEAM_WIDTH = 13
+
+
+def _standings_block(league: dict, tables: list[StandingTable]) -> str:
+    """一個聯賽的戰績，整段放在 <pre> 裡讓欄位對齊。"""
+    if league["path"].startswith("soccer/"):
+        lines = [f"{'':3}{'':{_TEAM_WIDTH}}{'P':>3}{'W-D-L':>9}{'GD':>5}{'Pts':>5}"]
+        for row in tables[0].rows:
+            wdl = f"{row.wins}-{row.ties}-{row.losses}"
+            lines.append(
+                f"{row.rank or '':>2} {row.team[:_TEAM_WIDTH]:<{_TEAM_WIDTH}}"
+                f"{row.played:>3}{wdl:>9}{row.goal_diff:>5}{row.points:>5}"
+            )
+    else:
+        # 只有真的出現和局（NFL 偶爾會有）才多一欄，不然 W-L-T 的 -0 只是雜訊
+        has_ties = any(r.ties for t in tables for r in t.rows)
+        record_label = "W-L-T" if has_ties else "W-L"
+        lines = [f"{'':2}{'':{_TEAM_WIDTH}}{record_label:>8}{'GB':>5}{'STRK':>5}"]
+        current_conf = None
+        for table in tables:
+            if table.conference != current_conf:
+                current_conf = table.conference
+                lines.append(table.conference)
+            lines.append(f" {table.division}")
+            for row in table.rows:
+                record = f"{row.wins}-{row.losses}"
+                if has_ties:
+                    record += f"-{row.ties}"
+                lines.append(
+                    f"{'':2}{row.team[:_TEAM_WIDTH]:<{_TEAM_WIDTH}}"
+                    f"{record:>8}{row.games_behind:>5}{row.streak:>5}"
+                )
+
+    body = notify.esc("\n".join(lines))
+    return (f"{league.get('emoji', '')} <b>{notify.esc(league['name'])}</b>\n"
+            f"<pre>{body}</pre>")
+
+
+def _pack(blocks: list[str]) -> list[str]:
+    """把多段併成盡量少的訊息，但絕不從一段的中間切開。
+
+    notify.send 遇到太長的訊息會按行切，那會把 <pre>...</pre> 切成兩半，
+    Telegram 收到不成對的標籤會整則拒收。所以這裡先以「一個聯賽」為單位裝箱。
+    """
+    messages: list[str] = []
+    current = ""
+    for block in blocks:
+        candidate = f"{current}\n\n{block}" if current else block
+        if current and len(candidate) > notify.MAX_LEN:
+            messages.append(current)
+            current = block
+        else:
+            current = candidate
+    if current:
+        messages.append(current)
+    return messages
 
 
 def _result_section(title: str, games: list[Game], describe) -> str:

@@ -47,6 +47,14 @@ REMIND_CATCHUP_MINUTES = 60
 # 不論 GitHub 遲到 0 到 2 小時，摘要都會落在這個時間之後、且只送一次。
 DIGEST_NOT_BEFORE = "06:30"
 
+# 戰績推播：一個聯賽「這一輪」打完後，在賽果之後另外推一則戰績。
+#
+# 怎麼判斷「這一輪打完了」：這個聯賽沒有比賽在進行中，而且接下來這麼多小時內
+# 也沒有比賽要開打。NBA 一個比賽日的十幾場在台灣上午陸續結束，最後一場打完才推；
+# 英超週末的三個時段之間只隔 2-3 小時，所以會等到最後一個時段打完才推。
+# 不這樣做的話，NBA 一個早上會收到好幾則只差一兩場的戰績。
+STANDINGS_QUIET_HOURS = 3
+
 # 賽果推播已送出的紀錄保留幾天（避免 state.json 無限長大）
 STATE_RETENTION_DAYS = 14
 
@@ -70,6 +78,7 @@ FAIL_STREAK_ALERT = 3
 #   path           espn 與 yahoo 的路徑片段（lolesports 改用 league_id）
 #   league_id      lolesports 專用，聯賽的數字 ID
 #   duration_min   行事曆上這場比賽要佔多久（ESPN 不提供結束時間，只能估）
+#   standings      True = 這個聯賽一輪比賽打完後推一則戰績（目前只有 ESPN 的聯賽支援）
 #   teams          只關注特定球隊時填入隊名或縮寫（例：["NYY", "Dodgers"]）
 #                  留空 [] = 該聯賽全部比賽都要
 LEAGUES = [
@@ -80,6 +89,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "baseball/mlb",
+        "standings": True,
         "duration_min": 210,
         "teams": [],
     },
@@ -91,6 +101,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "basketball/nba",
+        "standings": True,
         "duration_min": 150,
         "teams": [],
     },
@@ -101,6 +112,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "football/nfl",
+        "standings": True,
         "duration_min": 195,
         "teams": [],
     },
@@ -111,6 +123,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "soccer/eng.1",
+        "standings": True,
         "duration_min": 120,
         "teams": [],
     },
@@ -121,6 +134,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "soccer/esp.1",
+        "standings": True,
         "duration_min": 120,
         "teams": [],
     },

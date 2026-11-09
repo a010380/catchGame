@@ -1,0 +1,3750 @@
+{
+ "nba": {
+  "name": "National Basketball Association",
+  "children": [
+   {
+    "name": "Eastern Conference",
+    "children": [
+     {
+      "name": "Atlantic",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Nets",
+          "displayName": "Brooklyn Nets",
+          "abbreviation": "BKN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 6.0,
+           "displayValue": "6"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -53.0,
+           "displayValue": "-53"
+          },
+          {
+           "name": "points",
+           "value": -2.5,
+           "displayValue": "-2.5"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.22222222,
+           "displayValue": ".222"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Knicks",
+          "displayName": "New York Knicks",
+          "abbreviation": "NY"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 51.0,
+           "displayValue": "+51"
+          },
+          {
+           "name": "points",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "streak",
+           "value": 3.0,
+           "displayValue": "W3"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Raptors",
+          "displayName": "Toronto Raptors",
+          "abbreviation": "TOR"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 49.0,
+           "displayValue": "+49"
+          },
+          {
+           "name": "points",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Celtics",
+          "displayName": "Boston Celtics",
+          "abbreviation": "BOS"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 87.0,
+           "displayValue": "+87"
+          },
+          {
+           "name": "points",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.7777778,
+           "displayValue": ".778"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "76ers",
+          "displayName": "Philadelphia 76ers",
+          "abbreviation": "PHI"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 34.0,
+           "displayValue": "+34"
+          },
+          {
+           "name": "points",
+           "value": 3.5,
+           "displayValue": "3.5"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.8181818,
+           "displayValue": ".818"
+          },
+          {
+           "name": "wins",
+           "value": 9.0,
+           "displayValue": "9"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "Central",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Bulls",
+          "displayName": "Chicago Bulls",
+          "abbreviation": "CHI"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "losses",
+           "value": 8.0,
+           "displayValue": "8"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -150.0,
+           "displayValue": "-150"
+          },
+          {
+           "name": "points",
+           "value": -3.5,
+           "displayValue": "-3.5"
+          },
+          {
+           "name": "streak",
+           "value": -7.0,
+           "displayValue": "L7"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.11111111,
+           "displayValue": ".111"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Bucks",
+          "displayName": "Milwaukee Bucks",
+          "abbreviation": "MIL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "losses",
+           "value": 8.0,
+           "displayValue": "8"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -112.0,
+           "displayValue": "-112"
+          },
+          {
+           "name": "points",
+           "value": -3.5,
+           "displayValue": "-3.5"
+          },
+          {
+           "name": "streak",
+           "value": -5.0,
+           "displayValue": "L5"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.11111111,
+           "displayValue": ".111"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Pacers",
+          "displayName": "Indiana Pacers",
+          "abbreviation": "IND"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.5,
+           "displayValue": "3.5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -39.0,
+           "displayValue": "-39"
+          },
+          {
+           "name": "points",
+           "value": -2.0,
+           "displayValue": "-2.0"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.3,
+           "displayValue": ".300"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Cavaliers",
+          "displayName": "Cleveland Cavaliers",
+          "abbreviation": "CLE"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 29.0,
+           "displayValue": "+29"
+          },
+          {
+           "name": "points",
+           "value": 0.0,
+           "displayValue": "0.0"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5,
+           "displayValue": ".500"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Pistons",
+          "displayName": "Detroit Pistons",
+          "abbreviation": "DET"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 70.0,
+           "displayValue": "+70"
+          },
+          {
+           "name": "points",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6666667,
+           "displayValue": ".667"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "Southeast",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Magic",
+          "displayName": "Orlando Magic",
+          "abbreviation": "ORL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -83.0,
+           "displayValue": "-83"
+          },
+          {
+           "name": "points",
+           "value": -2.5,
+           "displayValue": "-2.5"
+          },
+          {
+           "name": "streak",
+           "value": -4.0,
+           "displayValue": "L4"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.22222222,
+           "displayValue": ".222"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Hornets",
+          "displayName": "Charlotte Hornets",
+          "abbreviation": "CHA"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.5,
+           "displayValue": "3.5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -139.0,
+           "displayValue": "-139"
+          },
+          {
+           "name": "points",
+           "value": -2.0,
+           "displayValue": "-2.0"
+          },
+          {
+           "name": "streak",
+           "value": -6.0,
+           "displayValue": "L6"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.3,
+           "displayValue": ".300"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Heat",
+          "displayName": "Miami Heat",
+          "abbreviation": "MIA"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 6.0,
+           "displayValue": "6"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -59.0,
+           "displayValue": "-59"
+          },
+          {
+           "name": "points",
+           "value": -1.5,
+           "displayValue": "-1.5"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.33333334,
+           "displayValue": ".333"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Wizards",
+          "displayName": "Washington Wizards",
+          "abbreviation": "WSH"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "losses",
+           "value": 6.0,
+           "displayValue": "6"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -47.0,
+           "displayValue": "-47"
+          },
+          {
+           "name": "points",
+           "value": -1.0,
+           "displayValue": "-1.0"
+          },
+          {
+           "name": "streak",
+           "value": -3.0,
+           "displayValue": "L3"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.4,
+           "displayValue": ".400"
+          },
+          {
+           "name": "wins",
+           "value": 4.0,
+           "displayValue": "4"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Hawks",
+          "displayName": "Atlanta Hawks",
+          "abbreviation": "ATL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 35.0,
+           "displayValue": "+35"
+          },
+          {
+           "name": "points",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "streak",
+           "value": 4.0,
+           "displayValue": "W4"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6363636,
+           "displayValue": ".636"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "name": "Western Conference",
+    "children": [
+     {
+      "name": "Northwest",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Jazz",
+          "displayName": "Utah Jazz",
+          "abbreviation": "UTAH"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 6.5,
+           "displayValue": "6.5"
+          },
+          {
+           "name": "losses",
+           "value": 8.0,
+           "displayValue": "8"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -102.0,
+           "displayValue": "-102"
+          },
+          {
+           "name": "points",
+           "value": -3.5,
+           "displayValue": "-3.5"
+          },
+          {
+           "name": "streak",
+           "value": -7.0,
+           "displayValue": "L7"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.11111111,
+           "displayValue": ".111"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Nuggets",
+          "displayName": "Denver Nuggets",
+          "abbreviation": "DEN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 17.0,
+           "displayValue": "+17"
+          },
+          {
+           "name": "points",
+           "value": 1.0,
+           "displayValue": "1.0"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.625,
+           "displayValue": ".625"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Trail Blazers",
+          "displayName": "Portland Trail Blazers",
+          "abbreviation": "POR"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 50.0,
+           "displayValue": "+50"
+          },
+          {
+           "name": "points",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6666667,
+           "displayValue": ".667"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Timberwolves",
+          "displayName": "Minnesota Timberwolves",
+          "abbreviation": "MIN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 107.0,
+           "displayValue": "+107"
+          },
+          {
+           "name": "points",
+           "value": 2.0,
+           "displayValue": "2.0"
+          },
+          {
+           "name": "streak",
+           "value": 3.0,
+           "displayValue": "W3"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.7,
+           "displayValue": ".700"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Thunder",
+          "displayName": "Oklahoma City Thunder",
+          "abbreviation": "OKC"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 80.0,
+           "displayValue": "+80"
+          },
+          {
+           "name": "points",
+           "value": 3.0,
+           "displayValue": "3.0"
+          },
+          {
+           "name": "streak",
+           "value": 4.0,
+           "displayValue": "W4"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.8,
+           "displayValue": ".800"
+          },
+          {
+           "name": "wins",
+           "value": 8.0,
+           "displayValue": "8"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "Pacific",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Kings",
+          "displayName": "Sacramento Kings",
+          "abbreviation": "SAC"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "losses",
+           "value": 8.0,
+           "displayValue": "8"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -127.0,
+           "displayValue": "-127"
+          },
+          {
+           "name": "points",
+           "value": -3.5,
+           "displayValue": "-3.5"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.11111111,
+           "displayValue": ".111"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Clippers",
+          "displayName": "LA Clippers",
+          "abbreviation": "LAC"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 6.5,
+           "displayValue": "6.5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -52.0,
+           "displayValue": "-52"
+          },
+          {
+           "name": "points",
+           "value": -3.0,
+           "displayValue": "-3.0"
+          },
+          {
+           "name": "streak",
+           "value": -7.0,
+           "displayValue": "L7"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.125,
+           "displayValue": ".125"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Suns",
+          "displayName": "Phoenix Suns",
+          "abbreviation": "PHX"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 4.5,
+           "displayValue": "4.5"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -50.0,
+           "displayValue": "-50"
+          },
+          {
+           "name": "points",
+           "value": -1.0,
+           "displayValue": "-1.0"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.375,
+           "displayValue": ".375"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Warriors",
+          "displayName": "Golden State Warriors",
+          "abbreviation": "GS"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 50.0,
+           "displayValue": "+50"
+          },
+          {
+           "name": "points",
+           "value": 2.0,
+           "displayValue": "2.0"
+          },
+          {
+           "name": "streak",
+           "value": 7.0,
+           "displayValue": "W7"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.7,
+           "displayValue": ".700"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Lakers",
+          "displayName": "Los Angeles Lakers",
+          "abbreviation": "LAL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 82.0,
+           "displayValue": "+82"
+          },
+          {
+           "name": "points",
+           "value": 3.5,
+           "displayValue": "3.5"
+          },
+          {
+           "name": "streak",
+           "value": 5.0,
+           "displayValue": "W5"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.8181818,
+           "displayValue": ".818"
+          },
+          {
+           "name": "wins",
+           "value": 9.0,
+           "displayValue": "9"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "Southwest",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Pelicans",
+          "displayName": "New Orleans Pelicans",
+          "abbreviation": "NO"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.5,
+           "displayValue": "3.5"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 13.0,
+           "displayValue": "+13"
+          },
+          {
+           "name": "points",
+           "value": -0.5,
+           "displayValue": "-0.5"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.44444445,
+           "displayValue": ".444"
+          },
+          {
+           "name": "wins",
+           "value": 4.0,
+           "displayValue": "4"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Mavericks",
+          "displayName": "Dallas Mavericks",
+          "abbreviation": "DAL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 11.0,
+           "displayValue": "+11"
+          },
+          {
+           "name": "points",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Grizzlies",
+          "displayName": "Memphis Grizzlies",
+          "abbreviation": "MEM"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 55.0,
+           "displayValue": "+55"
+          },
+          {
+           "name": "points",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "streak",
+           "value": -3.0,
+           "displayValue": "L3"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6666667,
+           "displayValue": ".667"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Rockets",
+          "displayName": "Houston Rockets",
+          "abbreviation": "HOU"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 90.0,
+           "displayValue": "+90"
+          },
+          {
+           "name": "points",
+           "value": 2.0,
+           "displayValue": "2.0"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.7,
+           "displayValue": ".700"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Spurs",
+          "displayName": "San Antonio Spurs",
+          "abbreviation": "SA"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 103.0,
+           "displayValue": "+103"
+          },
+          {
+           "name": "points",
+           "value": 3.0,
+           "displayValue": "3.0"
+          },
+          {
+           "name": "streak",
+           "value": 8.0,
+           "displayValue": "W8"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.8,
+           "displayValue": ".800"
+          },
+          {
+           "name": "wins",
+           "value": 8.0,
+           "displayValue": "8"
+          }
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "nfl": {
+  "name": "National Football League",
+  "children": [
+   {
+    "name": "American Football Conference",
+    "children": [
+     {
+      "name": "AFC East",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Bills",
+          "displayName": "Buffalo Bills",
+          "abbreviation": "BUF"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 52.0,
+           "displayValue": "+52"
+          },
+          {
+           "name": "streak",
+           "value": 3.0,
+           "displayValue": "W3"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.85714287,
+           "displayValue": ".857"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Patriots",
+          "displayName": "New England Patriots",
+          "abbreviation": "NE"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 4.0,
+           "displayValue": "+4"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Jets",
+          "displayName": "New York Jets",
+          "abbreviation": "NYJ"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -41.0,
+           "displayValue": "-41"
+          },
+          {
+           "name": "streak",
+           "value": -4.0,
+           "displayValue": "L4"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.22222222,
+           "displayValue": ".222"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Dolphins",
+          "displayName": "Miami Dolphins",
+          "abbreviation": "MIA"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 5.5,
+           "displayValue": "5.5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -74.0,
+           "displayValue": "-74"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.125,
+           "displayValue": ".125"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "AFC North",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Steelers",
+          "displayName": "Pittsburgh Steelers",
+          "abbreviation": "PIT"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 36.0,
+           "displayValue": "+36"
+          },
+          {
+           "name": "streak",
+           "value": 4.0,
+           "displayValue": "W4"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Bengals",
+          "displayName": "Cincinnati Bengals",
+          "abbreviation": "CIN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 65.0,
+           "displayValue": "+65"
+          },
+          {
+           "name": "streak",
+           "value": 4.0,
+           "displayValue": "W4"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Browns",
+          "displayName": "Cleveland Browns",
+          "abbreviation": "CLE"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.5,
+           "displayValue": "1.5"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -35.0,
+           "displayValue": "-35"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Ravens",
+          "displayName": "Baltimore Ravens",
+          "abbreviation": "BAL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -47.0,
+           "displayValue": "-47"
+          },
+          {
+           "name": "streak",
+           "value": -4.0,
+           "displayValue": "L4"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.44444445,
+           "displayValue": ".444"
+          },
+          {
+           "name": "wins",
+           "value": 4.0,
+           "displayValue": "4"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "AFC South",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Jaguars",
+          "displayName": "Jacksonville Jaguars",
+          "abbreviation": "JAX"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 108.0,
+           "displayValue": "+108"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Texans",
+          "displayName": "Houston Texans",
+          "abbreviation": "HOU"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 17.0,
+           "displayValue": "+17"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.375,
+           "displayValue": ".375"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Colts",
+          "displayName": "Indianapolis Colts",
+          "abbreviation": "IND"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 4.5,
+           "displayValue": "4.5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -65.0,
+           "displayValue": "-65"
+          },
+          {
+           "name": "streak",
+           "value": -5.0,
+           "displayValue": "L5"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.22222222,
+           "displayValue": ".222"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Titans",
+          "displayName": "Tennessee Titans",
+          "abbreviation": "TEN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -55.0,
+           "displayValue": "-55"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.125,
+           "displayValue": ".125"
+          },
+          {
+           "name": "wins",
+           "value": 1.0,
+           "displayValue": "1"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "AFC West",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Broncos",
+          "displayName": "Denver Broncos",
+          "abbreviation": "DEN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 12.0,
+           "displayValue": "+12"
+          },
+          {
+           "name": "streak",
+           "value": 5.0,
+           "displayValue": "W5"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.7777778,
+           "displayValue": ".778"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Chiefs",
+          "displayName": "Kansas City Chiefs",
+          "abbreviation": "KC"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 59.0,
+           "displayValue": "+59"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Raiders",
+          "displayName": "Las Vegas Raiders",
+          "abbreviation": "LV"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -30.0,
+           "displayValue": "-30"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.44444445,
+           "displayValue": ".444"
+          },
+          {
+           "name": "wins",
+           "value": 4.0,
+           "displayValue": "4"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Chargers",
+          "displayName": "Los Angeles Chargers",
+          "abbreviation": "LAC"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 6.5,
+           "displayValue": "6.5"
+          },
+          {
+           "name": "losses",
+           "value": 8.0,
+           "displayValue": "8"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -98.0,
+           "displayValue": "-98"
+          },
+          {
+           "name": "streak",
+           "value": -8.0,
+           "displayValue": "L8"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.0,
+           "displayValue": ".000"
+          },
+          {
+           "name": "wins",
+           "value": 0.0,
+           "displayValue": "0"
+          }
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "name": "National Football Conference",
+    "children": [
+     {
+      "name": "NFC East",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Giants",
+          "displayName": "New York Giants",
+          "abbreviation": "NYG"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 10.0,
+           "displayValue": "+10"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "ties",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6875,
+           "displayValue": ".688"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Cowboys",
+          "displayName": "Dallas Cowboys",
+          "abbreviation": "DAL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 10.0,
+           "displayValue": "+10"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.44444445,
+           "displayValue": ".444"
+          },
+          {
+           "name": "wins",
+           "value": 4.0,
+           "displayValue": "4"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Commanders",
+          "displayName": "Washington Commanders",
+          "abbreviation": "WSH"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -30.0,
+           "displayValue": "-30"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "ties",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.3125,
+           "displayValue": ".313"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Eagles",
+          "displayName": "Philadelphia Eagles",
+          "abbreviation": "PHI"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "losses",
+           "value": 7.0,
+           "displayValue": "7"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -73.0,
+           "displayValue": "-73"
+          },
+          {
+           "name": "streak",
+           "value": -7.0,
+           "displayValue": "L7"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.22222222,
+           "displayValue": ".222"
+          },
+          {
+           "name": "wins",
+           "value": 2.0,
+           "displayValue": "2"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "NFC North",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Vikings",
+          "displayName": "Minnesota Vikings",
+          "abbreviation": "MIN"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 47.0,
+           "displayValue": "+47"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.85714287,
+           "displayValue": ".857"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Lions",
+          "displayName": "Detroit Lions",
+          "abbreviation": "DET"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 33.0,
+           "displayValue": "+33"
+          },
+          {
+           "name": "streak",
+           "value": 4.0,
+           "displayValue": "W4"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Bears",
+          "displayName": "Chicago Bears",
+          "abbreviation": "CHI"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "losses",
+           "value": 2.0,
+           "displayValue": "2"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 54.0,
+           "displayValue": "+54"
+          },
+          {
+           "name": "streak",
+           "value": 3.0,
+           "displayValue": "W3"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.75,
+           "displayValue": ".750"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Packers",
+          "displayName": "Green Bay Packers",
+          "abbreviation": "GB"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "losses",
+           "value": 3.0,
+           "displayValue": "3"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 25.0,
+           "displayValue": "+25"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.6666667,
+           "displayValue": ".667"
+          },
+          {
+           "name": "wins",
+           "value": 6.0,
+           "displayValue": "6"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "NFC South",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "Buccaneers",
+          "displayName": "Tampa Bay Buccaneers",
+          "abbreviation": "TB"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 27.0,
+           "displayValue": "+27"
+          },
+          {
+           "name": "streak",
+           "value": 2.0,
+           "displayValue": "W2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.375,
+           "displayValue": ".375"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Panthers",
+          "displayName": "Carolina Panthers",
+          "abbreviation": "CAR"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -20.0,
+           "displayValue": "-20"
+          },
+          {
+           "name": "streak",
+           "value": -3.0,
+           "displayValue": "L3"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.375,
+           "displayValue": ".375"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Saints",
+          "displayName": "New Orleans Saints",
+          "abbreviation": "NO"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 5.0,
+           "displayValue": "5"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -31.0,
+           "displayValue": "-31"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.375,
+           "displayValue": ".375"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Falcons",
+          "displayName": "Atlanta Falcons",
+          "abbreviation": "ATL"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.5,
+           "displayValue": "0.5"
+          },
+          {
+           "name": "losses",
+           "value": 6.0,
+           "displayValue": "6"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -35.0,
+           "displayValue": "-35"
+          },
+          {
+           "name": "streak",
+           "value": -2.0,
+           "displayValue": "L2"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.33333334,
+           "displayValue": ".333"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     {
+      "name": "NFC West",
+      "standings": {
+       "entries": [
+        {
+         "team": {
+          "shortDisplayName": "49ers",
+          "displayName": "San Francisco 49ers",
+          "abbreviation": "SF"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 0.0,
+           "displayValue": "-"
+          },
+          {
+           "name": "losses",
+           "value": 1.0,
+           "displayValue": "1"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 79.0,
+           "displayValue": "+79"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.875,
+           "displayValue": ".875"
+          },
+          {
+           "name": "wins",
+           "value": 7.0,
+           "displayValue": "7"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Seahawks",
+          "displayName": "Seattle Seahawks",
+          "abbreviation": "SEA"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 40.0,
+           "displayValue": "+40"
+          },
+          {
+           "name": "streak",
+           "value": 1.0,
+           "displayValue": "W1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Rams",
+          "displayName": "Los Angeles Rams",
+          "abbreviation": "LAR"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 2.5,
+           "displayValue": "2.5"
+          },
+          {
+           "name": "losses",
+           "value": 4.0,
+           "displayValue": "4"
+          },
+          {
+           "name": "pointDifferential",
+           "value": 33.0,
+           "displayValue": "+33"
+          },
+          {
+           "name": "streak",
+           "value": 3.0,
+           "displayValue": "W3"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.5555556,
+           "displayValue": ".556"
+          },
+          {
+           "name": "wins",
+           "value": 5.0,
+           "displayValue": "5"
+          }
+         ]
+        },
+        {
+         "team": {
+          "shortDisplayName": "Cardinals",
+          "displayName": "Arizona Cardinals",
+          "abbreviation": "ARI"
+         },
+         "stats": [
+          {
+           "name": "gamesBehind",
+           "value": 4.5,
+           "displayValue": "4.5"
+          },
+          {
+           "name": "losses",
+           "value": 6.0,
+           "displayValue": "6"
+          },
+          {
+           "name": "pointDifferential",
+           "value": -77.0,
+           "displayValue": "-77"
+          },
+          {
+           "name": "streak",
+           "value": -1.0,
+           "displayValue": "L1"
+          },
+          {
+           "name": "ties",
+           "value": 0.0,
+           "displayValue": "0"
+          },
+          {
+           "name": "winPercent",
+           "value": 0.33333334,
+           "displayValue": ".333"
+          },
+          {
+           "name": "wins",
+           "value": 3.0,
+           "displayValue": "3"
+          }
+         ]
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "epl": {
+  "name": "English Premier League",
+  "children": [
+   {
+    "name": "2026-27 English Premier League",
+    "standings": {
+     "entries": [
+      {
+       "team": {
+        "shortDisplayName": "Arsenal",
+        "displayName": "Arsenal",
+        "abbreviation": "ARS"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 10.0,
+         "displayValue": "+10"
+        },
+        {
+         "name": "points",
+         "value": 27.0,
+         "displayValue": "27"
+        },
+        {
+         "name": "ties",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "wins",
+         "value": 9.0,
+         "displayValue": "9"
+        },
+        {
+         "name": "rank",
+         "value": 1.0,
+         "displayValue": "1"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Brighton",
+        "displayName": "Brighton & Hove Albion",
+        "abbreviation": "BHA"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 19.0,
+         "displayValue": "+19"
+        },
+        {
+         "name": "points",
+         "value": 22.0,
+         "displayValue": "22"
+        },
+        {
+         "name": "ties",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "wins",
+         "value": 7.0,
+         "displayValue": "7"
+        },
+        {
+         "name": "rank",
+         "value": 2.0,
+         "displayValue": "2"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Man City",
+        "displayName": "Manchester City",
+        "abbreviation": "MNC"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 8.0,
+         "displayValue": "+8"
+        },
+        {
+         "name": "points",
+         "value": 21.0,
+         "displayValue": "21"
+        },
+        {
+         "name": "ties",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "wins",
+         "value": 7.0,
+         "displayValue": "7"
+        },
+        {
+         "name": "rank",
+         "value": 3.0,
+         "displayValue": "3"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Liverpool",
+        "displayName": "Liverpool",
+        "abbreviation": "LIV"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 4.0,
+         "displayValue": "+4"
+        },
+        {
+         "name": "points",
+         "value": 18.0,
+         "displayValue": "18"
+        },
+        {
+         "name": "ties",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "wins",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "rank",
+         "value": 4.0,
+         "displayValue": "4"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Chelsea",
+        "displayName": "Chelsea",
+        "abbreviation": "CHE"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 3.0,
+         "displayValue": "+3"
+        },
+        {
+         "name": "points",
+         "value": 16.0,
+         "displayValue": "16"
+        },
+        {
+         "name": "ties",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "wins",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "rank",
+         "value": 5.0,
+         "displayValue": "5"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Everton",
+        "displayName": "Everton",
+        "abbreviation": "EVE"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 2.0,
+         "displayValue": "+2"
+        },
+        {
+         "name": "points",
+         "value": 16.0,
+         "displayValue": "16"
+        },
+        {
+         "name": "ties",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "wins",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "rank",
+         "value": 6.0,
+         "displayValue": "6"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Bournemouth",
+        "displayName": "AFC Bournemouth",
+        "abbreviation": "BOU"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 2.0,
+         "displayValue": "+2"
+        },
+        {
+         "name": "points",
+         "value": 15.0,
+         "displayValue": "15"
+        },
+        {
+         "name": "ties",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "wins",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "rank",
+         "value": 7.0,
+         "displayValue": "7"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Brentford",
+        "displayName": "Brentford",
+        "abbreviation": "BRE"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 5.0,
+         "displayValue": "+5"
+        },
+        {
+         "name": "points",
+         "value": 14.0,
+         "displayValue": "14"
+        },
+        {
+         "name": "ties",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 8.0,
+         "displayValue": "8"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Leeds",
+        "displayName": "Leeds United",
+        "abbreviation": "LEE"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 2.0,
+         "displayValue": "+2"
+        },
+        {
+         "name": "points",
+         "value": 14.0,
+         "displayValue": "14"
+        },
+        {
+         "name": "ties",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 9.0,
+         "displayValue": "9"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Aston Villa",
+        "displayName": "Aston Villa",
+        "abbreviation": "AVL"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -3.0,
+         "displayValue": "-3"
+        },
+        {
+         "name": "points",
+         "value": 13.0,
+         "displayValue": "13"
+        },
+        {
+         "name": "ties",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 10.0,
+         "displayValue": "10"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Spurs",
+        "displayName": "Tottenham Hotspur",
+        "abbreviation": "TOT"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -1.0,
+         "displayValue": "-1"
+        },
+        {
+         "name": "points",
+         "value": 12.0,
+         "displayValue": "12"
+        },
+        {
+         "name": "ties",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 11.0,
+         "displayValue": "11"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Newcastle",
+        "displayName": "Newcastle United",
+        "abbreviation": "NEW"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -3.0,
+         "displayValue": "-3"
+        },
+        {
+         "name": "points",
+         "value": 12.0,
+         "displayValue": "12"
+        },
+        {
+         "name": "ties",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 12.0,
+         "displayValue": "12"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Hull",
+        "displayName": "Hull City",
+        "abbreviation": "HUL"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "pointDifferential",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "points",
+         "value": 11.0,
+         "displayValue": "11"
+        },
+        {
+         "name": "ties",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "wins",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "rank",
+         "value": 13.0,
+         "displayValue": "13"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Ipswich",
+        "displayName": "Ipswich Town",
+        "abbreviation": "IPS"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -5.0,
+         "displayValue": "-5"
+        },
+        {
+         "name": "points",
+         "value": 11.0,
+         "displayValue": "11"
+        },
+        {
+         "name": "ties",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 14.0,
+         "displayValue": "14"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Fulham",
+        "displayName": "Fulham",
+        "abbreviation": "FUL"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -2.0,
+         "displayValue": "-2"
+        },
+        {
+         "name": "points",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "ties",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "wins",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "rank",
+         "value": 15.0,
+         "displayValue": "15"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Nottm Forest",
+        "displayName": "Nottingham Forest",
+        "abbreviation": "NFO"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -4.0,
+         "displayValue": "-4"
+        },
+        {
+         "name": "points",
+         "value": 9.0,
+         "displayValue": "9"
+        },
+        {
+         "name": "ties",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "wins",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "rank",
+         "value": 16.0,
+         "displayValue": "16"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Coventry",
+        "displayName": "Coventry City",
+        "abbreviation": "COV"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 7.0,
+         "displayValue": "7"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -9.0,
+         "displayValue": "-9"
+        },
+        {
+         "name": "points",
+         "value": 9.0,
+         "displayValue": "9"
+        },
+        {
+         "name": "ties",
+         "value": 0.0,
+         "displayValue": "0"
+        },
+        {
+         "name": "wins",
+         "value": 3.0,
+         "displayValue": "3"
+        },
+        {
+         "name": "rank",
+         "value": 17.0,
+         "displayValue": "17"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Man Utd",
+        "displayName": "Manchester United",
+        "abbreviation": "MAN"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 4.0,
+         "displayValue": "4"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -5.0,
+         "displayValue": "-5"
+        },
+        {
+         "name": "points",
+         "value": 8.0,
+         "displayValue": "8"
+        },
+        {
+         "name": "ties",
+         "value": 5.0,
+         "displayValue": "5"
+        },
+        {
+         "name": "wins",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "rank",
+         "value": 18.0,
+         "displayValue": "18"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "Sunderland",
+        "displayName": "Sunderland",
+        "abbreviation": "SUN"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 6.0,
+         "displayValue": "6"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -9.0,
+         "displayValue": "-9"
+        },
+        {
+         "name": "points",
+         "value": 8.0,
+         "displayValue": "8"
+        },
+        {
+         "name": "ties",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "wins",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "rank",
+         "value": 19.0,
+         "displayValue": "19"
+        }
+       ]
+      },
+      {
+       "team": {
+        "shortDisplayName": "C Palace",
+        "displayName": "Crystal Palace",
+        "abbreviation": "CRY"
+       },
+       "stats": [
+        {
+         "name": "gamesPlayed",
+         "value": 10.0,
+         "displayValue": "10"
+        },
+        {
+         "name": "losses",
+         "value": 7.0,
+         "displayValue": "7"
+        },
+        {
+         "name": "pointDifferential",
+         "value": -14.0,
+         "displayValue": "-14"
+        },
+        {
+         "name": "points",
+         "value": 7.0,
+         "displayValue": "7"
+        },
+        {
+         "name": "ties",
+         "value": 1.0,
+         "displayValue": "1"
+        },
+        {
+         "name": "wins",
+         "value": 2.0,
+         "displayValue": "2"
+        },
+        {
+         "name": "rank",
+         "value": 20.0,
+         "displayValue": "20"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
