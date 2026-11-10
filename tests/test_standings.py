@@ -14,12 +14,20 @@ from sources import espn
 
 
 @pytest.fixture
+def nba_divisions(monkeypatch):
+    """NBA 預設只分東西區；分組的版面改用 NBA 的分組資料來測。"""
+    monkeypatch.setitem(league("nba"), "standings", True)
+
+
+@pytest.fixture
 def standings(monkeypatch):
     """讓 espn.fetch_standings 讀 fixture，不連網路。"""
     data = load_fixture("espn_standings.json")
     by_path = {"basketball/nba": "nba", "football/nfl": "nfl", "soccer/eng.1": "epl"}
 
     def fake_get(url):
+        if "/basketball/nba/standings" in url and "level=2" in url:
+            return data["nba_conference"]
         for path, key in by_path.items():
             if f"/{path}/standings" in url:
                 return data[key]
@@ -31,7 +39,7 @@ def standings(monkeypatch):
 # ---------------------------------------------------------------- 解析與排序
 
 
-def test_NBA_拆成兩區六組_中文名稱(standings):
+def test_分組模式_NBA_拆成兩區六組_中文名稱(standings, nba_divisions):
     tables = espn.fetch_standings(league("nba"))
     assert [(t.conference, t.division) for t in tables] == [
         ("東區", "大西洋組"), ("東區", "中央組"), ("東區", "東南組"),
@@ -40,7 +48,7 @@ def test_NBA_拆成兩區六組_中文名稱(standings):
     assert all(len(t.rows) == 5 for t in tables)
 
 
-def test_分組內自己排序_不照_ESPN_的順序(standings):
+def test_分組內自己排序_不照_ESPN_的順序(standings, nba_divisions):
     """ESPN 回的大西洋組第一筆是 2-7 的 Nets，不能照抄。"""
     raw_first = load_fixture("espn_standings.json")["nba"]["children"][0]["children"][0]
     assert raw_first["standings"]["entries"][0]["team"]["shortDisplayName"] == "Nets"
@@ -58,6 +66,35 @@ def test_NFL_八個分區(standings):
     assert all(len(t.rows) == 4 for t in tables)
 
 
+def test_NBA_預設只分東西區_照官方種子序(standings):
+    tables = espn.fetch_standings(league("nba"))
+    assert [(t.conference, t.division) for t in tables] == [("東區", ""), ("西區", "")]
+    assert all(len(t.rows) == 15 for t in tables)
+    for table in tables:
+        assert [r.seed for r in table.rows] == list(range(1, 16))
+        assert table.rows[0].games_behind == "-"   # 勝差以分區龍頭計算，不是分組
+
+
+def test_NBA_東西區版面_沒有分組標題_種子序在前(standings):
+    block = main._standings_block(league("nba"), espn.fetch_standings(league("nba")))
+    lines = _lines_in_pre(block)
+    assert "東區" in lines and "西區" in lines
+    assert not any(name in block for name in ("大西洋組", "西南組"))
+    first = lines[lines.index("東區") + 1]
+    assert first.startswith(" 1 ")
+    assert lines[lines.index("西區") - 1].startswith("15 ")
+
+
+def test_同勝率照官方種子序_不自己猜():
+    """5-4 同勝率的兩隊，誰前誰後由官方的破除規則決定（對戰成績等），這裡照種子序。"""
+    rows = [
+        espn.StandingRow("A", 5, 4, win_pct=0.556, seed=6),
+        espn.StandingRow("B", 5, 4, win_pct=0.556, seed=5),
+        espn.StandingRow("C", 6, 3, win_pct=0.667, seed=4),
+    ]
+    assert [r.team for r in espn._sort_conference(rows)] == ["C", "B", "A"]
+
+
 def test_足球是單一積分榜_照官方排名(standings):
     tables = espn.fetch_standings(league("epl"))
     assert len(tables) == 1
@@ -67,7 +104,7 @@ def test_足球是單一積分榜_照官方排名(standings):
     assert table.rows[0].team == "Arsenal" and table.rows[0].points == 27
 
 
-def test_沒翻譯到的名稱照原文(monkeypatch):
+def test_沒翻譯到的名稱照原文(monkeypatch, nba_divisions):
     node = {"children": [{"name": "Some New Conference", "children": [
         {"name": "Brand New Division", "standings": {"entries": [
             {"team": {"shortDisplayName": "A"},
@@ -103,7 +140,7 @@ def test_每行不超過手機寬度(standings, key):
     assert max(len(line) for line in _lines_in_pre(block)) <= 40
 
 
-def test_有和局才顯示_T_欄(standings):
+def test_有和局才顯示_T_欄(standings, nba_divisions):
     nfl = main._standings_block(league("nfl"), espn.fetch_standings(league("nfl")))
     nba = main._standings_block(league("nba"), espn.fetch_standings(league("nba")))
     assert "W-L-T" in nfl and "5-2-1" in nfl   # 這季 Giants 有一場和局
@@ -182,7 +219,7 @@ def test_賽果之後另外一則戰績(tmp_state, sent, standings, monkeypatch)
 
     assert len(sent) == 2
     assert "🏁 賽果" in sent[0] and "戰績" not in sent[0]
-    assert "📊 戰績" in sent[1] and "大西洋組" in sent[1]
+    assert "📊 戰績" in sent[1] and "東區" in sent[1] and "大西洋組" not in sent[1]
 
 
 def test_戰績壞掉不影響賽果(tmp_state, sent, monkeypatch):

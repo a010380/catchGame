@@ -2,15 +2,16 @@ name: 開賽提醒與賽果推播
 
 on:
   schedule:
-    # 每 10 分鐘跑一次，一次同時做兩件事：
-    #   1. 推播「即將開賽」（距離開賽 20 分鐘內的比賽）
-    #   2. 推播剛結束的比賽比分
+    # 名義上每 10 分鐘一次，一次同時做三件事（都在 main.py tick 裡）：
+    #   1. 每日摘要（過了 config.DIGEST_NOT_BEFORE、今天還沒送才送）
+    #   2. 推播「即將開賽」（距離開賽 20 分鐘內的比賽）
+    #   3. 推播剛結束的比賽比分與戰績
     #
-    # 為什麼是 10 分鐘：開賽提醒需要比較細的顆粒度，而 GitHub Actions 的
-    # 排程不保證準時（尖峰可能延遲 5-15 分鐘）。10 分鐘一次搭配 20 分鐘的
-    # 提醒視窗，可以確保每場比賽都會被提醒到，實際送達落在開賽前約 20-5 分鐘。
+    # 實際上 GitHub 一天只會跑 4-8 次，兩次之間可能隔 7 個多小時。
+    # 所以有比賽在進行、或 1 小時內要開打時，job 不會跑完就走，而是留下來
+    # 每 10 分鐘再跑一次 tick，直到比賽都打完（見下面的迴圈）。
     #
-    # 為什麼兩件事合併：兩個 job 各自 commit 同一個 state.json 會互相衝突，
+    # 為什麼三件事合併：各自一個 job 會各自 commit 同一個 state.json 而互相衝突，
     # 而且重複的 checkout 與 pip install 純屬浪費。
     - cron: '*/10 * * * *'
   workflow_dispatch:
@@ -19,14 +20,22 @@ permissions:
   contents: write
 
 concurrency:
+  # 留下來盯比賽的期間，後面的排程會在這裡排隊（只保留最新的一個），
+  # 等這一輪的上限時間到了就由它接手，不會有兩個同時推播。
   group: notify
   cancel-in-progress: false
 
 jobs:
   remind-and-results:
     runs-on: ubuntu-latest
+    # 迴圈本身最多 config.WATCH_MAX_MINUTES（300）分鐘，這裡多留餘裕給安裝與 commit
+    timeout-minutes: 340
     steps:
+      # 指定分支名稱 = 抓分支「現在」的最新版本。不指定的話會抓觸發當下的 commit，
+      # 排隊等了幾小時才開始跑時，拿到的是舊的 state.json，已送過的通知會重送一遍。
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -35,25 +44,51 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 開賽提醒 + 賽果推播
+      - name: 摘要 + 開賽提醒 + 賽果推播（有比賽在打就繼續盯）
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py tick
-
-      - name: Commit 通知紀錄
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state.json
-          if git diff --staged --quiet; then
-            echo "通知紀錄無變化，跳過 commit。"
-            exit 0
-          fi
-          git commit -m "chore: 更新通知紀錄"
-          for i in 1 2 3; do
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
-            echo "push 失敗，第 $i 次重試…"
-            sleep 5
+
+          # 每一輪都要把 state.json commit 回去：中途被取消或逾時，
+          # 已經送出的通知也要記住，不然下一次排程會重送。
+          commit_state() {
+            git add state.json
+            if git diff --staged --quiet; then
+              echo "通知紀錄無變化，跳過 commit。"
+              return 0
+            fi
+            git commit -q -m "chore: 更新通知紀錄"
+            for i in 1 2 3; do
+              git pull -q --rebase --autostash origin "${GITHUB_REF_NAME}" && git push -q && return 0
+              echo "push 失敗，第 $i 次重試…"
+              sleep 5
+            done
+            return 1
+          }
+
+          read -r interval max_minutes < <(python -c "import config; print(config.WATCH_INTERVAL_MINUTES, config.WATCH_MAX_MINUTES)")
+          deadline=$(( $(date +%s) + max_minutes * 60 ))
+          failed=0
+          round=1
+
+          while :; do
+            echo "::group::第 ${round} 輪（$(TZ=Asia/Taipei date +%H:%M)）"
+            python main.py tick --watch-flag .watching || failed=1
+            commit_state || failed=1
+            echo "::endgroup::"
+
+            [ -f .watching ] || break
+            if [ $(( $(date +%s) + interval * 60 )) -ge "${deadline}" ]; then
+              echo "已經盯了 ${max_minutes} 分鐘，交給排隊中的下一次排程。"
+              break
+            fi
+            echo "$(cat .watching)，${interval} 分鐘後再檢查。"
+            sleep $(( interval * 60 ))
+            round=$(( round + 1 ))
           done
-          exit 1
+
+          # 中間任何一輪失敗（例如某聯賽連續抓不到而紅燈）都讓整個 job 紅燈
+          exit "${failed}"

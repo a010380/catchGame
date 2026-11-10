@@ -2,17 +2,19 @@ name: 今日賽事摘要
 
 on:
   schedule:
-    # 掛三個時間點：UTC 21/22/23 = 台灣時間 05:00 / 06:00 / 07:00。
+    # 掛三個時間點：UTC 19/20/21 = 台灣時間 03:00 / 04:00 / 05:00。
     #
-    # 不是要送三次 —— 程式自己會擋（config.DIGEST_NOT_BEFORE 預設 06:30，
+    # 不是要送三次 —— 程式自己會擋（config.DIGEST_NOT_BEFORE 預設 06:00，
     # 而且記錄今天是否已送過），所以實際只會送一次。
     #
-    # 為什麼要三個：GitHub 的排程會遲到，實測這個 workflow 遲了 103-118 分鐘。
-    # 只掛一個時間點就得賭遲到幅度不變；掛三個之後，不管 GitHub 遲到
-    # 0 到 2 小時，都會有一次落在 06:30 之後而被送出。
+    # 為什麼掛這麼早：GitHub 在這個時段的排程常遲到 3 小時（原本掛 05-07 點，
+    # 實際都在 08:00-11:00 才跑）。掛早一點、早到的話就在 wait 這個 job
+    # 原地等到 06:00 再送；遲到的話也還有後面兩槍。
+    #
+    # 另外 notify.yml 每次跑 tick 也會檢查摘要，過了 06:00 還沒送就會順手送出。
+    - cron: '0 19 * * *'
+    - cron: '0 20 * * *'
     - cron: '0 21 * * *'
-    - cron: '0 22 * * *'
-    - cron: '0 23 * * *'
   workflow_dispatch:
 
 # 要把 state.json 的「今天已送過」紀錄 commit 回 repo，所以需要寫入權限。
@@ -21,16 +23,42 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  # 跟 notify.yml 共用同一個群組：兩邊都會 commit state.json，同時跑會互推衝突。
-  group: notify
-  cancel-in-progress: false
-
 jobs:
-  digest:
+  # 早到就等到 DIGEST_NOT_BEFORE。這個 job 不加入 notify 群組，
+  # 等待的這段時間不會擋住開賽提醒與賽果。
+  wait:
     runs-on: ubuntu-latest
+    timeout-minutes: 200
     steps:
       - uses: actions/checkout@v4
+
+      - name: 等到摘要時間
+        run: |
+          seconds=$(python -c "
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import config
+          now = datetime.now(ZoneInfo(config.TIMEZONE))
+          h, _, m = config.DIGEST_NOT_BEFORE.partition(':')
+          target = now.replace(hour=int(h), minute=int(m or 0), second=0, microsecond=0)
+          print(max(0, int((target - now).total_seconds())))
+          ")
+          echo "距離摘要時間還有 ${seconds} 秒。"
+          sleep "${seconds}"
+
+  digest:
+    needs: wait
+    runs-on: ubuntu-latest
+    concurrency:
+      # 跟 notify.yml 共用同一個群組：兩邊都會 commit state.json，同時跑會互推衝突。
+      group: notify
+      cancel-in-progress: false
+    steps:
+      # 指定分支名稱 = 抓分支「現在」的最新版本。不指定的話會抓觸發當下的 commit，
+      # 排隊等了幾小時才開始跑時，拿到的是舊的 state.json，已送過的通知會重送一遍。
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:

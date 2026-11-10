@@ -90,6 +90,7 @@ class StandingRow:
     points: int = 0        # 足球用：積分
     goal_diff: str = ""    # 足球用：淨勝球，帶正負號
     rank: int = 0          # 足球用：官方排名
+    seed: int = 0          # NBA 用：分區的季後賽種子序（官方已處理同勝率）
 
 
 @dataclass

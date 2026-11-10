@@ -227,15 +227,20 @@ DIVISION_NAMES = {
 def fetch_standings(league: dict) -> list[StandingTable]:
     """抓戰績，回傳每個分組一張表。
 
-    level=3 會把美國職業運動拆到最細的分組（NBA 六組、NFL 八組、MLB 六區）；
+    config 的 standings 決定分多細：
+      True         level=3，分到最細（NBA 六組、NFL 八組、MLB 六區）
+      "conference" level=2，只分東西區／聯盟。ESPN 這時的勝差是以分區龍頭計算，
+                   而且附官方的季後賽種子序（已處理同勝率），直接照種子序排。
     足球沒有分組，ESPN 不管 level 都只回一張 20 隊的積分榜。
     """
-    payload = _get(f"{STANDINGS_BASE}/{league['path']}/standings?level=3")
+    by_conference = league.get("standings") == "conference"
+    level = 2 if by_conference else 3
+    payload = _get(f"{STANDINGS_BASE}/{league['path']}/standings?level={level}")
     soccer = league["path"].startswith("soccer/")
 
     tables: list[StandingTable] = []
     for conf in payload.get("children") or []:
-        divisions = conf.get("children") or [conf]  # 足球沒有下一層
+        divisions = conf.get("children") or [conf]  # 足球、只分東西區時沒有下一層
         for div in divisions:
             entries = (div.get("standings") or {}).get("entries") or []
             rows = [_standing_row(e) for e in entries]
@@ -243,9 +248,13 @@ def fetch_standings(league: dict) -> list[StandingTable]:
                 continue
             if soccer:
                 tables.append(StandingTable("", "", _sort_table(rows)))
+                continue
+            conference = CONFERENCE_NAMES.get(conf.get("name"), conf.get("name") or "")
+            if div is conf:
+                tables.append(StandingTable(conference, "", _sort_conference(rows)))
             else:
                 tables.append(StandingTable(
-                    conference=CONFERENCE_NAMES.get(conf.get("name"), conf.get("name") or ""),
+                    conference=conference,
                     division=DIVISION_NAMES.get(div.get("name"), div.get("name") or ""),
                     rows=_sort_division(rows),
                 ))
@@ -275,6 +284,7 @@ def _standing_row(entry: dict) -> StandingRow:
         points=int(num("points")),
         goal_diff=text("pointDifferential"),
         rank=int(num("rank")),
+        seed=int(num("playoffSeed")),
     )
 
 
@@ -285,6 +295,13 @@ def _sort_division(rows: list[StandingRow]) -> list[StandingRow]:
     官方的同勝率破除規則（對戰成績、分區戰績…）這裡不處理。
     """
     return sorted(rows, key=lambda r: (-r.win_pct, -r.wins, r.losses))
+
+
+def _sort_conference(rows: list[StandingRow]) -> list[StandingRow]:
+    """有官方種子序就照種子序（含同勝率的破除規則），沒有才退回勝率排序。"""
+    if all(r.seed for r in rows):
+        return sorted(rows, key=lambda r: r.seed)
+    return _sort_division(rows)
 
 
 def _sort_table(rows: list[StandingRow]) -> list[StandingRow]:

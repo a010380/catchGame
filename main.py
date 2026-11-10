@@ -7,7 +7,8 @@
   python main.py digest --force   忽略時間與去重限制，強制送出
   python main.py remind       推播即將開賽的比賽（開賽前 20 分鐘內）
   python main.py results      推播剛結束的比賽比分（會記錄避免重複）
-  python main.py tick         remind + results，排程實際跑的就是這個
+  python main.py tick         摘要 + remind + results，排程實際跑的就是這個
+  python main.py tick --watch-flag F   同上；還有比賽在打時寫入檔案 F（notify.yml 用）
   python main.py chat-id      找出你的 Telegram chat id（只需要 BOT_TOKEN）
   python main.py test-notify  送一則測試訊息，確認 Telegram 設定正確
 """
@@ -219,7 +220,17 @@ def cmd_digest(args) -> int:
     print("抓取接下來 24 小時的賽程…")
     games, failed = collect(days_back=0, days_ahead=2)
     code = _report_failures(data, failed)
+    _send_digest(data, games)
+    return code
 
+
+def _maybe_digest(data: dict, games: list[Game]) -> None:
+    """tick 順手檢查：過了 DIGEST_NOT_BEFORE、今天還沒送，就送出摘要。"""
+    if _digest_gate(data, force=False) is None:
+        _send_digest(data, games)
+
+
+def _send_digest(data: dict, games: list[Game]) -> None:
     now = datetime.now(timezone.utc)
     horizon = now + timedelta(hours=DIGEST_HOURS)
     upcoming = [
@@ -236,7 +247,7 @@ def cmd_digest(args) -> int:
         notify.send(f"{header}\n\n這段時間沒有你關注的比賽。")
         _mark_digest_sent(data)
         print("接下來 24 小時沒有比賽，已送出空摘要。")
-        return code
+        return
 
     # 摘要的重點是「接下來會發生什麼」，所以按時間排、不按聯賽分群，
     # 聯賽名稱標在每一場旁邊。分群反而會讓你看不出先後順序。
@@ -254,8 +265,7 @@ def cmd_digest(args) -> int:
         )
     notify.send("\n".join(lines))
     _mark_digest_sent(data)
-    print(f"已推播 {len(upcoming)} 場比賽。")
-    return code
+    print(f"已推播摘要：{len(upcoming)} 場比賽。")
 
 
 def cmd_remind(_args) -> int:
@@ -284,8 +294,8 @@ def cmd_results(_args) -> int:
     return code
 
 
-def cmd_tick(_args) -> int:
-    """排程每次醒來要做的事：先提醒即將開賽，再推播剛結束的賽果。
+def cmd_tick(args) -> int:
+    """排程每次醒來要做的事：每日摘要（到時間才送）、即將開賽提醒、剛結束的賽果。
 
     合併成一個指令是為了讓排程只跑一個 job —— 兩個 job 各自 commit
     同一個 state.json 會互相衝突，而且重複的 checkout / pip install 很浪費。
@@ -303,6 +313,7 @@ def cmd_tick(_args) -> int:
     codes = [_report_failures(data, failed)]
 
     steps = (
+        ("每日摘要", lambda: _maybe_digest(data, games)),
         ("開賽提醒", lambda: _push_reminders(data, games)),
         ("賽果推播", lambda: _push_results(data, games, first_run)),
     )
@@ -324,7 +335,48 @@ def cmd_tick(_args) -> int:
     removed = state.prune(data)
     state.save(data)
     print(f"（清掉 {removed} 筆過期紀錄）")
+
+    flag = getattr(args, "watch_flag", None)
+    if flag:
+        reason = _watch_reason(games)
+        flag_path = Path(flag)
+        if reason:
+            print(f"繼續盯：{reason}")
+            flag_path.write_text(reason, encoding="utf-8")
+        else:
+            print("沒有進行中或即將開打的比賽，這次排程到此結束。")
+            flag_path.unlink(missing_ok=True)
     return max(codes)
+
+
+# 標成進行中卻已經開打這麼久的比賽，視為資料源卡住，不為它一直留下來。
+# 最長的是 NFL / MLB 延長賽，大約 5 小時；LoL 一場 BO5 也差不多。
+_STUCK_AFTER = timedelta(hours=8)
+
+
+def _watch_reason(games: list[Game]) -> str | None:
+    """排程該不該留下來，過幾分鐘再檢查一次。回傳原因，None 表示可以走了。
+
+    GitHub 的排程一天只跑 4-8 次，跑完就走的話，10 點開打的比賽可能
+    傍晚才收到賽果。所以有比賽在打、或很快要開打時，workflow 會留下來
+    每 WATCH_INTERVAL_MINUTES 分鐘再跑一次 tick（見 notify.yml）。
+    """
+    now = datetime.now(timezone.utc)
+    soon = now + timedelta(minutes=config.WATCH_AHEAD_MINUTES)
+    live = [g for g in games if g.state == "in" and now - g.start < _STUCK_AFTER]
+    if live:
+        return f"{len(live)} 場比賽進行中（{_league_names(live)}）"
+    upcoming = [g for g in games if g.state == "pre" and now <= g.start <= soon]
+    if upcoming:
+        first = min(upcoming, key=lambda g: g.start)
+        return (f"{config.WATCH_AHEAD_MINUTES} 分鐘內有比賽要開打"
+                f"（{first.local_start():%H:%M} {first.league_name}）")
+    return None
+
+
+def _league_names(games: list[Game]) -> str:
+    keys = dict.fromkeys(g.league_key for g in games)
+    return "、".join(_league_name(k) for k in keys)
 
 
 def _push_reminders(data: dict, games: list[Game]) -> None:
@@ -513,19 +565,24 @@ def _standings_block(league: dict, tables: list[StandingTable]) -> str:
         # 只有真的出現和局（NFL 偶爾會有）才多一欄，不然 W-L-T 的 -0 只是雜訊
         has_ties = any(r.ties for t in tables for r in t.rows)
         record_label = "W-L-T" if has_ties else "W-L"
-        lines = [f"{'':2}{'':{_TEAM_WIDTH}}{record_label:>8}{'GB':>5}{'STRK':>5}"]
+        # 只分東西區時把種子序印在隊名前：1-6 直接晉級、7-10 打附加賽，一眼看得出來
+        seeded = all(not t.division and r.seed for t in tables for r in t.rows)
+        pad = 3 if seeded else 2
+        lines = [f"{'':{pad}}{'':{_TEAM_WIDTH}}{record_label:>8}{'GB':>5}{'STRK':>5}"]
         current_conf = None
         for table in tables:
             if table.conference != current_conf:
                 current_conf = table.conference
                 lines.append(table.conference)
-            lines.append(f" {table.division}")
+            if table.division:
+                lines.append(f" {table.division}")
             for row in table.rows:
                 record = f"{row.wins}-{row.losses}"
                 if has_ties:
                     record += f"-{row.ties}"
+                prefix = f"{row.seed:>2} " if seeded else ""
                 lines.append(
-                    f"{'':2}{row.team[:_TEAM_WIDTH]:<{_TEAM_WIDTH}}"
+                    f"{prefix:<{pad}}{row.team[:_TEAM_WIDTH]:<{_TEAM_WIDTH}}"
                     f"{record:>8}{row.games_behind:>5}{row.streak:>5}"
                 )
 
@@ -625,6 +682,12 @@ def main() -> int:
         "--force",
         action="store_true",
         help="digest 專用：忽略「太早」與「今天已送過」的限制，直接送出",
+    )
+    parser.add_argument(
+        "--watch-flag",
+        metavar="PATH",
+        help="tick 專用：還有比賽進行中或即將開打時寫入這個檔案，否則刪掉"
+             "（notify.yml 靠它決定要不要留下來再跑一次）",
     )
     args = parser.parse_args()
     try:

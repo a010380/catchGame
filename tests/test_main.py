@@ -4,6 +4,10 @@ collect() 一律換成回傳假資料，所以這裡測的是「拿到這些比�
 不碰網路。
 """
 
+import argparse
+
+import pytest
+
 import config
 import main
 import state
@@ -185,7 +189,17 @@ def test_摘要_force_無視限制(tmp_state, monkeypatch):
 # ---------------------------------------------------------------- tick
 
 
-def test_tick_只抓一次_範圍涵蓋提醒與賽果(tmp_state, sent, monkeypatch):
+@pytest.fixture
+def no_digest(monkeypatch):
+    """tick 會順手送每日摘要；這些測試不管摘要，免得結果隨執行當下的時間變動。"""
+    monkeypatch.setattr(main, "_maybe_digest", lambda data, games: None)
+
+
+def _tick_args(watch_flag=None):
+    return argparse.Namespace(watch_flag=watch_flag)
+
+
+def test_tick_只抓一次_範圍涵蓋提醒與賽果(tmp_state, sent, no_digest, monkeypatch):
     calls = []
 
     def fake_collect(**window):
@@ -197,7 +211,7 @@ def test_tick_只抓一次_範圍涵蓋提醒與賽果(tmp_state, sent, monkeypa
 
     monkeypatch.setattr(main, "collect", fake_collect)
 
-    main.cmd_tick(None)
+    main.cmd_tick(_tick_args())
 
     assert calls == [{"days_back": config.RESULTS_LOOKBACK_DAYS, "days_ahead": 1}]
     assert len(sent) == 2
@@ -205,14 +219,14 @@ def test_tick_只抓一次_範圍涵蓋提醒與賽果(tmp_state, sent, monkeypa
     assert "賽果" in sent[1] and "done-away 1 - 2 done-home" in sent[1]
 
 
-def test_tick_連續失敗一次只加一(tmp_state, sent, monkeypatch):
+def test_tick_連續失敗一次只加一(tmp_state, sent, no_digest, monkeypatch):
     """舊版 remind 和 results 各自回報一次，一次 tick 加 2，20 分鐘就紅燈。"""
     _feed(monkeypatch, [], failed=["epl"])
-    main.cmd_tick(None)
+    main.cmd_tick(_tick_args())
     assert state.fail_streak(state.load(), "epl") == 1
 
 
-def test_tick_賽果失敗時提醒的紀錄不能丟(tmp_state, monkeypatch):
+def test_tick_賽果失敗時提醒的紀錄不能丟(tmp_state, no_digest, monkeypatch):
     import notify
 
     def send(text):
@@ -225,14 +239,14 @@ def test_tick_賽果失敗時提醒的紀錄不能丟(tmp_state, monkeypatch):
         make_game("done", "post", minutes_from_now=-200, home_score="2", away_score="1"),
     ])
 
-    assert main.cmd_tick(None) == 1
+    assert main.cmd_tick(_tick_args()) == 1
 
     data = state.load()
     assert state.already(data, "reminded", "soon")       # 送出去的要記住，不然會重送
     assert not state.already(data, "notified", "done")   # 沒送出去的不能記，下次重試
 
 
-def test_tick_首次執行_賽果只建基準(tmp_state, sent, monkeypatch):
+def test_tick_首次執行_賽果只建基準(tmp_state, sent, no_digest, monkeypatch):
     """舊版 remind 先跑、先把 state.json 建出來，results 就判斷不出是首次執行，
     會把過去幾天的賽果一次全部補送。"""
     tmp_state.unlink()
@@ -240,7 +254,71 @@ def test_tick_首次執行_賽果只建基準(tmp_state, sent, monkeypatch):
         make_game("done", "post", minutes_from_now=-200, home_score="2", away_score="1"),
     ])
 
-    main.cmd_tick(None)
+    main.cmd_tick(_tick_args())
 
     assert sent == []
     assert state.already(state.load(), "notified", "done")
+
+
+# ---------------------------------------------------------------- tick 順手送摘要
+
+
+def test_tick_過了摘要時間就順手送_而且只送一次(tmp_state, sent, monkeypatch):
+    monkeypatch.setattr(config, "DIGEST_NOT_BEFORE", "06:00")
+    _freeze(monkeypatch, 6, 10)
+    _feed(monkeypatch, [make_game("tonight", minutes_from_now=60 * 5)])
+
+    main.cmd_tick(_tick_args())
+    main.cmd_tick(_tick_args())
+
+    assert len(sent) == 1
+    assert "接下來 24 小時" in sent[0]
+
+
+def test_tick_還沒到摘要時間就不送(tmp_state, sent, monkeypatch):
+    monkeypatch.setattr(config, "DIGEST_NOT_BEFORE", "06:00")
+    _freeze(monkeypatch, 5, 50)
+    _feed(monkeypatch, [make_game("tonight", minutes_from_now=60 * 5)])
+
+    main.cmd_tick(_tick_args())
+
+    assert sent == []
+
+
+# ---------------------------------------------------------------- 有比賽在打就繼續盯
+
+
+def test_有比賽進行中就繼續盯():
+    reason = main._watch_reason([make_game("g", "in", minutes_from_now=-60)])
+    assert reason and "進行中" in reason
+
+
+def test_快開打了也繼續盯_開賽提醒才準時():
+    soon = make_game("g", minutes_from_now=config.WATCH_AHEAD_MINUTES - 10)
+    assert main._watch_reason([soon])
+
+
+def test_沒有比賽在打就結束():
+    games = [
+        make_game("done", "post", minutes_from_now=-200, home_score="1", away_score="0"),
+        make_game("later", minutes_from_now=config.WATCH_AHEAD_MINUTES + 30),
+        make_game("void", "void", minutes_from_now=10, note="延賽"),
+    ]
+    assert main._watch_reason(games) is None
+
+
+def test_卡在進行中太久的比賽不算():
+    """資料源偶爾會讓比賽一直停在進行中，不能為了它每次都盯滿 5 小時。"""
+    assert main._watch_reason([make_game("g", "in", minutes_from_now=-60 * 9)]) is None
+
+
+def test_tick_用旗標檔告訴_workflow_要不要繼續(tmp_state, sent, no_digest, monkeypatch, tmp_path):
+    flag = tmp_path / ".watching"
+
+    _feed(monkeypatch, [make_game("g", "in", minutes_from_now=-30)])
+    main.cmd_tick(_tick_args(str(flag)))
+    assert flag.exists() and "進行中" in flag.read_text(encoding="utf-8")
+
+    _feed(monkeypatch, [make_game("g", "post", minutes_from_now=-200, home_score="1", away_score="0")])
+    main.cmd_tick(_tick_args(str(flag)))
+    assert not flag.exists()

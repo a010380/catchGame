@@ -42,10 +42,24 @@ REMIND_CATCHUP_MINUTES = 60
 # 103-118 分鐘。如果只是把 cron 往前推去抵銷遲到，等哪天 GitHub 準時跑，
 # 摘要就會在凌晨送達。
 #
-# 所以改成：cron 掛三個時間點（台灣 05:00 / 06:00 / 07:00），程式自己判斷
-# 「現在還太早就不送，交給下一次排程」，並記錄今天是否已經送過。
-# 不論 GitHub 遲到 0 到 2 小時，摘要都會落在這個時間之後、且只送一次。
-DIGEST_NOT_BEFORE = "06:30"
+# 實際的做法有兩層，都會記錄今天是否已經送過，所以只會送一次：
+#   1. digest.yml 掛在台灣 03:00 / 04:00 / 05:00。GitHub 早到的話就原地等到
+#      這個時間再送；實測這個時段 GitHub 常遲到 3 小時，所以要掛得這麼早。
+#   2. 每次 tick 也會檢查：過了這個時間、今天還沒送，就順手送出。
+DIGEST_NOT_BEFORE = "06:00"
+
+# 有比賽在進行時，排程不要跑一次就走，而是留下來每 10 分鐘再檢查一次。
+#
+# 為什麼需要：GitHub 的 */10 排程實際上一天只跑 4-8 次，兩次之間可能隔
+# 7 個多小時（曾經 10:13 跑完、下一次 17:50 才跑，10 點開賽的賽果晚了快 5 小時）。
+#
+# 什麼時候留下來：有比賽在進行中，或 WATCH_AHEAD_MINUTES 分鐘內有比賽要開打
+# （這樣開賽提醒也能準時）。都沒有就結束，交給下一次排程。
+# 一次最多留 WATCH_MAX_MINUTES 分鐘（GitHub 單一 job 上限 6 小時），
+# 時間到還沒打完，排隊中的下一次排程會接手。
+WATCH_AHEAD_MINUTES = 60
+WATCH_MAX_MINUTES = 300
+WATCH_INTERVAL_MINUTES = 10
 
 # 戰績推播：一個聯賽「這一輪」打完後，在賽果之後另外推一則戰績。
 #
@@ -78,7 +92,10 @@ FAIL_STREAK_ALERT = 3
 #   path           espn 與 yahoo 的路徑片段（lolesports 改用 league_id）
 #   league_id      lolesports 專用，聯賽的數字 ID
 #   duration_min   行事曆上這場比賽要佔多久（ESPN 不提供結束時間，只能估）
-#   standings      True = 這個聯賽一輪比賽打完後推一則戰績（目前只有 ESPN 的聯賽支援）
+#   standings      這個聯賽一輪比賽打完後推一則戰績（目前只有 ESPN 的聯賽支援）
+#                    True         = 分到最細的分組（NFL 八個分區、MLB 六個分區）
+#                    "conference" = 只分到東西區／聯盟，照官方種子序排（NBA 用這個）
+#                    False        = 不推
 #   teams          只關注特定球隊時填入隊名或縮寫（例：["NYY", "Dodgers"]）
 #                  留空 [] = 該聯賽全部比賽都要
 LEAGUES = [
@@ -101,7 +118,7 @@ LEAGUES = [
         "enabled": True,
         "source": "espn",
         "path": "basketball/nba",
-        "standings": True,
+        "standings": "conference",
         "duration_min": 150,
         "teams": [],
     },
