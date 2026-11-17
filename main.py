@@ -338,7 +338,7 @@ def cmd_tick(args) -> int:
 
     flag = getattr(args, "watch_flag", None)
     if flag:
-        reason = _watch_reason(games)
+        reason = _watch_reason(games, data)
         flag_path = Path(flag)
         if reason:
             print(f"繼續盯：{reason}")
@@ -354,12 +354,16 @@ def cmd_tick(args) -> int:
 _STUCK_AFTER = timedelta(hours=8)
 
 
-def _watch_reason(games: list[Game]) -> str | None:
+def _watch_reason(games: list[Game], data: dict | None = None) -> str | None:
     """排程該不該留下來，過幾分鐘再檢查一次。回傳原因，None 表示可以走了。
 
     GitHub 的排程一天只跑 4-8 次，跑完就走的話，10 點開打的比賽可能
     傍晚才收到賽果。所以有比賽在打、或很快要開打時，workflow 會留下來
     每 WATCH_INTERVAL_MINUTES 分鐘再跑一次 tick（見 notify.yml）。
+
+    每日摘要也一樣：凌晨那一次排程如果發現摘要還沒送、離 DIGEST_NOT_BEFORE
+    又在盯得到的範圍內，就留下來等到時間送出。digest.yml 的三槍偶爾會整天
+    都沒觸發（2026-11-17 就是），06:00 之後也可能好幾個小時沒有任何排程。
     """
     now = datetime.now(timezone.utc)
     soon = now + timedelta(minutes=config.WATCH_AHEAD_MINUTES)
@@ -371,7 +375,24 @@ def _watch_reason(games: list[Game]) -> str | None:
         first = min(upcoming, key=lambda g: g.start)
         return (f"{config.WATCH_AHEAD_MINUTES} 分鐘內有比賽要開打"
                 f"（{first.local_start():%H:%M} {first.league_name}）")
+    if data is not None:
+        wait = _minutes_until_digest(data)
+        # 留 30 分鐘餘裕：迴圈每輪 10 分鐘外加抓資料的時間，會慢慢往後漂
+        if wait is not None and wait <= config.WATCH_MAX_MINUTES - 30:
+            return f"等 {config.DIGEST_NOT_BEFORE} 送每日摘要（還有 {wait} 分鐘）"
     return None
+
+
+def _minutes_until_digest(data: dict) -> int | None:
+    """離今天的摘要時間還有幾分鐘；今天已經送過、或時間已經過了就回傳 None。"""
+    local = datetime.now(_tz())
+    if state.already(data, "digest", local.date().isoformat()):
+        return None
+    hour, _, minute = config.DIGEST_NOT_BEFORE.partition(":")
+    target = local.replace(hour=int(hour), minute=int(minute or 0), second=0, microsecond=0)
+    if local >= target:
+        return None
+    return -(-int((target - local).total_seconds()) // 60)
 
 
 def _league_names(games: list[Game]) -> str:

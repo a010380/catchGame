@@ -322,3 +322,26 @@ def test_tick_用旗標檔告訴_workflow_要不要繼續(tmp_state, sent, no_di
     _feed(monkeypatch, [make_game("g", "post", minutes_from_now=-200, home_score="1", away_score="0")])
     main.cmd_tick(_tick_args(str(flag)))
     assert not flag.exists()
+
+
+def test_凌晨的排程會留下來等摘要時間(tmp_state, monkeypatch):
+    """2026-11-17：digest.yml 三槍都沒觸發，notify 只在 03:59 跑一次就走了，
+    之後好幾個小時沒有任何排程，摘要整天沒送。"""
+    monkeypatch.setattr(config, "DIGEST_NOT_BEFORE", "06:00")
+    _freeze(monkeypatch, 3, 59)
+    reason = main._watch_reason([], state.load())
+    assert reason and "每日摘要" in reason and "121 分鐘" in reason
+
+
+def test_摘要送過了_或離太遠_就不等(tmp_state, monkeypatch):
+    monkeypatch.setattr(config, "DIGEST_NOT_BEFORE", "06:00")
+    _freeze(monkeypatch, 0, 30)   # 5.5 小時後，一次盯不到
+    assert main._watch_reason([], state.load()) is None
+
+    _freeze(monkeypatch, 4, 0)
+    data = state.load()
+    main._mark_digest_sent(data)
+    assert main._watch_reason([], state.load()) is None
+
+    _freeze(monkeypatch, 7, 0)    # 已經過了，tick 這一輪就會送，不用等
+    assert main._minutes_until_digest(state.load()) is None
